@@ -63,7 +63,7 @@ Everything else in this repo is machinery serving these.
 
 ```bash
 python -m kg.cli check                 # is everything wired up
-python -m kg.cli run-all --limit 25    # fetch, read, load  (the main one)
+python -m kg.cli run-all               # build the graph  (the main one)
 python -m kg.cli stats                 # what is in the graph
 python -m kg.cli validate              # is the graph still valid
 python -m kg.cli build-ontology        # rebuild ontology files after editing
@@ -93,6 +93,9 @@ On a fresh machine, in order:
 **Requirements:** Python 3.10+, Docker Desktop (running).
 **Optional:** Protégé, to view the ontology visually.
 
+**No network access or SEC account is needed.** All source data ships with the
+repo in `data/samples/` (3.3 MB, 25 companies).
+
 ### Windows (PowerShell)
 
 ```powershell
@@ -100,10 +103,8 @@ On a fresh machine, in order:
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e .
 
-# 2. Configuration - SEC requires a real contact email
+# 2. Copy the config template (defaults work as-is)
 copy config\settings.yaml.example config\settings.yaml
-#    then edit sec_user_agent to "YourName your.email@example.com"
-#    SEC returns 403 without it
 
 # 3. Start the graph database (first boot downloads plugins, ~1 min)
 docker compose up -d
@@ -111,8 +112,8 @@ docker compose up -d
 # 4. Verify - should print neo4j_version and n10s_available: true
 .\.venv\Scripts\python.exe -m kg.cli check
 
-# 5. Build the graph (~3 min first time, then cached)
-.\.venv\Scripts\python.exe -m kg.cli run-all --limit 25
+# 5. Build the whole graph from data/samples/  (~1 min, no network)
+.\.venv\Scripts\python.exe -m kg.cli run-all
 ```
 
 ### macOS / Linux
@@ -120,22 +121,38 @@ docker compose up -d
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -e .
-cp config/settings.yaml.example config/settings.yaml   # then edit the email
+cp config/settings.yaml.example config/settings.yaml
 docker compose up -d
 .venv/bin/python -m kg.cli check
-.venv/bin/python -m kg.cli run-all --limit 25
+.venv/bin/python -m kg.cli run-all
 ```
 
 The `docker-compose.yml` mounts `C:/kg-data/neo4j` — change those two volume
 paths on non-Windows.
 
+### The bundled data
+
+```
+data/samples/
+  index.json                    which files belong to which company
+  structured/
+    company_tickers.json        25 companies, names and tickers
+  semi/
+    xbrl/*.json                 financial facts, trimmed to the 3 tags used
+    exhibit21/*.htm             raw subsidiary lists, exactly as SEC published
+  unstructured/                 empty - the prose reader is not built yet
+```
+
+The Exhibit 21 files are untouched originals, messy HTML and all. The XBRL
+files are trimmed from 94 MB to 1.9 MB by keeping only the tags the parser
+reads; nothing else is altered.
+
 ### Expected output from step 5
 
 ```
-...25 companies, each printing ex21=yes or no...
-structured/tickers: 165 mentions
-semi/xbrl: 11724 mentions
-semi/exhibit21: 1952 ownership edges
+structured/tickers:     165 mentions
+semi/xbrl:            11724 mentions
+semi/exhibit21:        1952 ownership edges
 loaded 13864 mentions, 13690 edges
 mentions:
   FinancialFact    semi           11628
@@ -161,7 +178,7 @@ RETURN p, s
 
 | Symptom | Cause |
 |---|---|
-| `403 Forbidden` from SEC | `sec_user_agent` in `config/settings.yaml` has no email |
+| `FileNotFoundError: data/samples` | Run commands from the project root folder |
 | `ServiceUnavailable` on bolt | Docker not running, or Neo4j still booting (wait ~60s) |
 | `FileNotFoundError: config/settings.yaml` | Step 2 was skipped |
 | `ConstraintCreationFailed ... Enterprise Edition` | You are on Neo4j Enterprise-only syntax; this repo targets Community |
@@ -372,13 +389,13 @@ neo4j/     the database files
 | Command | What it does | Writes |
 |---|---|---|
 | `check` | Verifies config and Neo4j | — |
-| `ingest-sec --limit N` | Downloads filings for N companies | `C:\kg-data\raw\` |
-| `parse` | Runs the readers | `mentions.parquet`, `edge_mentions.parquet` |
+| `parse` | Reads `data/samples/` | `mentions.parquet`, `edge_mentions.parquet` |
 | `load --reset` | Loads Parquet into Neo4j | the graph |
 | `stats` | Counts by type | — |
 | `validate` | SHACL validation and consistency checks | — |
 | `build-ontology` | Regenerates ontology files from `ontology.ttl` | `ontology.owl`, `constraints.cypher` |
-| `run-all --limit N` | ingest → parse → load → stats | everything |
+| `run-all` | parse → load → stats | everything |
+| `refresh-samples --limit N` | OPTIONAL: re-download from SEC. Needs a contact email in config and network | the raw cache |
 
 Tests:
 
@@ -396,7 +413,9 @@ Three cases. Only one needs code.
 ### A. More of the same
 
 ```bash
-python -m kg.cli run-all --limit 500
+python -m kg.cli refresh-samples --limit 500
+python scripts/export_samples.py
+python -m kg.cli run-all
 ```
 
 No code. Already-cached files are skipped.

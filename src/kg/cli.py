@@ -19,7 +19,7 @@ from kg.load.neo4j_conn import check_connection, get_driver
 from kg.load.neo4j_writer import apply_constraints, clear_graph, load_edges, load_mentions
 from kg.parse.schema import write_edges, write_mentions
 from kg.parse.semi import parse_companyfacts, parse_exhibit21
-from kg.parse.structured import parse_company_tickers, parse_gleif_lei
+from kg.parse.structured import parse_company_tickers
 
 app = typer.Typer(help="Enterprise KG construction pipeline")
 
@@ -42,9 +42,14 @@ def check():
         driver.close()
 
 
-@app.command(name="ingest-sec")
-def ingest_sec(limit: int = typer.Option(25, help="number of companies to ingest")):
-    """Fetch tickers, submissions, companyfacts, and Exhibit 21 for N companies."""
+@app.command(name="refresh-samples")
+def ingest_sec(limit: int = typer.Option(25, help="number of companies to fetch")):
+    """OPTIONAL. Re-download from SEC to refresh data/samples/.
+
+    Needs a contact email in config/settings.yaml and network access. Normal
+    use does not require this - the sample data ships with the repo. After
+    running it, regenerate the folder with: python scripts/export_samples.py
+    """
     settings = load_settings()
     client = _client(settings)
     doc_id, records = fetch_company_tickers(client)
@@ -77,58 +82,48 @@ def ingest_sec(limit: int = typer.Option(25, help="number of companies to ingest
 
 @app.command()
 def parse():
-    """Run the parsers into mentions.parquet and edge_mentions.parquet."""
+    """Read data/samples/ and write mentions.parquet and edge_mentions.parquet."""
+    from kg.ingest.local import (
+        doc_id_for,
+        load_exhibit21,
+        load_index,
+        load_tickers,
+        load_xbrl,
+    )
+
     settings = load_settings()
-    cache = RawCache(settings.raw_dir)
     mentions, edges = [], []
 
-    gleif_parquet = settings.staging_dir / "gleif_lei.parquet"
-    if gleif_parquet.exists():
-        doc = "gleif_lei_golden_copy".ljust(64, "0")
-        m, e = parse_gleif_lei(gleif_parquet, doc, str(gleif_parquet))
-        mentions += m
-        edges += e
-        typer.echo(f"structured/gleif: {len(m)} mentions")
+    records = load_tickers()
+    tickers_doc = doc_id_for("structured/company_tickers.json")
+    m, e = parse_company_tickers(records, tickers_doc, "data/samples/structured/company_tickers.json")
+    mentions += m
+    edges += e
+    typer.echo(f"structured/tickers:  {len(m):>6} mentions")
 
-    tickers_doc_file = settings.staging_dir / "tickers_doc_id.txt"
-    manifest_file = settings.staging_dir / "sec_manifest.json"
-    manifest = json.loads(manifest_file.read_text()) if manifest_file.exists() else []
-
-    if tickers_doc_file.exists():
-        doc_id = tickers_doc_file.read_text().strip()
-        all_records = list(json.loads(cache.get(doc_id)).values())
-        ciks = {e["cik"] for e in manifest}
-        records = [r for r in all_records if r["cik_str"] in ciks] or all_records
-        m, e = parse_company_tickers(
-            records, doc_id, "https://www.sec.gov/files/company_tickers.json"
-        )
-        mentions += m
-        edges += e
-        typer.echo(f"structured/tickers: {len(m)} mentions")
-
+    index = load_index()
     facts_count = ex21_count = 0
-    for entry in manifest:
-        cik = str(entry["cik"]).zfill(10)
-        if entry.get("facts_doc"):
-            facts = json.loads(cache.get(entry["facts_doc"]))
-            m, e = parse_companyfacts(facts, entry["facts_doc"], "companyfacts", cik)
+    for entry in index:
+        cik = entry["cik"]
+        facts = load_xbrl(entry)
+        if facts is not None:
+            doc = doc_id_for(entry["xbrl"])
+            m, e = parse_companyfacts(facts, doc, entry["xbrl"], cik)
             mentions += m
             edges += e
             facts_count += len(m)
-        if entry.get("ex21"):
+        html = load_exhibit21(entry)
+        if html is not None:
+            doc = doc_id_for(entry["exhibit21"])
             m, e = parse_exhibit21(
-                cache.get(entry["ex21"]["doc_id"]),
-                entry["ex21"]["doc_id"],
-                entry["ex21"]["url"],
-                cik,
-                entry["title"],
+                html, doc, entry["exhibit21_url"] or entry["exhibit21"], cik, entry["title"]
             )
             mentions += m
             edges += e
             ex21_count += len(e)
-    if manifest:
-        typer.echo(f"semi/xbrl: {facts_count} mentions")
-        typer.echo(f"semi/exhibit21: {ex21_count} ownership edges")
+
+    typer.echo(f"semi/xbrl:           {facts_count:>6} mentions")
+    typer.echo(f"semi/exhibit21:      {ex21_count:>6} ownership edges")
 
     m_path = write_mentions(mentions, settings.staging_dir / "mentions.parquet")
     e_path = write_edges(edges, settings.staging_dir / "edge_mentions.parquet")
@@ -216,9 +211,8 @@ def build_ontology():
 
 
 @app.command(name="run-all")
-def run_all(limit: int = 25):
-    """ingest-sec, parse, load, stats."""
-    ingest_sec(limit=limit)
+def run_all():
+    """Build the whole graph from data/samples/: parse, load, stats."""
     parse()
     load(reset=True)
     stats()

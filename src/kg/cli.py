@@ -4,17 +4,13 @@ from pathlib import Path
 import typer
 
 from kg.config import load_settings
-from kg.ingest.cache import RawCache
-from kg.ingest.edgar import (
-    fetch_company_tickers,
-    fetch_companyfacts,
-    fetch_filing_headers,
-    fetch_submissions,
-    filing_doc_url,
-    find_exhibit21_from_headers,
-    recent_filings,
+from kg.ingest.local import (
+    doc_id_for,
+    load_exhibit21,
+    load_index,
+    load_tickers,
+    load_xbrl,
 )
-from kg.ingest.http import SecClient
 from kg.load.neo4j_conn import check_connection, get_driver
 from kg.load.neo4j_writer import apply_constraints, clear_graph, load_edges, load_mentions
 from kg.parse.schema import write_edges, write_mentions
@@ -26,71 +22,9 @@ app = typer.Typer(help="Enterprise KG construction pipeline")
 CONSTRAINTS = Path("ontology/constraints.cypher")
 
 
-def _client(settings):
-    return SecClient(settings, RawCache(settings.raw_dir))
-
-
-@app.command()
-def check():
-    """Verify config, data root, and Neo4j connectivity."""
-    settings = load_settings()
-    typer.echo(f"data_root: {settings.data_root}")
-    driver = get_driver(settings)
-    try:
-        typer.echo(json.dumps(check_connection(driver), indent=2))
-    finally:
-        driver.close()
-
-
-@app.command(name="refresh-samples")
-def ingest_sec(limit: int = typer.Option(25, help="number of companies to fetch")):
-    """OPTIONAL. Re-download from SEC to refresh data/samples/.
-
-    Needs a contact email in config/settings.yaml and network access. Normal
-    use does not require this - the sample data ships with the repo. After
-    running it, regenerate the folder with: python scripts/export_samples.py
-    """
-    settings = load_settings()
-    client = _client(settings)
-    doc_id, records = fetch_company_tickers(client)
-    (settings.staging_dir / "tickers_doc_id.txt").write_text(doc_id)
-    manifest = []
-    for rec in records[:limit]:
-        cik = rec["cik_str"]
-        entry = {"cik": cik, "title": rec["title"], "facts_doc": None, "ex21": None}
-        try:
-            entry["facts_doc"], _ = fetch_companyfacts(client, cik)
-        except Exception as exc:
-            typer.echo(f"  {rec['title']}: companyfacts failed ({exc.__class__.__name__})")
-        try:
-            _, submissions = fetch_submissions(client, cik)
-            filings = recent_filings(submissions, "10-K", 1)
-            if filings:
-                _, headers = fetch_filing_headers(client, cik, filings[0]["accession"])
-                filename = find_exhibit21_from_headers(headers)
-                if filename:
-                    url = filing_doc_url(cik, filings[0]["accession"], filename)
-                    ex21_doc, _ = client.get_bytes(url)
-                    entry["ex21"] = {"doc_id": ex21_doc, "url": url}
-        except Exception as exc:
-            typer.echo(f"  {rec['title']}: filing lookup failed ({exc.__class__.__name__})")
-        manifest.append(entry)
-        typer.echo(f"{rec['title']}: ex21={'yes' if entry['ex21'] else 'no'}")
-    (settings.staging_dir / "sec_manifest.json").write_text(json.dumps(manifest, indent=2))
-    typer.echo(f"ingested {len(manifest)} companies")
-
-
 @app.command()
 def parse():
     """Read data/samples/ and write mentions.parquet and edge_mentions.parquet."""
-    from kg.ingest.local import (
-        doc_id_for,
-        load_exhibit21,
-        load_index,
-        load_tickers,
-        load_xbrl,
-    )
-
     settings = load_settings()
     mentions, edges = [], []
 

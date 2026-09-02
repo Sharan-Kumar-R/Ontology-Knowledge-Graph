@@ -190,7 +190,14 @@ gigabytes of Parquet and database files are not synced to the cloud.
 
 ## 4. How it was built, step by step
 
-Eleven commits, in this order. Each step solved one problem.
+Each step solved one problem, in this order.
+
+> **Note on steps 1 and 3.** The project originally downloaded from SEC on
+> every run. It now ships the source files in `data/samples/` and reads them
+> directly, so `ingest/cache.py`, `ingest/http.py`, and `ingest/edgar.py` were
+> deleted once the data was captured. They are described below because the
+> bundled files came from them, and because the EDGAR bug in step 5 is worth
+> recording. `ingest/local.py` replaced all three.
 
 ### Step 1 — Configuration
 
@@ -348,9 +355,7 @@ ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, re
 | File | Purpose |
 |---|---|
 | `config.py` | Reads settings, validates the SEC contact email, creates data folders |
-| `ingest/cache.py` | Content-addressed store. Downloads once, keeps forever |
-| `ingest/http.py` | Rate-limited SEC client (8 req/s), cache-aware |
-| `ingest/edgar.py` | The SEC endpoints: tickers, submissions, XBRL facts, Exhibit 21 |
+| `ingest/local.py` | Reads the bundled files in `data/samples/` |
 | `parse/schema.py` | **The common format every reader writes into** |
 | `parse/structured.py` | Reader for clean tables |
 | `parse/semi.py` | Reader for XBRL JSON and Exhibit 21 HTML |
@@ -395,7 +400,6 @@ neo4j/     the database files
 | `validate` | SHACL validation and consistency checks | — |
 | `build-ontology` | Regenerates ontology files from `ontology.ttl` | `ontology.owl`, `constraints.cypher` |
 | `run-all` | parse → load → stats | everything |
-| `refresh-samples --limit N` | OPTIONAL: re-download from SEC. Needs a contact email in config and network | the raw cache |
 
 Tests:
 
@@ -410,15 +414,15 @@ python -m pytest                        # everything, needs docker compose up
 
 Three cases. Only one needs code.
 
-### A. More of the same
+### A. More companies
+
+Drop the new files into `data/samples/`, add an entry to `index.json`, then:
 
 ```bash
-python -m kg.cli refresh-samples --limit 500
-python scripts/export_samples.py
 python -m kg.cli run-all
 ```
 
-No code. Already-cached files are skipped.
+No code. The parsers read whatever the index lists.
 
 ### B. A new file format, same kinds of thing
 

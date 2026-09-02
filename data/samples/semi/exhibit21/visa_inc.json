@@ -1,0 +1,25 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Visa Europe Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Visa International Service Association",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Visa U.S.A. Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Visa Worldwide Pte. Limited",
+   "jurisdiction_text": "Singapore"
+  }
+ ],
+ "parent_name": "VISA INC.",
+ "parent_cik": "0001403161",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/vex211093025.htm",
+ "source_file": "visa_inc.htm"
+}

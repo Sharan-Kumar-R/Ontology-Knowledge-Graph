@@ -1,0 +1,137 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Intel International, Inc.",
+   "jurisdiction_text": "California, U.S."
+  },
+  {
+   "name": "Intel Capital Corporation",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Intel Overseas Funding Corporation",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Mission College Investments Ltd.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Intel Americas, Inc.",
+   "jurisdiction_text": "California, U.S."
+  },
+  {
+   "name": "Intel Ireland Holdings (U.S.) LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Intel Technology (US), LP",
+   "jurisdiction_text": "California, U.S."
+  },
+  {
+   "name": "Intel Ignite IV 1 LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Componentes Intel de Costa Rica, S.R.L.",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "Grange Newco LLC",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Intel Benelux B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Intel Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Intel Finance B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Intel Corporation (UK) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Intel Technologies, Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Intel Ireland Limited",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Intel Electronics Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Mobileye Global Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Hampton Acquisition Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Intel Israel (74) Limited",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Intel Semi Conductors Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Intel Kabushiki Kaisha",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Intel Semiconductor (Dalian) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Intel Technology Sdn. Berhad",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Intel Semiconductor (US) LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Intel Asia Holding Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Intel Products Vietnam Co., Ltd.",
+   "jurisdiction_text": "Vietnam"
+  },
+  {
+   "name": "Intel China Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Intel Products (Chengdu) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Arizona Fab LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Arizona Fab Holdco Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Intel China Finance I (HK) Limited",
+   "jurisdiction_text": "China"
+  }
+ ],
+ "parent_name": "INTEL CORP",
+ "parent_cik": "0000050863",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/a12272025-ex211.htm",
+ "source_file": "intel_corp.htm"
+}

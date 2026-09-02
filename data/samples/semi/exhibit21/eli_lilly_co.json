@@ -1,0 +1,641 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Adverum Biotechnologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Adverum NC, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Akouos, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Alnara Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Annapurna Therapeutics, Ltd.",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Aparito Espanya S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Aparito Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Aparito LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ARMO Biosciences, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Avalanche Australia Pty Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Avid Radiopharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "CoLucid Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Compania Farmaceutica Eli Lilly de Centro America S.A.",
+   "jurisdiction_text": "Guatemala"
+  },
+  {
+   "name": "CPD 4, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Dermira, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "DICE Alpha Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "DICE Molecules SV, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "DICE Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Disarm Therapeutics Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Dista Ilac Ticaret Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Dista, S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Dista-Produtos Quimicos & Farmaceuticos, LDA",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "ELC EHS, LLC",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "ELCO Dominicana S.R.L.",
+   "jurisdiction_text": "Dominican Republic"
+  },
+  {
+   "name": "ELCO for Trading and Marketing, S.A.E.",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "ELCO Insurance Company Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "ELCO Management, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ELGO Insurance Company Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Eli Lilly (Malaysia) Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Eli Lilly (Philippines), Incorporated",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "Eli Lilly (S.A.) (Proprietary) Limited",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Eli Lilly (Singapore) Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Eli Lilly (Suisse) S.A.",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Eli Lilly and Company (India) Pvt. Ltd.",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Eli Lilly and Company (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Eli Lilly and Company (N.Z.) Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Eli Lilly and Company (Taiwan), Inc.",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Eli Lilly and Company Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Eli Lilly Asia Pacific SSC Sdn Bhd",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Eli Lilly Asia, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Eli Lilly Australia Pty. Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Eli Lilly Benelux S.A.",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Eli Lilly B-H d.o.o.",
+   "jurisdiction_text": "Bosnia"
+  },
+  {
+   "name": "Eli Lilly Bienes y Servicios S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Eli Lilly Canada Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Eli Lilly Clinical Diagnostics Laboratory LLC",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Eli Lilly Cork Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Eli Lilly CR s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Eli Lilly Danmark A/S",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Eli Lilly de Costa Rica, S.R.L.",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "Eli Lilly do Brasil Limitada",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Eli Lilly Drug Store LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Eli Lilly Egypt for Trading Company S.A.E.",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "Eli Lilly European Clinical Trial Services S.A.",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Eli Lilly Export S.A.",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Eli Lilly farmacevtska druzba, d.o.o.",
+   "jurisdiction_text": "Slovenia"
+  },
+  {
+   "name": "Eli Lilly Finance, S.A.",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Eli Lilly Ges.m.b.H.",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Eli Lilly Group Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Eli Lilly Hrvatska d.o.o.",
+   "jurisdiction_text": "Croatia"
+  },
+  {
+   "name": "Eli Lilly Interamerica Inc., y Compania Limitada",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "Eli Lilly Interamerica, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Eli Lilly International Corporation",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Eli Lilly Ireland Holdings Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Eli Lilly Israel Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Eli Lilly Italia S.p.A.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Eli Lilly Japan K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Eli Lilly Kinsale Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Eli Lilly Nederland B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Eli Lilly Norge A.S.",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Eli Lilly Pakistan (Pvt.) Ltd.",
+   "jurisdiction_text": "Pakistan"
+  },
+  {
+   "name": "Eli Lilly Polska Sp. z.o.o. (Ltd.)",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Eli Lilly Regional Operations GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Eli Lilly Romania S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "Eli Lilly S.A.",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Eli Lilly Saudi Arabia Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Eli Lilly Services India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Eli Lilly Services Peru S.A.C",
+   "jurisdiction_text": "Peru"
+  },
+  {
+   "name": "Eli Lilly Slovakia s.r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Eli Lilly Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Eli Lilly Vostok S.A.",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Eli Lilly y Compania de Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Eli Lilly y Compania de Venezuela, S.A.",
+   "jurisdiction_text": "Venezuela"
+  },
+  {
+   "name": "Emergence Therapeutics France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Glycostasis, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Greenfield-Produtos Farmaceuticos, Lda.",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "ICOS Corporation",
+   "jurisdiction_text": "Washington"
+  },
+  {
+   "name": "ImClone LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ImClone Systems Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Irisfarma S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Isopro Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH I Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH II Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH III Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH IV Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH V 2023 Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH VI Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH VII Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LDH VIII Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lilly (Beijing) Medical Tech Innovation Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lilly (Shanghai) Management Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lilly Asia Ventures Fund I, L.P.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Lilly Asia Ventures Fund II, L.P.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Lilly Asian Ventures Fund III, L.P.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Lilly Cayman Holdings",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Lilly Centre for Clinical Pharmacology PTE. LTD.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Lilly China Research and Development Co., Ltd",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lilly del Caribe, Inc.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Lilly Deutschland GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Lilly France S.A.S.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Lilly Global Nederland Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Lilly Global Services, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Lilly Holding GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Lilly Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Lilly Hungaria KFT",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "Lilly Ilac Ticaret Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Lilly Japan Financing G.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Lilly Korea Ltd.",
+   "jurisdiction_text": "Korea"
+  },
+  {
+   "name": "Lilly Lebanon Advanced Therapies LLC",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Lilly Nederland Finance B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Lilly Nederland Holding B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Lilly Pharma Ltd.",
+   "jurisdiction_text": "Russia"
+  },
+  {
+   "name": "Lilly Portugal - Produtos Farmaceuticos, Lda.",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Lilly S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Lilly Suzhou Pharmaceutical Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lilly Trading Co. LTD",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lilly USA, LLC",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Lilly Ventures Fund I LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LillyDirect Pharmacy, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Loxo Oncology, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mablink Bioscience S.A.S.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Manet Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Morphic Holding, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Morphic Therapeutic UK Ltd.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Morphic Therapeutic, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NexPharm Parent Holdco, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "OY Eli Lilly Finland AB",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "Pandinus MSC, Inc.",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "Petra Pharma Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pharmaserve-Lilly S.A.C.I.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "Point Biopharma Corp.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Point Biopharma Global Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Point Biopharma Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Point Biopharma USA Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Prevail Therapeutics Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Protomer Technologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Scorpion Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SGX Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sigilon Therapeutics Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SiteOne Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Spaly Bioquimica, S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "UAB Eli Lilly Lietuva",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "Valquifarma, S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Versanis Bio Australia PTY LTD",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Versanis Bio, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Verve Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Victoria Holdco Corp.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Vitalfarma - Produtos Farmaceuticos, Lda.",
+   "jurisdiction_text": "Portugal"
+  }
+ ],
+ "parent_name": "ELI LILLY & Co",
+ "parent_cik": "0000059478",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-12312025x10kexhibit21.htm",
+ "source_file": "eli_lilly_co.htm"
+}

@@ -1,0 +1,21 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Google LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "XXVI Holdings Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Alphabet Capital US LLC",
+   "jurisdiction_text": "Delaware"
+  }
+ ],
+ "parent_name": "Alphabet Inc.",
+ "parent_cik": "0001652044",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/googexhibit2101q42025.htm",
+ "source_file": "alphabet_inc.htm"
+}

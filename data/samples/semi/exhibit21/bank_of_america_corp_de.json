@@ -1,0 +1,233 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "BA Continuum India Private Limited",
+   "jurisdiction_text": "Hyderabad, India"
+  },
+  {
+   "name": "BA Electronic Data Processing (Guangzhou) Ltd.",
+   "jurisdiction_text": "Guangzhou, PRC"
+  },
+  {
+   "name": "BAC Canada Finance Company",
+   "jurisdiction_text": "Toronto, Ontario, Canada"
+  },
+  {
+   "name": "BAC North America Holding Company",
+   "jurisdiction_text": "Charlotte, NC"
+  },
+  {
+   "name": "BAL Investment & Advisory, LLC",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Banc of America FSC Holdings, Inc.",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Banc of America Leasing & Capital, LLC",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Banc of America Public Capital Corp",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Bank of America California, National Association",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Bank of America Europe Designated Activity Company",
+   "jurisdiction_text": "Dublin, Ireland"
+  },
+  {
+   "name": "Bank of America Malaysia Berhad",
+   "jurisdiction_text": "Kuala Lumpur, Malaysia"
+  },
+  {
+   "name": "Bank of America Merrill Lynch Banco M\u00faltiplo S.A.",
+   "jurisdiction_text": "Sao Paulo, Brazil"
+  },
+  {
+   "name": "Bank of America Mexico, S.A., Institucion de Banca Multiple",
+   "jurisdiction_text": "Mexico City, Mexico"
+  },
+  {
+   "name": "Bank of America, National Association",
+   "jurisdiction_text": "Charlotte, NC"
+  },
+  {
+   "name": "Bank of America Singapore Limited",
+   "jurisdiction_text": "Singapore, Singapore"
+  },
+  {
+   "name": "Bank of America Yatirim Bank A.S.",
+   "jurisdiction_text": "Istanbul, Turkey"
+  },
+  {
+   "name": "BankAmerica International Financial Corporation",
+   "jurisdiction_text": "San Francisco, CA"
+  },
+  {
+   "name": "Blue Ridge Investments, L.L.C.",
+   "jurisdiction_text": "New York, NY"
+  },
+  {
+   "name": "BofA Finance LLC",
+   "jurisdiction_text": "Charlotte, NC"
+  },
+  {
+   "name": "BofA Securities Europe SA",
+   "jurisdiction_text": "Paris, France"
+  },
+  {
+   "name": "BofA Securities, Inc.",
+   "jurisdiction_text": "New York, NY"
+  },
+  {
+   "name": "BofA Securities India Limited",
+   "jurisdiction_text": "Mumbai, India"
+  },
+  {
+   "name": "BofA Securities Japan Co., Ltd.",
+   "jurisdiction_text": "Tokyo, Japan"
+  },
+  {
+   "name": "BofA Securities Prime, Inc.",
+   "jurisdiction_text": "New York, NY"
+  },
+  {
+   "name": "Managed Account Advisors LLC",
+   "jurisdiction_text": "Jersey City, NJ"
+  },
+  {
+   "name": "Merrill Lynch (Asia Pacific) Limited",
+   "jurisdiction_text": "Hong Kong, PRC"
+  },
+  {
+   "name": "Merrill Lynch (Australia) Futures Limited",
+   "jurisdiction_text": "Sydney, Australia"
+  },
+  {
+   "name": "Merrill Lynch (Singapore) Pte. Ltd.",
+   "jurisdiction_text": "Singapore, Singapore"
+  },
+  {
+   "name": "Merrill Lynch Argentina S.A.",
+   "jurisdiction_text": "Capital Federal, Argentina"
+  },
+  {
+   "name": "Merrill Lynch B.V.",
+   "jurisdiction_text": "Amsterdam, Netherlands"
+  },
+  {
+   "name": "Merrill Lynch Bank and Trust Company (Cayman) Limited",
+   "jurisdiction_text": "George Town, Grand Cayman, Cayman Is."
+  },
+  {
+   "name": "Merrill Lynch Canada Inc.",
+   "jurisdiction_text": "Toronto, Ontario, Canada"
+  },
+  {
+   "name": "Merrill Lynch Capital Services, Inc.",
+   "jurisdiction_text": "New York, NY"
+  },
+  {
+   "name": "Merrill Lynch Commodities Canada, ULC",
+   "jurisdiction_text": "Toronto, Ontario, Canada"
+  },
+  {
+   "name": "Merrill Lynch Commodities, Inc.",
+   "jurisdiction_text": "Houston, TX"
+  },
+  {
+   "name": "Merrill Lynch Corredores de Bolsa SpA",
+   "jurisdiction_text": "Santiago, Chile"
+  },
+  {
+   "name": "Merrill Lynch Equities (Australia) Limited",
+   "jurisdiction_text": "Sydney, Australia"
+  },
+  {
+   "name": "Merrill Lynch Far East Limited",
+   "jurisdiction_text": "Hong Kong, PRC"
+  },
+  {
+   "name": "Merrill Lynch Global Services Pte. Ltd.",
+   "jurisdiction_text": "Singapore, Singapore"
+  },
+  {
+   "name": "Merrill Lynch International",
+   "jurisdiction_text": "London, U.K."
+  },
+  {
+   "name": "Merrill Lynch International, LLC",
+   "jurisdiction_text": "Charlotte, NC"
+  },
+  {
+   "name": "Merrill Lynch Israel Ltd.",
+   "jurisdiction_text": "Tel Aviv, Israel"
+  },
+  {
+   "name": "Merrill Lynch, Kingdom of Saudi Arabia Company",
+   "jurisdiction_text": "Kingdom of Saudi Arabia"
+  },
+  {
+   "name": "Merrill Lynch Malaysian Advisory Sdn. Bhd.",
+   "jurisdiction_text": "Kuala Lumpur, Malaysia"
+  },
+  {
+   "name": "Merrill Lynch Markets (Australia) Pty. Limited",
+   "jurisdiction_text": "Sydney, Australia"
+  },
+  {
+   "name": "Merrill Lynch Mexico, S.A. de C.V., Casa de Bolsa",
+   "jurisdiction_text": "Mexico City, Mexico"
+  },
+  {
+   "name": "Merrill Lynch, Pierce, Fenner & Smith Incorporated",
+   "jurisdiction_text": "New York, NY"
+  },
+  {
+   "name": "Merrill Lynch S.A. Corretora de T\u00edtulos e Valores Mobili\u00e1rios",
+   "jurisdiction_text": "Sao Paulo, Brazil"
+  },
+  {
+   "name": "Merrill Lynch Securities (Taiwan) Ltd.",
+   "jurisdiction_text": "Taipei, Taiwan"
+  },
+  {
+   "name": "Merrill Lynch Securities (Thailand) Limited",
+   "jurisdiction_text": "Bangkok, Thailand"
+  },
+  {
+   "name": "Merrill Lynch South Africa Proprietary Limited",
+   "jurisdiction_text": "Gauteng, South Africa"
+  },
+  {
+   "name": "Mortgages plc",
+   "jurisdiction_text": "London, U.K."
+  },
+  {
+   "name": "NB Holdings Corporation",
+   "jurisdiction_text": "Charlotte, NC"
+  },
+  {
+   "name": "PT Merrill Lynch Sekuritas Indonesia",
+   "jurisdiction_text": "Jakarta, Indonesia"
+  },
+  {
+   "name": "U.S. Trust Company of Delaware",
+   "jurisdiction_text": "Wilmington, DE"
+  },
+  {
+   "name": "Wave Lending Limited",
+   "jurisdiction_text": "London, U.K."
+  }
+ ],
+ "parent_name": "BANK OF AMERICA CORP /DE/",
+ "parent_cik": "0000070858",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/bac-1231202510xkex21.htm",
+ "source_file": "bank_of_america_corp_de.htm"
+}

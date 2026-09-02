@@ -1,0 +1,73 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Global Mastercard Holdings LP",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard A&M Investment Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mastercard AP Financing Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Mastercard Asia/Pacific Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Mastercard/Europay U.K. Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard Europe SA",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Mastercard Europe Services Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard Financing Solutions LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mastercard Holdings LP",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard International Incorporated",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mastercard Middle East Africa FZ-LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Mastercard Payment Gateway Services Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard Payment Gateway Services Group Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Mastercard Singapore Holding Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Mastercard Technologies, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mastercard US Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  }
+ ],
+ "parent_name": "Mastercard Inc",
+ "parent_cik": "0001141391",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/exb21-12312025.htm",
+ "source_file": "mastercard_inc.htm"
+}

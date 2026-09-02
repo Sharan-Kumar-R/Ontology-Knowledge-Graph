@@ -1,0 +1,1233 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "\"Cisco Internetworking\" Limited Liability Company",
+   "jurisdiction_text": "Armenia"
+  },
+  {
+   "name": "3CInteractive LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "47Line Technologies Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Acacia Communications (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Acacia Communications Holdings, Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Acacia Communications, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Acacia Technologies (UK) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Acacia Technology, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Acano (UK) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Accedian France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Accedian Holdings US LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Accedian Networks (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Accedian Networks (Japan) KK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Accedian Networks (Sweden) AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Accedian Networks (UK) Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Accedian Networks Comercio de Equipamentos de Redes e Servicos Ltda",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Accedian Networks Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Accedian Networks India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Accedian Networks M\u00e9xico, S. De R.L. De C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "ACIA Communications Technology (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "AppDynamics Asia Pacific Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "AppDynamics International Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AppDynamics LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AppDynamics Technologies India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "AppDynamics UK Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Armorblox LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Armorblox Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "BroadSoft Adaption LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BroadSoft Australia Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "BroadSoft International LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BroadSoft Italy S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "BroadSoft Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "BroadSoft Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "BroadSoft SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "BroadSoft Technologies Private Ltd.",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "BroadSoft UK Holding Company Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "BroadSoft UK Operating Company Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "BroadSoft, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Center for Cisco Heritage, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco (China) Innovation Technology Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco (Saudi Arabia) Support Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Cisco Bahrain W.L.L",
+   "jurisdiction_text": "Bahrain"
+  },
+  {
+   "name": "Cisco Bilgisayar ve Internet Sistemleri Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Cisco Capital (Dubai) Limited",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Cisco Capital Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Cisco China Company, Limited",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco China Holdings (HK) Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Cisco Com\u00e9rcio e Servi\u00e7os de Hardware e Software do Brasil Ltda",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Cisco Commerce India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Cisco do Brasil Ltda",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Cisco Dutch Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco International Israel Limited",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Cisco International Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Cisco International Taiwan, Ltd.",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Cisco Internetworking Systems Hellas S.A.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "Cisco Investments B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Investments LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco ISH B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Morocco",
+   "jurisdiction_text": "Morocco"
+  },
+  {
+   "name": "Cisco Netherlands B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Norway AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Cisco Norway Holdings AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Cisco OpenDNS LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco Optical GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Cisco Photonics Italy S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Cisco QSTP-LLC",
+   "jurisdiction_text": "Qatar"
+  },
+  {
+   "name": "Cisco Ravenscourt L.L.C.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco Saudi Arabia Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Cisco SCM (Thailand) Limited",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Cisco Serbia doo Beograd",
+   "jurisdiction_text": "Serbia"
+  },
+  {
+   "name": "Cisco Services (Hong Kong) Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Cisco Services & Spares India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Cisco Services Malaysia SDN. BHD.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Cisco Solutions (Switzerland) GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cisco Solutions France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Cisco Solutions GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Cisco Solutions Guatemala, Limitada",
+   "jurisdiction_text": "Guatemala"
+  },
+  {
+   "name": "Cisco Systems (Argentina) S.A.",
+   "jurisdiction_text": "Argentina"
+  },
+  {
+   "name": "Cisco Systems (China) Information Technology Services Limited",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Systems (China) Networking Technology Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Systems (China) Research and Development Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Systems (Colombia) Limitada",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Cisco Systems (Czech Republic) s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Cisco Systems (HK) Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Cisco Systems (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Cisco Systems (Italy) S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Cisco Systems (Jordan)",
+   "jurisdiction_text": "Jordan"
+  },
+  {
+   "name": "Cisco Systems (Korea) Limited",
+   "jurisdiction_text": "Republic of Korea"
+  },
+  {
+   "name": "Cisco Systems (Malaysia) SDN. BHD.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Cisco Systems (Myanmar) Company Limited",
+   "jurisdiction_text": "Myanmar"
+  },
+  {
+   "name": "Cisco Systems (Nigeria) Limited",
+   "jurisdiction_text": "Nigeria"
+  },
+  {
+   "name": "Cisco Systems (Puerto Rico) Corp.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco Systems (Senegal) SUARL",
+   "jurisdiction_text": "Senegal"
+  },
+  {
+   "name": "Cisco Systems (South Africa) (Proprietary) Limited",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Cisco Systems (Spain), S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Cisco Systems (Sweden) AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Cisco Systems (Switzerland) GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cisco Systems (Switzerland) Investments Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Cisco Systems (Thailand) Limited",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Cisco Systems (Trinidad & Tobago) Limited",
+   "jurisdiction_text": "Trinidad and Tobago"
+  },
+  {
+   "name": "Cisco Systems (USA) Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Cisco Systems Algeria EURL",
+   "jurisdiction_text": "Algeria"
+  },
+  {
+   "name": "Cisco Systems Australia Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Cisco Systems Austria GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Cisco Systems Belgium BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Cisco Systems Bulgaria EOOD",
+   "jurisdiction_text": "Bulgaria"
+  },
+  {
+   "name": "Cisco Systems Canada Co. / Les Systemes Cisco Canada CIE",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Cisco Systems Capital (Australia) Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Cisco Systems Capital (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Cisco Systems Capital (Korea) Limited",
+   "jurisdiction_text": "Republic of Korea"
+  },
+  {
+   "name": "Cisco Systems Capital (Thailand) Limited",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Cisco Systems Capital Asia Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Cisco Systems Capital Canada Co./Les Systemes Cisco Capital Canada CIE",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Cisco Systems Capital China Corporation",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Systems Capital Corporation",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Cisco Systems Capital France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Cisco Systems Capital GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Cisco Systems Capital K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Cisco Systems Capital Netherlands B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Systems Capital SDN. BHD.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Cisco Systems Chile S.A.",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "Cisco Systems Costa Rica, Sociedad Anonima",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "Cisco Systems Croatia Ltd. For Trade",
+   "jurisdiction_text": "Croatia"
+  },
+  {
+   "name": "Cisco Systems Cyprus Ltd.",
+   "jurisdiction_text": "Cyprus"
+  },
+  {
+   "name": "Cisco Systems Danmark ApS",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Cisco Systems de Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Cisco Systems Dominicana, S.R.L.",
+   "jurisdiction_text": "Dominican Republic"
+  },
+  {
+   "name": "Cisco Systems Egypt L.L.C.",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "Cisco Systems El Salvador, Ltda. de C.V.",
+   "jurisdiction_text": "El Salvador"
+  },
+  {
+   "name": "Cisco Systems Estonia OU",
+   "jurisdiction_text": "Estonia"
+  },
+  {
+   "name": "Cisco Systems Finance International Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Cisco Systems Finland OY",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "Cisco Systems France Sarl",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Cisco Systems G.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Cisco Systems GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Cisco Systems Holding GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Cisco Systems Holdings UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Cisco Systems Hungary Ltd. / Cisco Systems Hungary Servicing and Trading Limited Liability Company",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "Cisco Systems International B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Systems International FZ-LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Cisco Systems International S\u00e0rl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cisco Systems Internetworking (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Cisco Systems Internetworking d.o.o. Za Marketing, Tehnicke I Druge Usluge Sarajevo",
+   "jurisdiction_text": "Bosnia and Herzegovina"
+  },
+  {
+   "name": "Cisco Systems Internetworking Iletisim Hizmetleri Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Cisco Systems Island Ehf.",
+   "jurisdiction_text": "Iceland"
+  },
+  {
+   "name": "Cisco Systems Israel Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Cisco Systems Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Cisco Systems LLC",
+   "jurisdiction_text": "Oman"
+  },
+  {
+   "name": "Cisco Systems Luxembourg International s.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Cisco Systems Macedonia DOOEL Skopje",
+   "jurisdiction_text": "Republic of North Macedonia"
+  },
+  {
+   "name": "Cisco Systems Management B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Systems Netherlands Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Systems New Zealand Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Cisco Systems Norway AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Cisco Systems Pakistan (Private) Limited",
+   "jurisdiction_text": "Pakistan"
+  },
+  {
+   "name": "Cisco Systems Panama S. de R.L.",
+   "jurisdiction_text": "Panama"
+  },
+  {
+   "name": "Cisco Systems Peru S.A.",
+   "jurisdiction_text": "Peru"
+  },
+  {
+   "name": "Cisco Systems Poland Sp. z o. o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Cisco Systems Portugal - Sistemas Inform\u00e1ticos, Sociedade Unipessoal, Limitada",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Cisco Systems Romania S.r.l.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "Cisco Systems Services B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cisco Systems Slovakia, spol. s. r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Cisco Systems Taiwan, Ltd.",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Cisco Systems Uruguay S.R.L.",
+   "jurisdiction_text": "Uruguay"
+  },
+  {
+   "name": "Cisco Systems Venezuela, C.A.",
+   "jurisdiction_text": "Bolivarian Republic of Venezuela"
+  },
+  {
+   "name": "Cisco Systems Vietnam Limited (Cong Ty Trach Nhiem Huu Han Cisco Systems Vietnam)",
+   "jurisdiction_text": "Vietnam"
+  },
+  {
+   "name": "Cisco Technologies (Beijing) Co., Ltd",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Technologies New Zealand Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Cisco Technologies Philippines, Inc.",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "Cisco Technology (Bermuda) Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Cisco Technology and Services (South Africa) (Pty) Ltd.",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Cisco Technology Bangladesh Ltd.",
+   "jurisdiction_text": "Bangladesh"
+  },
+  {
+   "name": "Cisco Technology Belgium BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Cisco Technology Denmark ApS",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Cisco Technology Services (Dalian) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Cisco Technology, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Cisco THV LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco Tunisia SARL",
+   "jurisdiction_text": "Tunisia"
+  },
+  {
+   "name": "Cisco WebEx LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cisco Wood Norway Holdings AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Cisco Worldwide Holdings Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "CiscoSystems Ecuador S.A.",
+   "jurisdiction_text": "Ecuador"
+  },
+  {
+   "name": "CliQr Technologies LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Code BGP LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Code BGP Monoprosopi I.K.E.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "CSI BD (Mauritius)",
+   "jurisdiction_text": "Mauritius"
+  },
+  {
+   "name": "CSI Mauritius Inc.",
+   "jurisdiction_text": "Mauritius"
+  },
+  {
+   "name": "Customer Analytics Technologies LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Customer Insight 360 Technologies Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Deeper Insights AI Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Deeper Insights Europe, Unipessoal, LDA",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Deeper Insights Solutions Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Deepfactor India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "DeepFactor LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Duo Security LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Epsagon Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "ExtendMedia LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Fluidmesh Networks S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Fluidmesh Networks, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Healthcare Communications UK Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMI Mobile Vas Ltd FZE",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "IMI Mobile VAS Nigeria Limited",
+   "jurisdiction_text": "Nigeria"
+  },
+  {
+   "name": "IMImobile African Holdings Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile Canada ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "IMImobile Cloud Communications (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "IMImobile Europe Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile Intelligent Networks Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IMImobile North America LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IMImobile Software Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile South Africa (Pty) Ltd",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "IMImobile South Africa 1 Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "IMImobile South Africa 2 Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Isovalent GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Isovalent LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Jasper Technologies LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "July Systems and Technologies Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "July Systems LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Kenna Security LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lenco International Limited",
+   "jurisdiction_text": "British Virgin Islands"
+  },
+  {
+   "name": "Lenco Technology Group Limited",
+   "jurisdiction_text": "British Virgin Islands"
+  },
+  {
+   "name": "Lightspin Technologies Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Limited Liability Company \"Cisco Systems Ukraine\"",
+   "jurisdiction_text": "Ukraine"
+  },
+  {
+   "name": "Meraki Japan G.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Meraki LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NDS Finance Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "NDS Group Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "NDS Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "NDS Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Neohapsis International LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Neohapsis LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Neohapsis Software Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Neohapsis, Inc.",
+   "jurisdiction_text": "Illinois"
+  },
+  {
+   "name": "Oort Cloud Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Oort LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pawaa Software Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Perspica Networks Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Portshift Software Technologies Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "PT Cisco Systems Indonesia",
+   "jurisdiction_text": "Indonesia"
+  },
+  {
+   "name": "PT Cisco Technologies Indonesia",
+   "jurisdiction_text": "Indonesia"
+  },
+  {
+   "name": "Robust Intelligence LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Rostrvm Solutions Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "SamKnows Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Sedonasys Systems LTD",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Sedonasys Systems, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "SIA \"Cisco Latvia\"",
+   "jurisdiction_text": "Latvia"
+  },
+  {
+   "name": "SignalFx France SARL",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "SignalFx Germany GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "SignalFx LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SignalFx Netherlands B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "SignalFx Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "sli.do s. r. o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Smartlook.com, s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Socio Labs LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Splunk Holdings Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Splunk Information Technology (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Splunk Ireland Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Splunk LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Splunk Services Arabia Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Splunk Services Australia Pty. Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Splunk Services Belgium BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Splunk Services Canada ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Splunk Services Costa Rica Sociedad De Responsabilidad Limitada",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "Splunk Services Czech Republic s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Splunk Services Estonia O\u00dc",
+   "jurisdiction_text": "Estonia"
+  },
+  {
+   "name": "Splunk Services France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Splunk Services FZ-LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Splunk Services Germany GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Splunk Services Hong Kong Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Splunk Services India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Splunk Services Israel Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Splunk Services Japan GK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Splunk Services Korea",
+   "jurisdiction_text": "Korea, Republic of"
+  },
+  {
+   "name": "Splunk Services Malaysia Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Splunk Services Netherlands B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Splunk Services New Zealand Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Splunk Services Poland sp. z.o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Splunk Services Singapore Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Splunk Services South Africa (PTY) Ltd.",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Splunk Services Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Splunk Services Switzerland AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Splunk Services UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Splunk Servi\u00e7os do Brasil Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Splunk Technology Consulting (Beijing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Starent International LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Starent Networks (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Starent Networks India Sales and Services Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Starent Networks LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tail-f Systems AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Tandberg Products UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Tandberg Technology (India) Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Tandberg Telecom UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Tap2Bill Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "ThousandEyes LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Threatology LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Txtlocal Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "UAB \"Cisco LT\"",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "Ukhozi Digital (Pty) Limited",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Valtix LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "WebEx (China) Software Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "WebEx Communications India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "WebEx Worldwide B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Working Group Two AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Working Group Two AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Zomojo Pty. Ltd.",
+   "jurisdiction_text": "Australia"
+  }
+ ],
+ "parent_name": "CISCO SYSTEMS, INC.",
+ "parent_cik": "0000858877",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/exh211subsidiariesofthereg.htm",
+ "source_file": "cisco_systems_inc.htm"
+}

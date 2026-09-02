@@ -1,0 +1,1677 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Alabama Service LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "All EV Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allegheny Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allegheny Solar Manager 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Alset Transport GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Alset Warehouse GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Ancon Holdings II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Holdings III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar II Lessee Manager, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar II Lessee, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar II Lessor, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar III Lessee Manager, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar III Lessee, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar III Lessor, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ancon Solar Managing Member I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Arpad Solar Borrower, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Arpad Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Arpad Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AU Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AU Solar 2, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Banyan SolarCity Manager 2010, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Banyan SolarCity Owner 2010, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Barbacoa Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Basking Solar Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Beatrix Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Bernese Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Blue Skies Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Blue Skies Solar II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BT Connolly Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "BT Smith Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Caballero Solar Managing Member I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Caballero Solar Managing Member II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Caballero Solar Managing Member III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Castello Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Castello Solar II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Castello Solar III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chaparral SREC Borrower, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chaparral SREC Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chestnut Storage, LLC",
+   "jurisdiction_text": "North Carolina"
+  },
+  {
+   "name": "Chompie Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chompie Solar II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chompie Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chompie Solar Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Colorado River Project, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Community Solar Partners, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Compass Automation Incorporated",
+   "jurisdiction_text": "Illinois"
+  },
+  {
+   "name": "Connecticut Auto Repair and Service LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Corpus Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "El Rey EV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Falconer Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Firehorn Solar I, LLC",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Firehorn Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "FocalPoint Solar Borrower, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "FocalPoint Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "FocalPoint Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Fontane Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Fotovoltaica GI 4, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Fotovoltaica GI 5, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "FP System Owner, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Giga Insurance Texas, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Giga Texas Energy, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Goldilocks Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Automation (Shanghai) Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Guilder Solar, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Hamilton Solar, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Harborfields LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Harpoon Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Harpoon Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Haymarket Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Haymarket Manager 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Haymarket Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Hibar Systems Europe GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Hive Battery Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ikehu Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IL Buono Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Iliosson, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Industrial Maintenance Technologies, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Kansas Repair LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Klamath Falls Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Knight Solar Managing Member I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Knight Solar Managing Member II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Knight Solar Managing Member III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Landlord 2008-A, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lincoln Auto Repair and Service LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar Manager III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar Master Tenant I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar MT Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar Owner I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Louis Solar Owner Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Master Tenant 2008-A, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Matterhorn Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Maxwell Technologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Megalodon Solar, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MISO 1 Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Monte Rosa Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Manager V, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Manager VI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Manager X, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Manager XI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Manager XII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Master Tenant IX, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Master Tenant V, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Mound Solar Master Tenant VI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Master Tenant VII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Master Tenant VIII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar MT Manager IX, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar MT Manager VII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar MT Manager VIII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner IX, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner Manager IX, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner Manager VII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner Manager VIII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner V, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Mound Solar Owner VI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner VII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Owner VIII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Partnership X, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Partnership XI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mound Solar Partnership XII, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MS SolarCity 2008, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MS SolarCity Commercial 2008, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MS SolarCity Residential 2008, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "New Mexico Sales and Vehicle Service LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NBA SolarCity AFB, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "NBA SolarCity Commercial I, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "NBA SolarCity Solar Phoenix, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Northern Nevada Research Co., LLC",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Oranje Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Oranje Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Palmetto Auto Repair and Service LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Paramount Energy Fund I Lessee, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Paramount Energy Fund I Lessor, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "PEF I MM, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Perbix Machine Company, Inc.",
+   "jurisdiction_text": "Minnesota"
+  },
+  {
+   "name": "Presidio Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Presidio Solar II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Presidio Solar III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pukana La Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "R9 Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Roadster Automobile Sales and Service (Beijing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Roadster Finland Oy",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "SA VPP Holding Trust",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Sealy Power LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sequoia Pacific Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sequoia Pacific Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sequoia Pacific Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sequoia SolarCity Owner I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sierra Solar Power (Hong Kong) Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "SiiLion, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Silevo, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Smith II Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Solar Aquarium Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Energy of America 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Energy of America Manager 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Explorer, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Gezellig Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar House I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar House II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar House III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar House IV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund IV-A, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund V, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Fund VI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager IV-A, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager V, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Integrated Manager VI, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Services Company, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Ulysses Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Ulysses Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Voyager, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Warehouse Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Warehouse Manager II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Warehouse Manager III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solar Warehouse Manager IV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Alpine Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Amphitheatre Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Arbor Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Arches Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity AU Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Cruyff Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Electrical, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Electrical New York Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Finance Company, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Finance Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Foxborough Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity FTE Series 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity FTE Series 2, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Fund Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Grand Canyon Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Holdings 2008, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity International, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Leviathan Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity LMC Series I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity LMC Series II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity LMC Series III, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity LMC Series IV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity LMC Series V, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Mid-Atlantic Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Nitro Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Orange Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Series Holdings I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Series Holdings II, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Series Holdings IV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Steep Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Ulu Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarCity Village Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarRock, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SolarStrong, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Sparrowhawk Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SREC Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Swanson Battery Storage, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "TALT Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TEO Engineering, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "TES 2017-1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TES Holdings 2017-1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Auto Lease Trust 2021-B",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Auto Lease Trust 2023-B",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Auto Lease Trust 2024-A",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Auto Lease Trust 2024-B",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Electric Vehicle Trust 2023-1",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Autobidder International B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Automation GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Tesla Automobile Information Service (Dalian) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Management and Service (Haikou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Beijing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Changchun) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Changsha) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Chengdu) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Chongqing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Dalian) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Fuzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Guangzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Guangzhou Panyu District) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Guiyang) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Haerbin) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Hangzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Hefei) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Hohhot) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Jinan) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Kunming) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Lanzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Nanchang) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Nanjing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Nanning) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Ningbo) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Ningbo) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Ordos City) Co., Ltd",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Qingdao) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Shenyang) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Shenzhen) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Shijiazhuang) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Suzhou) Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Taiyuan) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Tianjin) Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Urumqi) Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Wenzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Wuhan) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Wuxi) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Xi'an) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Xiamen) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Xining) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Yinchuan) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobile Sales and Service (Zhengzhou) Co. Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Automobiles Sales and Service Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Tesla (Beijing) New Energy R&D Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Belgium BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Tesla Canada Finance ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Tesla Canada Lease Finance GP ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Tesla Canada Lease Finance LP",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Tesla LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Chile SpA",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "Tesla Construction Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Construction (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Czech Republic s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Tesla Energia Macau Limitada",
+   "jurisdiction_text": "Macau"
+  },
+  {
+   "name": "Tesla Engineering Germany GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Tesla Energy d.o.o.",
+   "jurisdiction_text": "Slovenia"
+  },
+  {
+   "name": "Tesla Energy Management LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Energy Operations, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Energy Ventures Australia Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Tesla Energy Ventures France S.\u00e0 r.l.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Tesla Energy Ventures Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Tesla Energy Ventures, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Energy Ventures Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Estonia O\u00dc",
+   "jurisdiction_text": "Estonia"
+  },
+  {
+   "name": "Tesla EV Vault, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Finance LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Financial Leasing (China) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Financial Services GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Tesla Financial Services Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Financial Services Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Tesla Financial Services France S.\u00e0 r.l.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Tesla Fleet Operations LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla France S.\u00e0 r.l.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Tesla Germany GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Tesla General Insurance (TX)",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla General Insurance, Inc.",
+   "jurisdiction_text": "Arizona"
+  },
+  {
+   "name": "Tesla Greece Single Member P.C.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "Tesla Gulf Limited Company",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Tesla Hrvatska d.o.o.",
+   "jurisdiction_text": "Croatia"
+  },
+  {
+   "name": "Tesla Hungary Kft.",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "Tesla India Motors and Energy Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Tesla Insurance Brokers (China) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Insurance Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Insurance, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Insurance Company",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Tesla Insurance Company of Hawaii, LLC",
+   "jurisdiction_text": "Hawaii"
+  },
+  {
+   "name": "Tesla Insurance Services, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Tesla Insurance Services of Texas, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla International B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Italy S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Tesla Jordan Car Trading LLC",
+   "jurisdiction_text": "Jordan"
+  },
+  {
+   "name": "Tesla Korea Limited",
+   "jurisdiction_text": "Republic of Korea"
+  },
+  {
+   "name": "Tesla Latvia SIA",
+   "jurisdiction_text": "Latvia"
+  },
+  {
+   "name": "Tesla Lease Electric Vehicle Securitization 2025-A, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Lease Trust",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Lithuania UAB",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "Tesla LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Manufacturing Brandenburg SE",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Tesla Manufacturing Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Tesla Manufacturing Mexico Holding, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Tesla Michigan, Inc.",
+   "jurisdiction_text": "Michigan"
+  },
+  {
+   "name": "Tesla Mississippi LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Morocco SARL",
+   "jurisdiction_text": "Morocco"
+  },
+  {
+   "name": "Tesla Motors Australia, Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Tesla Motors Austria GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Tesla Motors (Beijing) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Motors Canada ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Tesla Motors Colombia S.A.S",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Tesla Motors Holding B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Motors Denmark ApS",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Tesla Motors FL, Inc.",
+   "jurisdiction_text": "Florida"
+  },
+  {
+   "name": "Tesla Motors HK Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Tesla Motors Iceland ehf.",
+   "jurisdiction_text": "Iceland"
+  },
+  {
+   "name": "Tesla Motors Ireland Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Tesla Motors Israel Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Tesla Motors Japan GK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Tesla Motors Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Tesla Motors Luxembourg S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Tesla Motors MA, Inc.",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "Tesla Motors Netherlands B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Motors New York LLC",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "Tesla Motors NL LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Motors NV, Inc.",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Tesla Motors PA, Inc.",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Tesla Motors Philippines Inc.",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "Tesla Motors Romania S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "Tesla Motors Sales and Service LLC",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Tesla Motors Singapore Holdings Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Tesla Motors Singapore Private Limited",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Tesla Motors Stichting",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Tesla Motors Taiwan Limited",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Tesla Motors TN, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "Tesla Motors TX, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Motors UT, Inc.",
+   "jurisdiction_text": "Utah"
+  },
+  {
+   "name": "Tesla Nambe LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla New Zealand ULC",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Tesla Norway AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Tesla Poland sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Tesla Power Marketing, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Property &Casualty, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Tesla Portugal, Sociedade Unipessoal LDA",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Tesla Puerto Rico LLC",
+   "jurisdiction_text": "Puerto Rico"
+  },
+  {
+   "name": "Tesla Qatar LLC",
+   "jurisdiction_text": "Qatar"
+  },
+  {
+   "name": "Tesla Rental LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Residential Energy Holdings, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Residential Energy Leasing, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Robotaxi, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Sales, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Tesla (Shanghai) Co., Ltd",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla (Shanghai) New Energy Co., LTD.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Tesla Slovakia s.r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Tesla Spain, S.L. Unipersonal",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Tesla Solar Systems, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Sustainable Energy Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Sustainable Energy Trust 2024-1",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Switzerland GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Tesla (Thailand) Ltd.",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Tesla TH1 LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Toronto Automation ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Tesla US Property Holdings, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Tesla Wholesale Energy Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "The Big Green Solar I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "The Big Green Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar 2, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar 3, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar Manager 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar Manager 2, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Three Rivers Solar Manager 3, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TM International C.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "TM Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "TSET Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tesla Uruguay S.A.S.",
+   "jurisdiction_text": "Uruguay"
+  },
+  {
+   "name": "USB SolarCity Manager IV, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "USB SolarCity Owner IV, LLC",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Visigoth Solar 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Visigoth Solar Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Visigoth Solar Managing Member 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "VPP Project 1 (SA) Pty Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Weisshorn Solar I, LLC",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Weisshorn Solar Manager I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Zep Solar LLC",
+   "jurisdiction_text": "California"
+  }
+ ],
+ "parent_name": "Tesla, Inc.",
+ "parent_cik": "0001318605",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-2025x12x31xex211.htm",
+ "source_file": "tesla_inc.htm"
+}

@@ -1,0 +1,1109 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Acme Brick Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Acme Building Brands, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Affordable Housing Partners, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Albecca Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "Alleghany Capital Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Alleghany Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Alleghany Insurance Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AltaLink, L.P.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "American Dairy Queen Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AmGUARD Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Bell Laboratories, Inc.",
+   "jurisdiction_text": "Wisconsin"
+  },
+  {
+   "name": "Ben Bridge Jeweler, Inc.",
+   "jurisdiction_text": "Washington"
+  },
+  {
+   "name": "Benjamin Moore & Co.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Benjamin Moore & Co., Limited",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Berkshire Hathaway Assurance Corporation",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "Berkshire Hathaway Automotive Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Berkshire Hathaway Credit Corporation",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Berkshire Hathaway Direct Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Berkshire Hathaway Energy Company",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "Berkshire Hathaway European Insurance Designated Activity Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Berkshire Hathaway Finance Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Berkshire Hathaway Homestate Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Berkshire Hathaway International Insurance Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Berkshire Hathaway Life Insurance Company of Nebraska",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Berkshire Hathaway Specialty Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Berkshire Production Supply LLC",
+   "jurisdiction_text": "Michigan"
+  },
+  {
+   "name": "BH Finance LLC",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "BH Shoe Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BHA Real Estate Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BHE Canada Holdings Corporation",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "BHE GT&S, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BHE Pipeline Group, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BHE Renewables, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BHE U.S. Transmission, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BH-IMC Holdings Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BNSF Railway Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Boat America Corporation",
+   "jurisdiction_text": "Virginia"
+  },
+  {
+   "name": "Borsheim Jewelry Company, Inc.",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Brooks Sports, Inc.",
+   "jurisdiction_text": "Washington"
+  },
+  {
+   "name": "Burlington Northern Santa Fe, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Business Wire, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cannon-Muskegon Corporation",
+   "jurisdiction_text": "Michigan"
+  },
+  {
+   "name": "CapSpecialty, Inc.",
+   "jurisdiction_text": "Wisconsin"
+  },
+  {
+   "name": "Central States of Omaha Companies, Inc.",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Cerro Wire LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Charter Brokerage Holdings Corp.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Charter Brokerage Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Charter Brokerage LLC",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "Clayton Homes, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Clayton Properties Group, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "CMH Capital, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "CMH Homes, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "CMH Manufacturing, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "CMH Services, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "Columbia Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "CORT Business Services Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cove Point GP Holding Company, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cove Point LNG, LP",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "CTB International Corp.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Cypress Insurance Company",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Detlev Louis Motorrad-Vertriebs GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Detlev Louis Motorrad-Vertriebsgesellschaft GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Duracell (China) Limited",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Duracell Batteries BVBA",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Duracell International Operations S\u00e0rl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Duracell Manufacturing LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Duracell U.S. Holding LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Duracell U.S. Operations, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Eastern Energy Gas Holdings, LLC",
+   "jurisdiction_text": "Virginia"
+  },
+  {
+   "name": "Eastern Gas Transmission and Storage, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Eastern MLP Holding Company II, LLC",
+   "jurisdiction_text": "Virginia"
+  },
+  {
+   "name": "Empire Distributors of North Carolina, Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "Empire Distributors of Tennessee, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "Empire Distributors, Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "EXSIF Worldwide, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Faraday Corporate Capital Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "FlightSafety Defense Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "FlightSafety International Inc.",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "FlightSafety Textron Aviation Training LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "FOL International Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Forest River Manufacturing, LLC",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Forest River, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Freedom Warehouse Corp.",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Fruit of the Loom, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Garan Manufacturing Corp.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Garan, Incorporated",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "GEICO Advantage Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Casualty Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Choice Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "GEICO County Mutual Insurance Company",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "GEICO General Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Indemnity Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Insurance Agency, LLC",
+   "jurisdiction_text": "Maryland"
+  },
+  {
+   "name": "GEICO Marine Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Protection Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Secure Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "GEICO Texas County Mutual Insurance Company",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "General Re Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "General Re Life Corporation",
+   "jurisdiction_text": "Connecticut"
+  },
+  {
+   "name": "General Reinsurance Africa Ltd.",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "General Reinsurance AG",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "General Reinsurance Australia Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "General Reinsurance Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "General Reinsurance Life Australia Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "General Star Indemnity Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "General Star National Insurance Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Genesis Insurance Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Government Employees Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "H. H. Brown Shoe Company, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Helzberg\u2019s Diamond Shops, LLC",
+   "jurisdiction_text": "Missouri"
+  },
+  {
+   "name": "Henley Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Homemakers Plaza, Inc.",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "HomeServices of America, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IMC (Germany) Holdings GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "IMC International Metalworking Companies Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ingersoll Cutting Tool Company Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ingersoll Werkzeuge GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "International Dairy Queen, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IPS-Integrated Project Services, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Iscar Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "ITTI Group USA Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Jazwares, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johns Manville",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johns Manville Canada, Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Johns Manville Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johns Manville Europe GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Johns Manville Slovakia, a.s.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Jordan\u2019s Furniture, Inc.",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "Justin Brands, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Kahn Ventures, Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "Larson-Juhl US LLC",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "LeachGarner, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lipotec, S.A.U.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "LiquidPower Specialty Products Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol Additive (Zhuhai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lubrizol Advanced Materials Europe BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Lubrizol Advanced Materials India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Lubrizol Advanced Materials International, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol Advanced Materials Spain, S.L.U.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Lubrizol Advanced Materials, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol de Mexico Comercial S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Lubrizol do Brasil Aditivos, Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Lubrizol Europe Coordination Center BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Lubrizol Global Management, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Lubrizol International, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol Japan Limited",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Lubrizol Korea, Inc.",
+   "jurisdiction_text": "Korea"
+  },
+  {
+   "name": "Lubrizol Life Science, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Lubrizol Luxembourg S.a.r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Lubrizol Management (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Lubrizol Management UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Lubrizol Overseas Trading Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lubrizol Southeast Asia (Pte.) Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Lubrizol Specialty Chemicals Manufacturing (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Marmon Beverage Technologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Crane Services, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Distribution Services, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Energy Services Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Engineered Components Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Food, Beverage & Water Technologies Company LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Foodservice Technologies, Inc.",
+   "jurisdiction_text": "Minnesota"
+  },
+  {
+   "name": "Marmon Highway Technologies LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Rail Group, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Transportation Services LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Tubing, Fittings & Wire Products, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Water, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Marmon Wire & Cable, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "McLane Company, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "McLane Foodservice Distribution, Inc.",
+   "jurisdiction_text": "North Carolina"
+  },
+  {
+   "name": "McLane Foodservice, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "McLane Suneast, Inc.",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "MedPro Group Inc",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "MHC Inc.",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "MidAmerican Energy Company",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "MidAmerican Funding, LLC",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "Mindware Corporation",
+   "jurisdiction_text": "Minnesota"
+  },
+  {
+   "name": "MiTek Inc.",
+   "jurisdiction_text": "Missouri"
+  },
+  {
+   "name": "MiTek Industries, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MLMIC Insurance Company",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "Mount Vernon Fire Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Mouser Electronics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MPP Co., Inc.",
+   "jurisdiction_text": "Kansas"
+  },
+  {
+   "name": "National Fire & Marine Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "National Indemnity Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "National Indemnity Company of Mid-America",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "National Indemnity Company of the South",
+   "jurisdiction_text": "Iowa"
+  },
+  {
+   "name": "National Liability & Fire Insurance Company",
+   "jurisdiction_text": "Connecticut"
+  },
+  {
+   "name": "Nebraska Furniture Mart, Inc.",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Nederlandse Reassurantie Groep N.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "NetJets Aviation, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NetJets Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NetJets Sales, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Nevada Power Company",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "NFM of Kansas, Inc.",
+   "jurisdiction_text": "Kansas"
+  },
+  {
+   "name": "NNGC Acquisition, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Northern Electric plc.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Northern Natural Gas Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Northern Powergrid Holdings Company",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Northern Powergrid (Yorkshire) plc.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Northern Powergrid UK Holdings",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "NV Energy, Inc.",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "NVE Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Oak River Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Old United Casualty Company",
+   "jurisdiction_text": "Kansas"
+  },
+  {
+   "name": "Oriental Trading Company, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "OTC Brands, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "OTC Worldwide Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "PacifiCorp",
+   "jurisdiction_text": "Oregon"
+  },
+  {
+   "name": "PCC Airfoils LLC",
+   "jurisdiction_text": "Ohio"
+  },
+  {
+   "name": "PCC Structurals, Inc.",
+   "jurisdiction_text": "Oregon"
+  },
+  {
+   "name": "PFJE Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pilot Travel Centers LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "PPW Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Precision Castparts Corp.",
+   "jurisdiction_text": "Oregon"
+  },
+  {
+   "name": "Princeton Insurance Company",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Procor Limited",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Procrane Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Procrane Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "R. C. Willey Home Furnishings",
+   "jurisdiction_text": "Utah"
+  },
+  {
+   "name": "Redwood Fire and Casualty Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Richline Group, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Rio Grande, Inc.",
+   "jurisdiction_text": "New Mexico"
+  },
+  {
+   "name": "RSUI Group, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Russell Brands, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "See\u2019s Candies, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "See\u2019s Candy Shops, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Shaw Industries Group, Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "Shaw Industries, Inc.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "Sierra Pacific Power Company",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Smilemakers, Inc",
+   "jurisdiction_text": "South Carolina"
+  },
+  {
+   "name": "S\u00f6fft Shoe Company, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SPS International Investment Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SPS Technologies, LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Star Furniture Company, LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Sterling Crane LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TaeguTec Ltd.",
+   "jurisdiction_text": "Korea"
+  },
+  {
+   "name": "The Duracell Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "The Fechheimer Brothers Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "The Lubrizol Corporation",
+   "jurisdiction_text": "Ohio"
+  },
+  {
+   "name": "The Marmon Group of Canada Ltd.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "The Medical Protective Company",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "The Pampered Chef, Ltd.",
+   "jurisdiction_text": "Illinois"
+  },
+  {
+   "name": "Titanium Metals Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Transatlantic Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Transatlantic Reinsurance Company",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "TTI, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Tungaloy Corporation",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "TXFM INC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "U.S. Investment Corporation",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "U.S. Underwriters Insurance Company",
+   "jurisdiction_text": "North Dakota"
+  },
+  {
+   "name": "Union Tank Car Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Union Underwear Company, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "United States Liability Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Vanderbilt Mortgage and Finance, Inc.",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "Vanity Fair Brands, LP",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Vesta Intermediate Funding, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "W&W-AFCO Steel LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Wellfleet Insurance Company",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Wellfleet New York Insurance Company",
+   "jurisdiction_text": "New York"
+  },
+  {
+   "name": "Western Capital Group, LLC",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "WestGUARD Insurance Company",
+   "jurisdiction_text": "Nebraska"
+  },
+  {
+   "name": "Worldwide Containers, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "WPLG, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "WWSC Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Wyman-Gordon Company",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "XTRA Companies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "XTRA Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "XTRA Lease LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "XTRA LLC",
+   "jurisdiction_text": "Maine"
+  },
+  {
+   "name": "Yorkshire Electricity Group plc.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "21st Mortgage Corporation",
+   "jurisdiction_text": "Delaware"
+  }
+ ],
+ "parent_name": "BERKSHIRE HATHAWAY INC",
+ "parent_cik": "0001067983",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-ex21.htm",
+ "source_file": "berkshire_hathaway_inc.htm"
+}

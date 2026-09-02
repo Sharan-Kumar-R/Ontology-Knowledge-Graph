@@ -1,0 +1,61 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Wal-Mart Stores East, LP",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Wal-Mart Stores Texas, LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Wal-Mart Property Company",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Wal-Mart Real Estate Business Trust",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Sam's West, Inc.",
+   "jurisdiction_text": "Arkansas, U.S."
+  },
+  {
+   "name": "Sam's East, Inc.",
+   "jurisdiction_text": "Arkansas, U.S."
+  },
+  {
+   "name": "Sam's Property Company",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Sam's Real Estate Business Trust",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Wal-Mart de Mexico, S.A.B. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Wal-Mart Canada Corp.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Flipkart Private Limited",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Walmart Chile S.A.(1)",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "Massmart Holdings Ltd.",
+   "jurisdiction_text": "South Africa"
+  }
+ ],
+ "parent_name": "Walmart Inc.",
+ "parent_cik": "0000104169",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmtexhibit21fy26.htm",
+ "source_file": "walmart_inc.htm"
+}

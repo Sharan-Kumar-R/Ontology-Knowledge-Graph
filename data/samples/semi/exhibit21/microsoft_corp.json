@@ -1,0 +1,41 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Microsoft Ireland Research Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Microsoft Global Finance Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Microsoft Ireland Operations Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Microsoft Online, Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "LinkedIn Corporation",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "LinkedIn Ireland Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Activision Blizzard, Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Activision Publishing, Inc.",
+   "jurisdiction_text": "United States"
+  }
+ ],
+ "parent_name": "MICROSOFT CORP",
+ "parent_cik": "0000789019",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-ex21.htm",
+ "source_file": "microsoft_corp.htm"
+}

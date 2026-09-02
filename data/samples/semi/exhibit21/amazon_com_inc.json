@@ -1,0 +1,45 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Amazon.com Services LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Amazon.com Sales, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Amazon Data Services, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Amazon Web Services, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Amazon Technologies, Inc.",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Amazon.com NV Investment Holdings LLC",
+   "jurisdiction_text": "Nevada"
+  },
+  {
+   "name": "Amazon US Services LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "A100 ROW, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Day One Insurance, Inc.",
+   "jurisdiction_text": "Arizona"
+  }
+ ],
+ "parent_name": "AMAZON COM INC",
+ "parent_cik": "0001018724",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231xex211.htm",
+ "source_file": "amazon_com_inc.htm"
+}

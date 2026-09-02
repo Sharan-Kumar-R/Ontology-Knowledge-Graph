@@ -1,0 +1,505 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Xilinx Development Corporation(1)",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "AMD Advanced Research, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD Design, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD (EMEA) LTD.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD Far East Ltd.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD Federal Technologies, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD International Sales & Service, Ltd.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD Latin America Ltd.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMD Research Technologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Brium, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Enosemi, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Lapland NewCo LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Level 5 Networks, Inc. (2)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mipsology, Inc.(1)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MK One Technologies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pensando Systems, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Variscale Services & Engineering, Inc. (29)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Xilinx, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Silexica, Inc. (1)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Solarflare Communications, Inc. (1)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Xilinx Holding LLC(1)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Variscale Services & Engineering Australia Pty Limited(30)",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Xilinx Armenia LLC(1)",
+   "jurisdiction_text": "Armenia"
+  },
+  {
+   "name": "ATI International SRL(*) (3)(**)",
+   "jurisdiction_text": "Barbados"
+  },
+  {
+   "name": "Xilinx Benelux B.V. (23)",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "ATI Technologies (Bermuda) Limited (3)",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Advanced Micro Devices Belgium N.V.(6)",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "AMD South America Ltda.(7)",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "ATI Technologies ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Xilinx Canada Co. (8)",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Advanced Micro Devices (China) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Advanced Micro Devices (Shanghai) Co., Ltd.(9)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Advanced Micro Devices Products (China) Co., Ltd. (9)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Chengdu Haiguang Microelectronics Technology Co., Ltd. (10)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Chengdu Haiguang Integrated Circuit Design Co., Ltd.(11)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Suzhou TF-AMD Semiconductor Co., Ltd. (12)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Xilinx Technology Beijing Limited(13)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Xilinx Technology Shanghai Limited(8)",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Silo AI Denmark Aps(5)",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Silo AI Oy(4)",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "Silo GenAI Oy(5)",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "Advanced Micro Devices S.A.S.",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Brium Inc. Europe(31)",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Mipsology S.A.S.(1)",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Xilinx SARL(1)",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Advanced Micro Devices GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Silexica GmbH(14)",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Xilinx Dresden GmbH i.L.(1)(**)",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Xilinx GmbH(1)",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Variscale Services & Engineering HK Limited(30)",
+   "jurisdiction_text": "Hong Kong SAR, China"
+  },
+  {
+   "name": "Xilinx Hong Kong Limited(8)",
+   "jurisdiction_text": "Hong Kong SAR, China"
+  },
+  {
+   "name": "AMD India Private Limited (15)",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Solarflare India Private Limited(25) (*)",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Prakhyaat VDCSE Private Limited(30)",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Xilinx India Technology Services Private Limited(24)",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Xilinx Finance Ireland Limited(16)",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Xilinx Ireland Unlimited Company(16)",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Xilinx Israel Limited(1)",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Advanced Micro Devices S.p.A.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "AMD Japan Ltd.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Variscale Services & Engineering Japan G.K. (30) (**)",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Xilinx Kabushiki Kaisha (1)",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Advanced Micro Devices Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Advanced Micro Devices Global Services (M) Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "ATI Technologies (L) Inc. (17)",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Advanced Micro Devices Malaysia Ltd. (18)",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "TF AMD Micro Electronics (Penang) Sdn. Bhd. (19)",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Variscale Services & Engineering Malaysia Sdn. Bhd. (30)(**)",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Machine2Learn B.V. (5)",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Xilinx NL B.V. (20)",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Advanced Micro Devices (Poland) sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "AMD Advanced Micro Devices (ROU) S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "Advanced Micro Devices RS d.o.o.",
+   "jurisdiction_text": "Serbia"
+  },
+  {
+   "name": "Advanced Micro Devices (Singapore) Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Variscale Services & Engineering Singapore Pte. Ltd. (30)(*)",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Xilinx Asia Pacific Pte. Ltd. (28)",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Xilinx Sales International Pte. Ltd. (16)",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Xilinx Singapore Holding Pte. Ltd. (16)",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Xilinx Holding Three Pte. Ltd. i.L.(1)(**)",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Advanced Micro Devices (Spain), S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Advanced Micro Devices AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Combient Mix AB(27)",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Silo AI Sweden AB(5)",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Xilinx AB(1)",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Advanced Micro Devices CH GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Brium Switzerland GmbH(31)",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Variscale Services & Engineering Taiwan Inc. (30)",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Advanced Micro Devices (U.K.) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Xilinx Limited(22)",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Xilinx NI Limited(13)",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Xilinx Technology Ltd. (21)",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "(*)",
+   "jurisdiction_text": "Inactive"
+  },
+  {
+   "name": "(**)",
+   "jurisdiction_text": "In the process of being dissolved"
+  },
+  {
+   "name": "(1)",
+   "jurisdiction_text": "100% owned by Xilinx, Inc."
+  },
+  {
+   "name": "(2)",
+   "jurisdiction_text": "Subsidiary of Solarflare Communications, Inc."
+  },
+  {
+   "name": "(3)",
+   "jurisdiction_text": "100% owned by ATI Technologies ULC"
+  },
+  {
+   "name": "(4)",
+   "jurisdiction_text": "Subsidiary of Lapland NewCo LLC"
+  },
+  {
+   "name": "(5)",
+   "jurisdiction_text": "Subsidiary of Silo AI Oy"
+  },
+  {
+   "name": "(6)",
+   "jurisdiction_text": "99.9952% owned by Advanced Micro Devices, Inc., .0048% owned by AMD International Sales & Service, Ltd."
+  },
+  {
+   "name": "(7)",
+   "jurisdiction_text": "99.9% owned by AMD International Sales & Service, Ltd., 0.1% owned by AMD Far East Ltd."
+  },
+  {
+   "name": "(8)",
+   "jurisdiction_text": "Subsidiary of Xilinx Development Corporation"
+  },
+  {
+   "name": "(9)",
+   "jurisdiction_text": "Subsidiary of Advanced Micro Devices (China) Co., Ltd."
+  },
+  {
+   "name": "(10)",
+   "jurisdiction_text": "51% owned by Advanced Micro Devices, Inc."
+  },
+  {
+   "name": "(11)",
+   "jurisdiction_text": "30% owned by Advanced Micro Devices, Inc."
+  },
+  {
+   "name": "(12)",
+   "jurisdiction_text": "15% owned by Advanced Micro Devices (China) Co., Ltd."
+  },
+  {
+   "name": "(13)",
+   "jurisdiction_text": "Subsidiary of Xilinx Singapore Holding Pte. Ltd."
+  },
+  {
+   "name": "(14)",
+   "jurisdiction_text": "Subsidiary of Silexica, Inc."
+  },
+  {
+   "name": "(15)",
+   "jurisdiction_text": "47.18% owned by ATI Technologies ULC, 52.82% owned by Advanced Micro Devices, Inc., less than 0.01% owned by AMD Far East Ltd."
+  },
+  {
+   "name": "(16)",
+   "jurisdiction_text": "Subsidiary of Xilinx Asia Pacific Pte. Ltd."
+  },
+  {
+   "name": "(17)",
+   "jurisdiction_text": "Subsidiary of ATI Technologies (Bermuda) Limited"
+  },
+  {
+   "name": "(18)",
+   "jurisdiction_text": "Subsidiary of ATI Technologies (L) Inc."
+  },
+  {
+   "name": "(19)",
+   "jurisdiction_text": "15% owned by Advanced Micro Devices Sdn. Bhd."
+  },
+  {
+   "name": "(20)",
+   "jurisdiction_text": "Subsidiary of Xilinx Finance Ireland Ltd."
+  },
+  {
+   "name": "(21)",
+   "jurisdiction_text": "Subsidiary of Level 5 Networks, Inc."
+  },
+  {
+   "name": "(22)",
+   "jurisdiction_text": "99.9% owned by Xilinx, Inc., 0.1% owned by Xilinx Development Corporation"
+  },
+  {
+   "name": "(23)",
+   "jurisdiction_text": "99.867% owned by Xilinx, Inc., 0.133% owned by Xilinx Development Corporation"
+  },
+  {
+   "name": "(24)",
+   "jurisdiction_text": "99.9% owned by Xilinx Development Corporation, 0.1% owned by Xilinx Canada Co."
+  },
+  {
+   "name": "(25)",
+   "jurisdiction_text": "99.99% owned by Solarflare Communications, Inc., 0.01% owned by Level 5 Networks, Inc."
+  },
+  {
+   "name": "(26)",
+   "jurisdiction_text": "Subsidiary of Mipsology S.A.S."
+  },
+  {
+   "name": "(27)",
+   "jurisdiction_text": "Subsidiary of Silo AI Sweden AB"
+  },
+  {
+   "name": "(28)",
+   "jurisdiction_text": "Subsidiary of Xilinx Holding LLC"
+  },
+  {
+   "name": "(29)",
+   "jurisdiction_text": "Subsidiary of AMD Design, LLC"
+  },
+  {
+   "name": "(30)",
+   "jurisdiction_text": "Subsidiary of Variscale Services & Engineering, Inc."
+  },
+  {
+   "name": "(31)",
+   "jurisdiction_text": "Subsidiary of Brium, Inc."
+  }
+ ],
+ "parent_name": "ADVANCED MICRO DEVICES INC",
+ "parent_cik": "0000002488",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/exh_21-10kfy25.htm",
+ "source_file": "advanced_micro_devices_inc.htm"
+}

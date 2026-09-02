@@ -1,0 +1,21 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Mellanox Technologies, Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "NVIDIA International, Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "NVIDIA Singapore Pte Ltd",
+   "jurisdiction_text": "Singapore"
+  }
+ ],
+ "parent_name": "NVIDIA CORP",
+ "parent_cik": "0001045810",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/subsidiariesofregistrantfy.htm",
+ "source_file": "nvidia_corp.htm"
+}

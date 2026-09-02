@@ -1,0 +1,1605 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "ABD Holding Company, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ABIOMED COMMERCIAL, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ABIOMED R&D, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ABIOMED, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Actelion Pharmaceuticals US, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Albany Street LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "ALZA Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ambrx Biopharma, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ambrx, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMO Development, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMO Manufacturing USA, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMO Sales and Service, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AMO Spain Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Anakuria Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AorTx, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Aragon Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Asia Pacific Holdings, LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Atrionix, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "AUB Holdings LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Auris Health, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "BeneVir BioPharm, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Biosense Webster, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Bow Merger Sub, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Breethe, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cerenovus, Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Cobra 1 Merger Sub, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Coherex Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "CoTherix Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Coyote Merger, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "CrossRoads Extremity Systems, LLC",
+   "jurisdiction_text": "Tennessee"
+  },
+  {
+   "name": "CSATS, Inc.",
+   "jurisdiction_text": "Washington"
+  },
+  {
+   "name": "DePuy Mitek, LLC",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "DePuy Orthopaedics, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "DePuy Products, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "DePuy Spine, LLC",
+   "jurisdiction_text": "Ohio"
+  },
+  {
+   "name": "DePuy Synthes Institute, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "DePuy Synthes Products, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "DePuy Synthes Sales, Inc.",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "DePuy Synthes, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Dutch Holding LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ECL7, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ethicon Endo-Surgery, Inc.",
+   "jurisdiction_text": "Ohio"
+  },
+  {
+   "name": "Ethicon Endo-Surgery, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ethicon LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ethicon US, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ethicon, Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Fuse Biotherapeutics Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Halda Therapeutics OpCo, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Hansen Medical International, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Hansen Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "I.D. Acquisition Corp.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Intra-Cellular Therapies, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ITI, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Janssen Biotech, Inc.",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Janssen Global Services, LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Janssen Oncology, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Janssen Ortho LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Janssen Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Janssen Products, LP",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Janssen Research & Development, LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Janssen Scientific Affairs, LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Janssen Supply Group, LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Janssen-Cilag Manufacturing, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Jevco Holding, Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "JJHC, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "JNJ International Investment LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johnson & Johnson (Middle East) Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson (Singapore) HoldCo LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johnson & Johnson Enterprise Innovation Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johnson & Johnson Finance Corporation",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Gateway, LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Health Care Systems Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Holdco (NA) Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Innovation - JJDC, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johnson & Johnson International",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Medical Devices & Diagnostics Group - Latin America, L.L.C.",
+   "jurisdiction_text": "Florida"
+  },
+  {
+   "name": "Johnson & Johnson S.E., Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Services, Inc.",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Surgical Vision, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Johnson & Johnson Urban Renewal Associates",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Johnson & Johnson Vision Care, Inc.",
+   "jurisdiction_text": "Florida"
+  },
+  {
+   "name": "JOM Pharmaceutical Services, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Laminar, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Manifest Technologies Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Medical Device Business Services, Inc.",
+   "jurisdiction_text": "Indiana"
+  },
+  {
+   "name": "Medical Devices & Diagnostics Global Services, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MegaDyne Medical Products, Inc.",
+   "jurisdiction_text": "Utah"
+  },
+  {
+   "name": "Mentor Partnership Holding Company I, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mentor Texas GP LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mentor Texas L.P.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mentor Worldwide LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Middlesex Assurance Company Limited",
+   "jurisdiction_text": "Vermont"
+  },
+  {
+   "name": "Momenta Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Netherlands Holding Company",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NeuWave Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "NuVera Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "OMJ Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Omrix Biopharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ortho Biologics LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Ortho Biotech Holding LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Patient Service Center LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Patriot Pharmaceuticals, LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Pecos River Talc LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Percivia LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Princeton Laboratories, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Propel Merger Sub, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Prosidyan, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Proteologix US Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Proteologix, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "PSC Holding Co LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "PSC Pass Co LLC",
+   "jurisdiction_text": "Pennsylvania"
+  },
+  {
+   "name": "Pulsar Vascular, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "RC2 Acquisition Sub, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Red River Talc LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Regency Urban Renewal Associates",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Royalty A&M LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "Rutan Realty LLC",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "Serotiny, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Shockwave Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "SterilMed, Inc.",
+   "jurisdiction_text": "Minnesota"
+  },
+  {
+   "name": "Synthes USA Products, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Synthes USA, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Synthes, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TalCo LLC",
+   "jurisdiction_text": "Texas"
+  },
+  {
+   "name": "TARIS Biomedical LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "TearScience, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "The Anspach Effort, LLC",
+   "jurisdiction_text": "Florida"
+  },
+  {
+   "name": "Tibotec, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Torax Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "V-Wave Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Verb Surgical Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "WH4110 Development Company, L.L.C.",
+   "jurisdiction_text": "Georgia"
+  },
+  {
+   "name": "ABIOMED AUSTRALIA PTY LTD",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Abiomed Europe GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Abiomed Japan K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "ABIOMED SARL",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "ABIOMED SINGAPORE PTE. LTD.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "ABIOMED, LTD.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Actelion Pharmaceuticals Ltd",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Actelion Pharmaceuticals Trading (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Actelion Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AIS GmbH Aachen Innovative Solutions",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Ambrx Australia Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "AMO (Hangzhou) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "AMO (Shanghai) Medical Devices Trading Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "AMO ASIA LIMITED",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "AMO Australia Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "AMO Canada Company",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "AMO Denmark ApS",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "AMO France",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "AMO Germany GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AMO Groningen B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AMO International Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AMO Ireland",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "AMO Italy SRL",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "AMO Japan K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "AMO Netherlands BV",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AMO Norway AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "AMO Puerto Rico Manufacturing, Inc.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "AMO Singapore Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "AMO Switzerland GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "AMO United Kingdom, Ltd.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AMO Uppsala AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Apsis",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "B-Balloon Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Berna Rhein B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Biosense Webster (Israel) Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "ChromaGenics B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Cilag AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cilag GmbH International",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cilag Holding AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Cilag Holding Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Cilag-Biotech, S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Cordis de Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Corimmun GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "DePuy Hellas SA",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "DePuy International Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "DePuy Ireland Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "DePuy Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "ECP Entwicklungsgesellschaft mbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "EES Holdings de Mexico, S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "EES, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "EIT Emerging Implant Technologies GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Ethicon Endo-Surgery (Europe) GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Ethicon Sarl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Ethicon Women's Health & Urology Sarl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Ethnor (Proprietary) Limited",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Ethnor del Istmo S.A.",
+   "jurisdiction_text": "Panama"
+  },
+  {
+   "name": "Finsbury (Instruments) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Finsbury Orthopaedics International Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Finsbury Orthopaedics Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "GATT Technologies B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Genesis Shockwave Private Limited",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "GH Biotech Holdings Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "GMED Healthcare BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Guangzhou Bioseal Biotech Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Hansen Medical Deutschland GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Healthcare Services (Shanghai) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Innomedic Gesellschaft f\u00fcr innovative Medizintechnik und Informatik mbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "J & J Company West Africa Limited",
+   "jurisdiction_text": "Nigeria"
+  },
+  {
+   "name": "J&J Argentina S.A.",
+   "jurisdiction_text": "Argentina"
+  },
+  {
+   "name": "J&J Productos Medicos & Farmaceuticos del Peru S.A.",
+   "jurisdiction_text": "Peru"
+  },
+  {
+   "name": "J.C. General Services BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Janssen Biologics B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Janssen Cilag Farmaceutica S.A.",
+   "jurisdiction_text": "Argentina"
+  },
+  {
+   "name": "Janssen Cilag S.p.A.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Janssen Cilag SPA",
+   "jurisdiction_text": "Algeria"
+  },
+  {
+   "name": "Janssen Cilag, C.A.",
+   "jurisdiction_text": "Venezuela, Bolivarian Republic of"
+  },
+  {
+   "name": "Janssen Egypt LLC",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "Janssen Farmaceutica Portugal Lda",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Janssen France Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Janssen Irish Finance Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Japan Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Korea Ltd.",
+   "jurisdiction_text": "Korea, Republic of"
+  },
+  {
+   "name": "Janssen Mexico Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Pharmaceutica (Proprietary) Limited",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Janssen Pharmaceutica NV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Janssen Pharmaceutical K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Janssen Pharmaceutical Sciences Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Pharmaceutical Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Sciences Ireland Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Janssen Vaccines & Prevention B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Janssen Vaccines Corp.",
+   "jurisdiction_text": "Korea, Republic of"
+  },
+  {
+   "name": "Janssen-Cilag",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Janssen-Cilag (New Zealand) Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Janssen-Cilag A/S",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Janssen-Cilag AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Janssen-Cilag Aktiebolag",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Janssen-Cilag AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Janssen-Cilag B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Janssen-Cilag d.o.o. Beograd",
+   "jurisdiction_text": "Serbia"
+  },
+  {
+   "name": "Janssen-Cilag de Mexico S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Janssen-Cilag Farmaceutica Lda.",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Janssen-Cilag Farmaceutica Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Janssen-Cilag GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Janssen-Cilag International NV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Janssen-Cilag Kft.",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "Janssen-Cilag Limited",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Janssen-Cilag Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Janssen-Cilag NV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Janssen-Cilag OY",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "Janssen-Cilag Pharma GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Janssen-Cilag Pharmaceutical Single Member S.A.C.I.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "Janssen-Cilag Polska, Sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Janssen-Cilag Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Janssen-Cilag S.A.",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Janssen-Cilag s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Janssen-Cilag, S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Janssen-Cilag, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Janssen-Pharma, S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "J-C Health Care Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "JJ Surgical Vision Spain, S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "JJC Acquisition Company B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "JJSV Belgium BV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "JJSV Manufacturing Malaysia SDN. BHD.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "JJSV Norden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "JJSV Produtos Oticos Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "JNJ Global Business Services s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "JNJ Holding EMEA B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Johnson & Johnson (Angola), Limitada",
+   "jurisdiction_text": "Angola"
+  },
+  {
+   "name": "Johnson & Johnson (Australia) Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Johnson & Johnson (Canada) Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Johnson & Johnson (China) Investment Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson (Ecuador) S.A.",
+   "jurisdiction_text": "Ecuador"
+  },
+  {
+   "name": "Johnson & Johnson (Hong Kong) Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Johnson & Johnson (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Johnson & Johnson (Kenya) Limited",
+   "jurisdiction_text": "Kenya"
+  },
+  {
+   "name": "Johnson & Johnson (Mozambique), Limitada",
+   "jurisdiction_text": "Mozambique"
+  },
+  {
+   "name": "Johnson & Johnson (Namibia) (Proprietary) Limited",
+   "jurisdiction_text": "Namibia"
+  },
+  {
+   "name": "Johnson & Johnson (New Zealand) Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Johnson & Johnson (Philippines), Inc.",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "Johnson & Johnson (Private) Limited",
+   "jurisdiction_text": "Zimbabwe"
+  },
+  {
+   "name": "Johnson & Johnson (Vietnam) Co., Ltd",
+   "jurisdiction_text": "Vietnam"
+  },
+  {
+   "name": "Johnson & Johnson AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Johnson & Johnson AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Johnson & Johnson Bulgaria EOOD",
+   "jurisdiction_text": "Bulgaria"
+  },
+  {
+   "name": "Johnson & Johnson d.o.o.",
+   "jurisdiction_text": "Slovenia"
+  },
+  {
+   "name": "Johnson & Johnson de Chile S.A.",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "Johnson & Johnson de Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Johnson & Johnson de Uruguay S.A.",
+   "jurisdiction_text": "Uruguay"
+  },
+  {
+   "name": "Johnson & Johnson do Brasil Industria E Comercio de Produtos Para Saude Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Johnson & Johnson Dominicana, S.A.S.",
+   "jurisdiction_text": "Dominican Republic"
+  },
+  {
+   "name": "Johnson & Johnson European Treasury Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Johnson & Johnson Finance Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Johnson & Johnson Financial Services GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Johnson & Johnson for Export and Import LLC",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "Johnson & Johnson GT, Sociedad An\u00f3nima",
+   "jurisdiction_text": "Guatemala"
+  },
+  {
+   "name": "Johnson & Johnson Healthcare SPC",
+   "jurisdiction_text": "Kuwait"
+  },
+  {
+   "name": "Johnson & Johnson Hemisferica S.A.",
+   "jurisdiction_text": "Puerto Rico"
+  },
+  {
+   "name": "Johnson & Johnson Holding GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Johnson & Johnson Holdings (Austria) GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Johnson & Johnson Innovation Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Johnson & Johnson International (Singapore) Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Johnson & Johnson International Financial Services Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Johnson & Johnson Irish Finance Company Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Johnson & Johnson K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Johnson & Johnson Kazakhstan Limited Liability Partnership",
+   "jurisdiction_text": "Kazakhstan"
+  },
+  {
+   "name": "Johnson & Johnson Kft.",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "Johnson & Johnson LLC",
+   "jurisdiction_text": "Russian Federation"
+  },
+  {
+   "name": "Johnson & Johnson Management Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Johnson & Johnson Medical (China) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson Medical (Proprietary) Ltd",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "Johnson & Johnson Medical (Shanghai) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson Medical (Suzhou) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson Medical B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Johnson & Johnson Medical GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Johnson & Johnson Medical Greece Single Member S.A.",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "Johnson & Johnson Medical Korea Ltd.",
+   "jurisdiction_text": "Korea, Republic of"
+  },
+  {
+   "name": "Johnson & Johnson Medical Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Johnson & Johnson Medical Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Johnson & Johnson Medical NV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Johnson & Johnson Medical Products GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Johnson & Johnson Medical Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Johnson & Johnson Medical S.A.",
+   "jurisdiction_text": "Argentina"
+  },
+  {
+   "name": "Johnson & Johnson Medical S.p.A.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Johnson & Johnson Medical SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Johnson & Johnson Medical Saudi Arabia Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Johnson & Johnson Medical Taiwan Ltd.",
+   "jurisdiction_text": "Taiwan (Province of China)"
+  },
+  {
+   "name": "Johnson & Johnson Medical, S.A.",
+   "jurisdiction_text": "Venezuela, Bolivarian Republic of"
+  },
+  {
+   "name": "Johnson & Johnson Medikal Sanayi ve Ticaret Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Johnson & Johnson MedTech (Thailand) Ltd.",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Johnson & Johnson Medtech Colombia S.A.S.",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Johnson & Johnson Medtech CR Limitada",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "Johnson & Johnson MENA RHQ Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Johnson & Johnson Middle East FZ-LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Johnson & Johnson Morocco Societe Anonyme",
+   "jurisdiction_text": "Morocco"
+  },
+  {
+   "name": "Johnson & Johnson Nordic AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Johnson & Johnson Pakistan (Private) Limited",
+   "jurisdiction_text": "Pakistan"
+  },
+  {
+   "name": "Johnson & Johnson Pharmaceutical Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson Poland Sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Johnson & Johnson Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Johnson & Johnson Romania S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "Johnson & Johnson S.E. d.o.o.",
+   "jurisdiction_text": "Croatia"
+  },
+  {
+   "name": "Johnson & Johnson SDN. BHD.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Johnson & Johnson Surgical Vision India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Johnson & Johnson Taiwan Ltd.",
+   "jurisdiction_text": "Taiwan (Province of China)"
+  },
+  {
+   "name": "Johnson & Johnson Trading Limited",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "Johnson & Johnson UK Treasury Company Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Johnson & Johnson Ukraine II LLC",
+   "jurisdiction_text": "Ukraine"
+  },
+  {
+   "name": "Johnson & Johnson Vision Care (Australia) Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Johnson & Johnson Vision Care (Shanghai) Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Johnson & Johnson Vision Care Ireland Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Johnson & Johnson Vision Korea, Ltd.",
+   "jurisdiction_text": "Korea, Republic of"
+  },
+  {
+   "name": "Johnson & Johnson, Lda",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Johnson & Johnson, S.A.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Johnson & Johnson, s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "Johnson & Johnson, s.r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "Johnson and Johnson Sihhi Malzeme Sanayi Ve Ticaret Limited Sirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "La Concha Land Investment Corporation",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "McNeil Panama, LLC",
+   "jurisdiction_text": "Panama"
+  },
+  {
+   "name": "Medos International Sarl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Medos Sarl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Menlo Care De Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Mentor B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Mentor Medical Systems B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Neovasc Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Neovasc Medical Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Neovasc Tiara Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Neuravi Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Newco Colombia S.A.S.",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Obtech Medical Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Omrix Biopharmaceuticals Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Omrix Biopharmaceuticals NV",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "Orthospin Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Orthotaxy",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "preCARDIA",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Proleader S.A.",
+   "jurisdiction_text": "Uruguay"
+  },
+  {
+   "name": "Proteologix Australia Pty Ltd",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "PT Johnson and Johnson Indonesia Two",
+   "jurisdiction_text": "Indonesia"
+  },
+  {
+   "name": "RespiVert Ltd.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Serhum S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Shockwave Medical France SaRL",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "ShockWave Medical GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Shockwave Medical India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Shockwave Medical Ireland Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Shockwave Medical Italy S.R.L.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Shockwave Medical Japan KK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Shockwave Medical Portugal, Unipessoal Lda.",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "Shockwave Medical UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Spectrum Vision Limited Liability Partnership",
+   "jurisdiction_text": "Kazakhstan"
+  },
+  {
+   "name": "Surgical Process Institute Deutschland GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Swav CR, Sociedad de Responsabilidad Limitada",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "SWAV Medical Spain, S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Synthes Costa Rica S.C.R., Limitada",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "SYNTHES GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Synthes GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Synthes Holding AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Synthes Holding Limited",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "SYNTHES Medical Immobilien GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Synthes Medical Surgical Equipment & Instruments Trading LLC",
+   "jurisdiction_text": "United Arab Emirates"
+  },
+  {
+   "name": "Synthes Produktions GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Synthes S.M.P., S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Synthes Tuttlingen GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "UAB \"Johnson & Johnson\"",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "Vision Care Finance Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "V-Wave (Australia) Pty Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "V-Wave Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Xian Janssen Pharmaceutical Ltd.",
+   "jurisdiction_text": "China"
+  }
+ ],
+ "parent_name": "JOHNSON & JOHNSON",
+ "parent_cik": "0000200406",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/ex21-subsidiariesxform10xk.htm",
+ "source_file": "johnson_johnson.htm"
+}

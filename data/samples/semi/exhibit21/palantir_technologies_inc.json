@@ -1,0 +1,137 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Palantir USG, Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Palantir GSC Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Palantir Technologies Geneva S\u00e0rl",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Palantir Technologies Holdings LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Palantir International Inc.",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Palantir Italia S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Palantir Technologies Singapore Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Palantir Technologies New Zealand Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "Palantir Technologies Australia Pty Ltd.",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Palantir Technologies GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "Palantir Technologies Canada Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Palantir Technologies Japan, G.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Palantir Engineering Israel Ltd.",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Palantir Technologies Sweden AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "Palantir Technologies Mexico S. de R.L. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Palantir Tecnologia do Brasil Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Palantir Technologies Switzerland GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Palantir Technologies Spain S.L.U.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "Palantir Technologies France SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Palantir Technologies Poland Sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "Palantir Technologies Denmark ApS",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "Palantir Technologies Norway AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "Palantir Technologies UK, Ltd.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Palantir Shakti Technologies Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Palantir Technologies Taiwan Limited",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Palantir Technologies QFC LLC",
+   "jurisdiction_text": "Qatar"
+  },
+  {
+   "name": "Palantir Technologies UK - Eagle, Ltd.",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Palantir Technologies Austria GmbH",
+   "jurisdiction_text": "Austria"
+  },
+  {
+   "name": "Palantir Technologies Korea LLC",
+   "jurisdiction_text": "South Korea"
+  },
+  {
+   "name": "Palantir Technologies Lithuania, UAB",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "Palantir Technologies Belgium SRL",
+   "jurisdiction_text": "Belgium"
+  },
+  {
+   "name": "*",
+   "jurisdiction_text": "Pursuant to Item 601(b)(21)(ii) of Regulation S-K, the names of other subsidiaries of Palantir Technologies Inc. are omitted because, considered in the aggregate, they would not constitute a significant subsidiary as of the end of the year covered by this report."
+  }
+ ],
+ "parent_name": "Palantir Technologies Inc.",
+ "parent_cik": "0001321655",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/a2025fyexhibit211.htm",
+ "source_file": "palantir_technologies_inc.htm"
+}

@@ -14,7 +14,7 @@ from kg.ingest.local import (
 from kg.load.neo4j_conn import check_connection, get_driver
 from kg.load.neo4j_writer import apply_constraints, clear_graph, load_edges, load_mentions
 from kg.parse.schema import write_edges, write_mentions
-from kg.parse.semi import parse_companyfacts, parse_exhibit21
+from kg.parse.semi import parse_companyfacts, parse_exhibit21_json
 from kg.parse.structured import parse_company_tickers
 
 app = typer.Typer(help="Enterprise KG construction pipeline")
@@ -46,11 +46,11 @@ def parse():
             mentions += m
             edges += e
             facts_count += len(m)
-        html = load_exhibit21(entry)
-        if html is not None:
+        ex21 = load_exhibit21(entry)
+        if ex21 is not None:
             doc = doc_id_for(entry["exhibit21"])
-            m, e = parse_exhibit21(
-                html, doc, entry["exhibit21_url"] or entry["exhibit21"], cik, entry["title"]
+            m, e = parse_exhibit21_json(
+                ex21, doc, entry["exhibit21_url"] or entry["exhibit21"], cik, entry["title"]
             )
             mentions += m
             edges += e

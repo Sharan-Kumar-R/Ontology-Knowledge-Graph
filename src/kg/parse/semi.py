@@ -147,6 +147,27 @@ def _rows_from_text(tree) -> list:
     return rows
 
 
+def parse_exhibit21_json(
+    payload: dict,
+    source_doc: str,
+    source_uri: str,
+    parent_cik: str,
+    parent_name: str,
+):
+    """Read a converted Exhibit 21 record.
+
+    Same output as parse_exhibit21, but the subsidiary rows have already been
+    lifted out of the original HTML by tools/html_to_json.py. Confidence stays
+    below 1.0 because those rows came from layout heuristics, not a schema.
+    """
+    rows = [
+        (s.get("name", ""), s.get("jurisdiction_text", ""))
+        for s in payload.get("subsidiaries", [])
+        if s.get("name")
+    ]
+    return _build_ownership(rows, source_doc, source_uri, parent_cik, parent_name)
+
+
 def parse_exhibit21(
     html_bytes: bytes,
     source_doc: str,
@@ -154,12 +175,15 @@ def parse_exhibit21(
     parent_cik: str,
     parent_name: str,
 ):
-    extractor = "exhibit21"
     tree = lxml_html.fromstring(html_bytes)
-
     rows = [r for r in _rows_from_tables(tree) if not _is_header_row(r[0], r[1])]
     if not rows:
         rows = [r for r in _rows_from_text(tree) if not _is_header_row(r[0], r[1])]
+    return _build_ownership(rows, source_doc, source_uri, parent_cik, parent_name)
+
+
+def _build_ownership(rows, source_doc, source_uri, parent_cik, parent_name):
+    extractor = "exhibit21"
 
     parent = Mention(
         mention_id=make_mention_id(source_doc, extractor, f"parent:{parent_cik}"),

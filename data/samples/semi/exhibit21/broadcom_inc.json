@@ -1,0 +1,49 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Avago Technologies International Sales Pte. Limited",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Avago Technologies U.S. Inc.",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  },
+  {
+   "name": "Broadcom Corporation",
+   "jurisdiction_text": "California (U.S.A.)"
+  },
+  {
+   "name": "Broadcom Singapore Pte Ltd",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Broadcom Technologies, Inc.",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  },
+  {
+   "name": "CA, Inc.",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  },
+  {
+   "name": "VMware International Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "VMware LLC",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  },
+  {
+   "name": "VMware Global, Inc.",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  },
+  {
+   "name": "VMware Management Inc.",
+   "jurisdiction_text": "Delaware (U.S.A.)"
+  }
+ ],
+ "parent_name": "Broadcom Inc.",
+ "parent_cik": "0001730168",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/ex211listofsubsidiaries2025.htm",
+ "source_file": "broadcom_inc.htm"
+}

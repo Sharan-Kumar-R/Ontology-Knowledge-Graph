@@ -1,0 +1,89 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Micron Europe Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Micron Idaho Semiconductor Manufacturing (Triton) LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Micron Japan, Ltd.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Micron Memory Japan Facilities, K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Micron Memory Japan, K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Micron Memory Malaysia Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Micron Memory Taiwan Co., Ltd.",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "Micron New York Semiconductor Manufacturing LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Micron Semiconductor Asia, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Micron Semiconductor Asia Operations Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Micron Semiconductor Asia Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Micron Semiconductor International, Ltd.",
+   "jurisdiction_text": "Cayman Islands, B.W.I."
+  },
+  {
+   "name": "Micron Semiconductor Products, Inc.",
+   "jurisdiction_text": "Idaho"
+  },
+  {
+   "name": "Micron Semiconductor Technology India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Micron Semiconductor (Xi\u2019an) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Micron Technology B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Micron Technology Finance LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Micron Technology Operations India LLP",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Micron Technology Taiwan, Inc.",
+   "jurisdiction_text": "Taiwan"
+  },
+  {
+   "name": "S-Squared Insurance Company, Inc.",
+   "jurisdiction_text": "Hawaii"
+  }
+ ],
+ "parent_name": "MICRON TECHNOLOGY INC",
+ "parent_cik": "0000723125",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/a2025q4ex211-subsidiarieso.htm",
+ "source_file": "micron_technology_inc.htm"
+}

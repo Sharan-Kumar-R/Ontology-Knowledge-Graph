@@ -139,13 +139,21 @@ data/samples/
     company_tickers.json        25 companies, names and tickers
   semi/
     xbrl/*.json                 financial facts, trimmed to the 3 tags used
-    exhibit21/*.htm             raw subsidiary lists, exactly as SEC published
+    exhibit21/*.json            subsidiary lists, lifted out of the SEC HTML
   unstructured/                 empty - the prose reader is not built yet
 ```
 
-The Exhibit 21 files are untouched originals, messy HTML and all. The XBRL
-files are trimmed from 94 MB to 1.9 MB by keeping only the tags the parser
-reads; nothing else is altered.
+The XBRL files are trimmed from 94 MB to 1.9 MB by keeping only the tags the
+parser reads. The Exhibit 21 files were converted from the original SEC HTML
+by `tools/html_to_json.py`, which handled both layouts SEC filers use (real
+HTML tables and dot-leader free text) and filtered out header rows. Each
+record keeps a `layout` field recording which case it came from, and the
+`jurisdiction_text` values stay exactly as printed - `"Delaware, U.S."`,
+`"Hong Kong"` - because normalising them is a modelling decision, not a
+parsing one.
+
+Ownership edges keep `confidence: 0.85` rather than `1.0`, since those rows
+came from layout heuristics rather than a schema.
 
 ### Expected output from step 5
 

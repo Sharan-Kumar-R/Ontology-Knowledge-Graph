@@ -1,0 +1,41 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "OC Acquisition LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Oracle America, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Oracle EMEA Holdings Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Oracle International Corporation",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Oracle International Holdings Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Oracle Software (Schweiz) GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Oracle Software Technology GmbH, US Branch",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Oracle Systems Corporation",
+   "jurisdiction_text": "Delaware"
+  }
+ ],
+ "parent_name": "ORACLE CORP",
+ "parent_cik": "0001341439",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-ex21_01.htm",
+ "source_file": "oracle_corp.htm"
+}

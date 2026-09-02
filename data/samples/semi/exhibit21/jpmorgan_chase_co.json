@@ -1,0 +1,81 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "JPMorgan Chase Bank, National Association",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "Paymentech, LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "J.P. Morgan International Finance Limited",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "JPMorgan Securities Japan Co., Ltd.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "J.P. Morgan Capital Holdings Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "J.P. Morgan Securities plc",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "J.P. Morgan SE",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "JPMorgan Chase Holdings LLC",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "J.P. Morgan Services India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "JPMorgan Asset Management Holdings Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "JPMorgan Distribution Services, Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "JPMorgan Asset Management International Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "JPMorgan Asset Management (UK) Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "JPMorgan Asset Management Holdings (Luxembourg) S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "JPMorgan Asset Management (Europe) S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "J.P. Morgan Investment Management Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "J.P. Morgan Broker-Dealer Holdings Inc.",
+   "jurisdiction_text": "United States"
+  },
+  {
+   "name": "J.P. Morgan Securities LLC",
+   "jurisdiction_text": "United States"
+  }
+ ],
+ "parent_name": "JPMORGAN CHASE & CO",
+ "parent_cik": "0000019617",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/corp10k2025exhibit21.htm",
+ "source_file": "jpmorgan_chase_co.htm"
+}

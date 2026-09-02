@@ -1,0 +1,85 @@
+{
+ "layout": "table",
+ "subsidiaries": [
+  {
+   "name": "Apple Asia Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Apple Asia LLC",
+   "jurisdiction_text": "Delaware, U.S."
+  },
+  {
+   "name": "Apple Canada Inc.",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Apple Computer Trading (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Apple Distribution International Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Apple India Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Apple Insurance Company, Inc.",
+   "jurisdiction_text": "Arizona, U.S."
+  },
+  {
+   "name": "Apple Japan, Inc.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Apple Korea Limited",
+   "jurisdiction_text": "South Korea"
+  },
+  {
+   "name": "Apple Operations International Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Apple Operations Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Apple Operations Mexico, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "Apple Pty Limited",
+   "jurisdiction_text": "Australia"
+  },
+  {
+   "name": "Apple Services Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Apple South Asia (Thailand) Limited",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "Apple South Asia Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Apple Vietnam Limited Liability Company",
+   "jurisdiction_text": "Vietnam"
+  },
+  {
+   "name": "Braeburn Capital, Inc.",
+   "jurisdiction_text": "Nevada, U.S."
+  },
+  {
+   "name": "iTunes K.K.",
+   "jurisdiction_text": "Japan"
+  }
+ ],
+ "parent_name": "Apple Inc.",
+ "parent_cik": "0000320193",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/a10-kexhibit21109272025.htm",
+ "source_file": "apple_inc.htm"
+}

@@ -1,0 +1,97 @@
+{
+ "layout": "free_text",
+ "subsidiaries": [
+  {
+   "name": "AbbVie Finance Corporation Delaware",
+   "jurisdiction_text": "AbbVie Global Inc. Delaware"
+  },
+  {
+   "name": "AGN Sundry LLC Delaware",
+   "jurisdiction_text": "Aliada Therapeutics, Inc. Delaware"
+  },
+  {
+   "name": "Allergan Pharma Inc. Delaware",
+   "jurisdiction_text": "Allergan Property Holdings, LLC Delaware"
+  },
+  {
+   "name": "Cerevel Therapeutics, Inc. Delaware",
+   "jurisdiction_text": "Cerevel Therapeutics, LLC Delaware"
+  },
+  {
+   "name": "Hurricane, LLC Delaware",
+   "jurisdiction_text": "IEP Pharmaceutical Devices, LLC Delaware"
+  },
+  {
+   "name": "LifeCell Corporation Delaware",
+   "jurisdiction_text": "Mavupharma, Inc. Delaware"
+  },
+  {
+   "name": "AbbVie Ltd Bermuda",
+   "jurisdiction_text": "AbbVie Biotechnology Ltd Bermuda"
+  },
+  {
+   "name": "Allergan Holdings B2, Ltd. Bermuda",
+   "jurisdiction_text": "Kythera Holdings Ltd Bermuda"
+  },
+  {
+   "name": "Aptalis Pharma Canada ULC Canada",
+   "jurisdiction_text": "Allergan Holdings C, Ltd. Cayman Islands"
+  },
+  {
+   "name": "Shanghai Allergan Medical Aesthetics Clinic Co.,  Ltd.  China",
+   "jurisdiction_text": "AbbVie S.A.S. Colombia"
+  },
+  {
+   "name": "Allergan Holdings France SAS France",
+   "jurisdiction_text": "Allergan Industrie SAS France"
+  },
+  {
+   "name": "AbbVie Limited Hong Kong",
+   "jurisdiction_text": "Allergan Hong Kong Limited Hong Kong"
+  },
+  {
+   "name": "Allergan Equities Unlimited Company Ireland",
+   "jurisdiction_text": "Allergan Holdings Unlimited Company Ireland"
+  },
+  {
+   "name": "Forest Laboratories Ireland Limited Ireland",
+   "jurisdiction_text": "Fournier Laboratories Ireland Limited Ireland"
+  },
+  {
+   "name": "Aptalis Pharma S.r.l. Italy",
+   "jurisdiction_text": "AbbVie GK Japan"
+  },
+  {
+   "name": "Allergan Capital S.\u00e0 r.l. Luxembourg",
+   "jurisdiction_text": "Allergan Europe S.\u00e0 r.l. Luxembourg"
+  },
+  {
+   "name": "Allergan Malta Holding Limited Malta",
+   "jurisdiction_text": "Allergan Malta II Limited Malta"
+  },
+  {
+   "name": "AbbVie Nederland Holdings B.V. Netherlands",
+   "jurisdiction_text": "AbbVie Pharmaceuticals B.V. Netherlands"
+  },
+  {
+   "name": "AbbVie Philippines Inc. Philippines",
+   "jurisdiction_text": "AbbVie Sp. z o.o. Poland"
+  },
+  {
+   "name": "AbbVie Operations Singapore Pte. Ltd. Singapore",
+   "jurisdiction_text": "AbbVie Pte. Ltd. Singapore"
+  },
+  {
+   "name": "Fastox Pharma SA Switzerland",
+   "jurisdiction_text": "ImmunoGen Switzerland GmbH Switzerland"
+  },
+  {
+   "name": "AbbVie Ltd United Kingdom",
+   "jurisdiction_text": "AbbVie Trustee Company Limited United Kingdom"
+  }
+ ],
+ "parent_name": "AbbVie Inc.",
+ "parent_cik": "0001551152",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231xex21.htm",
+ "source_file": "abbvie_inc.htm"
+}

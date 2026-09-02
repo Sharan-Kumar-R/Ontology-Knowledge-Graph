@@ -39,10 +39,12 @@ def load_xbrl(entry: dict, root: Optional[Path] = None) -> Optional[dict]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_exhibit21(entry: dict, root: Optional[Path] = None) -> Optional[bytes]:
+def load_exhibit21(entry: dict, root: Optional[Path] = None) -> Optional[dict]:
+    """Load a converted Exhibit 21 record (subsidiary list plus provenance)."""
     if not entry.get("exhibit21"):
         return None
-    return (sample_root(root) / entry["exhibit21"]).read_bytes()
+    path = sample_root(root) / entry["exhibit21"]
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def doc_id_for(relative_path: str) -> str:

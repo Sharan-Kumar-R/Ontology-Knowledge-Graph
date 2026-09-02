@@ -61,7 +61,15 @@ kg:Industry a owl:Class ;
 
 ##############################################################################
 # Object properties
+#
+# kg:edgeLabel names the relationship type this property becomes in the
+# property graph. src/kg/parse/schema.py reads these, so this file is the
+# single source of truth for what the pipeline will accept.
 ##############################################################################
+
+kg:edgeLabel a owl:AnnotationProperty ;
+    rdfs:label "edge label" ;
+    rdfs:comment "The Neo4j relationship type this object property maps to." .
 
 # directParentOf is a SIMPLE role: asymmetric and irreflexive are only legal on
 # simple roles in OWL 2 DL. parentOf is its transitive super-property. Declaring
@@ -72,6 +80,7 @@ kg:directParentOf a owl:ObjectProperty , owl:AsymmetricProperty , owl:Irreflexiv
     rdfs:range kg:LegalEntity ;
     rdfs:subPropertyOf kg:parentOf ;
     rdfs:label "direct parent of" ;
+    kg:edgeLabel "PARENT_OF" ;
     rdfs:comment "Immediate ownership, as asserted by a single Exhibit 21 row." .
 
 kg:parentOf a owl:ObjectProperty , owl:TransitiveProperty ;
@@ -89,7 +98,8 @@ kg:subsidiaryOf a owl:ObjectProperty ;
 kg:identifiedBy a owl:ObjectProperty ;
     rdfs:domain kg:Entity ;
     rdfs:range kg:Identifier ;
-    rdfs:label "identified by" .
+    rdfs:label "identified by" ;
+    kg:edgeLabel "IDENTIFIED_BY" .
 
 kg:identifies a owl:ObjectProperty , owl:InverseFunctionalProperty ;
     owl:inverseOf kg:identifiedBy ;
@@ -101,7 +111,8 @@ kg:identifies a owl:ObjectProperty , owl:InverseFunctionalProperty ;
 kg:reports a owl:ObjectProperty ;
     rdfs:domain kg:LegalEntity ;
     rdfs:range kg:FinancialFact ;
-    rdfs:label "reports" .
+    rdfs:label "reports" ;
+    kg:edgeLabel "REPORTS" .
 
 kg:aboutConcept a owl:ObjectProperty , owl:FunctionalProperty ;
     rdfs:domain kg:FinancialFact ;
@@ -113,27 +124,32 @@ kg:incorporatedIn a owl:ObjectProperty , owl:FunctionalProperty ;
     rdfs:domain kg:LegalEntity ;
     rdfs:range kg:Jurisdiction ;
     rdfs:label "incorporated in" ;
+    kg:edgeLabel "INCORPORATED_IN" ;
     rdfs:comment "Functional: at most one jurisdiction of incorporation." .
 
 kg:officerOf a owl:ObjectProperty ;
     rdfs:domain kg:Person ;
     rdfs:range kg:LegalEntity ;
-    rdfs:label "officer of" .
+    rdfs:label "officer of" ;
+    kg:edgeLabel "OFFICER_OF" .
 
 kg:acquired a owl:ObjectProperty ;
     rdfs:domain kg:LegalEntity ;
     rdfs:range kg:LegalEntity ;
-    rdfs:label "acquired" .
+    rdfs:label "acquired" ;
+    kg:edgeLabel "ACQUIRED" .
 
 kg:competesWith a owl:ObjectProperty , owl:SymmetricProperty ;
     rdfs:domain kg:LegalEntity ;
     rdfs:range kg:LegalEntity ;
-    rdfs:label "competes with" .
+    rdfs:label "competes with" ;
+    kg:edgeLabel "COMPETES_WITH" .
 
 kg:filed a owl:ObjectProperty ;
     rdfs:domain kg:LegalEntity ;
     rdfs:range kg:Filing ;
-    rdfs:label "filed" .
+    rdfs:label "filed" ;
+    kg:edgeLabel "FILED" .
 
 kg:resolvesTo a owl:ObjectProperty , owl:FunctionalProperty ;
     rdfs:domain kg:Entity ;

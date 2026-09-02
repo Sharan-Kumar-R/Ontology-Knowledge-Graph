@@ -2,31 +2,41 @@ import hashlib
 import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Set, Tuple
 
 import pandas as pd
 
-MENTION_TYPES = {
-    "LegalEntity",
-    "Person",
-    "Filing",
-    "FinancialFact",
-    "XBRLConcept",
-    "Jurisdiction",
-    "Industry",
-    "Identifier",
-}
+ONTOLOGY_PATH = Path("ontology/ontology.ttl")
+KG_NS = "http://kg.local/sec#"
 
-EDGE_TYPES = {
-    "FILED",
-    "PARENT_OF",
-    "INCORPORATED_IN",
-    "IDENTIFIED_BY",
-    "REPORTS",
-    "ACQUIRED",
-    "OFFICER_OF",
-    "COMPETES_WITH",
-}
+
+def load_vocabulary(path: Optional[Path] = None) -> Tuple[Set[str], Set[str]]:
+    """Read the allowed mention and edge types straight from the ontology.
+
+    Classes become mention types. Object properties become edge types via their
+    kg:edgeLabel annotation, so the ontology is the only place the vocabulary is
+    declared and the two cannot drift apart.
+    """
+    from rdflib import OWL, RDF, Graph, URIRef
+
+    path = Path(path) if path else ONTOLOGY_PATH
+    if not path.exists():
+        raise FileNotFoundError(
+            f"{path} not found. schema.py derives its vocabulary from the "
+            f"ontology, so run commands from the project root."
+        )
+    graph = Graph()
+    graph.parse(path, format="turtle")
+
+    mention_types = {
+        str(c).split("#")[-1] for c in graph.subjects(RDF.type, OWL.Class)
+    }
+    edge_label = URIRef(KG_NS + "edgeLabel")
+    edge_types = {str(o) for o in graph.objects(None, edge_label)}
+    return mention_types, edge_types
+
+
+MENTION_TYPES, EDGE_TYPES = load_vocabulary()
 
 MODALITIES = {"structured", "semi", "unstructured"}
 

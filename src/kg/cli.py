@@ -23,6 +23,26 @@ CONSTRAINTS = Path("ontology/constraints.cypher")
 
 
 @app.command()
+def check():
+    """Verify config, data folder, and Neo4j connectivity."""
+    settings = load_settings()
+    typer.echo(f"data_root:    {settings.data_root}")
+
+    samples = Path("data/samples")
+    if samples.exists():
+        n = len(list(samples.rglob("*.json")))
+        typer.echo(f"sample files: {n} JSON under {samples}")
+    else:
+        typer.echo(f"sample files: MISSING - {samples} not found")
+
+    driver = get_driver(settings)
+    try:
+        typer.echo(json.dumps(check_connection(driver), indent=2))
+    finally:
+        driver.close()
+
+
+@app.command()
 def parse():
     """Read data/samples/ and write mentions.parquet and edge_mentions.parquet."""
     settings = load_settings()
@@ -106,7 +126,7 @@ def stats():
 
 
 @app.command()
-def validate(limit: int = typer.Option(3000, help="max nodes to export to RDF")):
+def validate(limit: int = typer.Option(3000, help="nodes to sample; 0 validates the whole graph")):
     """Export the graph to RDF and validate it against the SHACL shapes."""
     from kg.evaluate.shacl_eval import (
         cypher_only_checks,
@@ -118,7 +138,7 @@ def validate(limit: int = typer.Option(3000, help="max nodes to export to RDF"))
     settings = load_settings()
     driver = get_driver(settings)
     try:
-        graph = export_rdf(driver, limit=limit)
+        graph = export_rdf(driver, limit=limit or None)
         typer.echo(f"exported {len(graph)} RDF triples")
         conforms, results, _ = shacl_validate(
             graph, Path("ontology/shapes.ttl"), Path("ontology/ontology.ttl")

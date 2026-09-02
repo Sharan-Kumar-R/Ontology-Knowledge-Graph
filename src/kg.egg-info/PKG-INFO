@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: kg
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: duckdb
+Requires-Dist: httpx
+Requires-Dist: lxml
+Requires-Dist: pydantic>=2
+Requires-Dist: pyyaml
+Requires-Dist: typer
+Requires-Dist: neo4j
+Requires-Dist: rapidfuzz
+Requires-Dist: scikit-learn
+Requires-Dist: datasketch

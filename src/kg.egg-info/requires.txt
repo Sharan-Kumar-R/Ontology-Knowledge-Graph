@@ -1,0 +1,12 @@
+pandas
+pyarrow
+duckdb
+httpx
+lxml
+pydantic>=2
+pyyaml
+typer
+neo4j
+rapidfuzz
+scikit-learn
+datasketch

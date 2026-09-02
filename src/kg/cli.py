@@ -23,7 +23,7 @@ from kg.parse.structured import parse_company_tickers, parse_gleif_lei
 
 app = typer.Typer(help="Enterprise KG construction pipeline")
 
-CONSTRAINTS = Path("ontology/constraints_thin.cypher")
+CONSTRAINTS = Path("ontology/constraints.cypher")
 
 
 def _client(settings):
@@ -73,27 +73,6 @@ def ingest_sec(limit: int = typer.Option(25, help="number of companies to ingest
         typer.echo(f"{rec['title']}: ex21={'yes' if entry['ex21'] else 'no'}")
     (settings.staging_dir / "sec_manifest.json").write_text(json.dumps(manifest, indent=2))
     typer.echo(f"ingested {len(manifest)} companies")
-
-
-@app.command(name="ingest-gleif")
-def ingest_gleif(
-    lei_csv: Path = typer.Option(..., help="path to unzipped GLEIF level 1 CSV"),
-    rr_csv: Path = typer.Option(None, help="path to unzipped GLEIF level 2 CSV"),
-):
-    """Stream-filter GLEIF CSVs to US-only Parquet."""
-    from kg.ingest.gleif import filter_lei_csv, filter_rr_csv
-
-    settings = load_settings()
-    dest = settings.staging_dir / "gleif_lei.parquet"
-    n = filter_lei_csv(lei_csv, dest, countries={"US"})
-    typer.echo(f"lei rows: {n} -> {dest}")
-    if rr_csv:
-        import pandas as pd
-
-        leis = set(pd.read_parquet(dest, columns=["lei"])["lei"])
-        rr_dest = settings.gold_dir / "gleif_rr.parquet"
-        m = filter_rr_csv(rr_csv, rr_dest, keep_leis=leis)
-        typer.echo(f"relationship rows: {m} -> {rr_dest}")
 
 
 @app.command()

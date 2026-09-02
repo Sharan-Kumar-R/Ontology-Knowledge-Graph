@@ -90,27 +90,81 @@ because `pip install -e .` was run once during setup.
 
 On a fresh machine, in order:
 
-```bash
+**Requirements:** Python 3.10+, Docker Desktop (running).
+**Optional:** Protégé, to view the ontology visually.
+
+### Windows (PowerShell)
+
+```powershell
 # 1. Python environment and dependencies
 python -m venv .venv
-.venv/Scripts/python.exe -m pip install -e .
+.\.venv\Scripts\python.exe -m pip install -e .
 
-# 2. Configuration — SEC requires a real contact email
-cp config/settings.yaml.example config/settings.yaml
+# 2. Configuration - SEC requires a real contact email
+copy config\settings.yaml.example config\settings.yaml
 #    then edit sec_user_agent to "YourName your.email@example.com"
+#    SEC returns 403 without it
 
 # 3. Start the graph database (first boot downloads plugins, ~1 min)
 docker compose up -d
 
-# 4. Verify
-.venv/Scripts/python.exe -m kg.cli check
+# 4. Verify - should print neo4j_version and n10s_available: true
+.\.venv\Scripts\python.exe -m kg.cli check
 
-# 5. Build the graph
-.venv/Scripts/python.exe -m kg.cli run-all --limit 25
+# 5. Build the graph (~3 min first time, then cached)
+.\.venv\Scripts\python.exe -m kg.cli run-all --limit 25
 ```
 
-Requirements: Python 3.10+, Docker Desktop. Optional: Protégé, to view the
-ontology visually.
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -e .
+cp config/settings.yaml.example config/settings.yaml   # then edit the email
+docker compose up -d
+.venv/bin/python -m kg.cli check
+.venv/bin/python -m kg.cli run-all --limit 25
+```
+
+The `docker-compose.yml` mounts `C:/kg-data/neo4j` — change those two volume
+paths on non-Windows.
+
+### Expected output from step 5
+
+```
+...25 companies, each printing ex21=yes or no...
+structured/tickers: 165 mentions
+semi/xbrl: 11724 mentions
+semi/exhibit21: 1952 ownership edges
+loaded 13864 mentions, 13690 edges
+mentions:
+  FinancialFact    semi           11628
+  LegalEntity      semi           1996
+  Identifier       structured     80
+  XBRLConcept      semi           71
+  LegalEntity      structured     25
+edges:
+  REPORTS          11628
+  PARENT_OF        1948
+  IDENTIFIED_BY    80
+```
+
+Then open **http://localhost:7474** (`neo4j` / `changeme_kg_local`) and run:
+
+```cypher
+MATCH (p:Mention)-[:PARENT_OF]->(s:Mention)
+WHERE p.name CONTAINS 'Apple'
+RETURN p, s
+```
+
+### Troubleshooting
+
+| Symptom | Cause |
+|---|---|
+| `403 Forbidden` from SEC | `sec_user_agent` in `config/settings.yaml` has no email |
+| `ServiceUnavailable` on bolt | Docker not running, or Neo4j still booting (wait ~60s) |
+| `FileNotFoundError: config/settings.yaml` | Step 2 was skipped |
+| `ConstraintCreationFailed ... Enterprise Edition` | You are on Neo4j Enterprise-only syntax; this repo targets Community |
 
 Bulk data is written to `C:\kg-data\`, deliberately outside OneDrive so
 gigabytes of Parquet and database files are not synced to the cloud.
@@ -265,7 +319,7 @@ provenance:        100%
 | constraints.cypher | The subset Neo4j can enforce | No, generated |
 | shapes.ttl | SHACL validation rules — catches bad data | Rarely |
 | build.py | Converts `ontology.ttl` into the two generated files | No |
-| constraints_thin.cypher | Obsolete placeholder from before the ontology existed | Delete |
+| 
 
 ```
 ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, reasoner)
@@ -298,8 +352,8 @@ ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, re
 | `pyproject.toml` | Dependencies and package config |
 | `tests/` | 34 tests |
 | `src/kg.egg-info/` | Auto-generated pip bookkeeping. Ignore it, never edit it |
-| `docs/superpowers/specs/` | The design document |
-| `docs/superpowers/plans/` | The implementation plan |
+|  `docs/DESIGN.md` | The design document |
+|  `docs/PLAN.md` | The implementation plan |
 
 ### Where the data lives
 

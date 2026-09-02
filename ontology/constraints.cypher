@@ -7,10 +7,10 @@
 CREATE CONSTRAINT mention_id_unique IF NOT EXISTS
 FOR (m:Mention) REQUIRE m.mention_id IS UNIQUE;
 
-// identifies is inverse-functional in the ontology:
-// one identifier value denotes at most one entity.
-CREATE CONSTRAINT identifier_value_unique IF NOT EXISTS
-FOR (m:Mention) REQUIRE (m.mention_type, m.name) IS NODE KEY;
+// identifies is inverse-functional in the ontology, meaning one
+// identifier value denotes at most one entity. Expressing that
+// in Neo4j needs a NODE KEY constraint, which is Enterprise
+// only, so it is checked in kg.evaluate instead.
 
 // Indexes for the 9 declared classes
 CREATE INDEX mention_type_idx IF NOT EXISTS

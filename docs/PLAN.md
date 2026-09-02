@@ -205,7 +205,7 @@ neo4j_password: changeme_kg_local
 llm_model: claude-sonnet-5
 ```
 
-`config/settings.yaml` — same, with `sec_user_agent: "Sharan shrnkmr0001@gmail.com"`.
+`config/settings.yaml` — same, with `sec_user_agent: "YourName your.email@example.com"`.
 
 - [ ] **Step 8: Commit**
 

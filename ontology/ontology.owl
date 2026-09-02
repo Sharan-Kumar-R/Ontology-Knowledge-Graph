@@ -5,25 +5,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://kg.local/sec#subsidiaryOf">
+  <rdf:Description rdf:about="http://kg.local/sec#incorporatedIn">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://kg.local/sec#parentOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:label>subsidiary of</rdfs:label>
+    <rdfs:range rdf:resource="http://kg.local/sec#Jurisdiction"/>
+    <rdfs:label>incorporated in</rdfs:label>
+    <rdfs:comment>Functional: at most one jurisdiction of incorporation.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#jurisdictionText">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>jurisdiction text</rdfs:label>
-    <rdfs:comment>Raw jurisdiction string as printed in Exhibit 21, before normalisation to a Jurisdiction instance.</rdfs:comment>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b7">
+    <rdf:first rdf:resource="http://kg.local/sec#Jurisdiction"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b8"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#confidence">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="http://kg.local/sec#resolvesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    <rdfs:label>confidence</rdfs:label>
+    <rdfs:range rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:label>resolves to</rdfs:label>
+    <rdfs:comment>Links a mention to the canonical entity chosen by entity resolution. Functional: a mention resolves to at most one canonical entity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#identifies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <owl:inverseOf rdf:resource="http://kg.local/sec#identifiedBy"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Identifier"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:label>identifies</rdfs:label>
+    <rdfs:comment>Inverse functional: one identifier value denotes at most one entity. This is the axiom that makes identifier agreement a valid entity-resolution signal.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#directParentOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -35,70 +44,11 @@
     <rdfs:label>direct parent of</rdfs:label>
     <rdfs:comment>Immediate ownership, as asserted by a single Exhibit 21 row.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Entity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Entity</rdfs:label>
-    <rdfs:comment>Anything the graph makes assertions about.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Person">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:label>Person</rdfs:label>
-    <rdfs:comment>A natural person, typically an officer or director.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#FinancialFact">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Financial Fact</rdfs:label>
-    <rdfs:comment>One reported numeric observation, bound to a concept, unit, and period.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#competesWith">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:label>competes with</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#identifies">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <owl:inverseOf rdf:resource="http://kg.local/sec#identifiedBy"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Identifier"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:label>identifies</rdfs:label>
-    <rdfs:comment>Inverse functional: one identifier value denotes at most one entity. This is the axiom that makes identifier agreement a valid entity-resolution signal.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#extractorVersion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>extractor version</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b6">
-    <rdf:first rdf:resource="http://kg.local/sec#XBRLConcept"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b7"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#unit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>unit</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#identifierValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Identifier"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>identifier value</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b5">
-    <rdf:first rdf:resource="http://kg.local/sec#FinancialFact"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#legalName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>legal name</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#filed">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -106,40 +56,22 @@
     <rdfs:range rdf:resource="http://kg.local/sec#Filing"/>
     <rdfs:label>filed</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#officerOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Person"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:label>officer of</rdfs:label>
+  <rdf:Description rdf:about="http://kg.local/sec#Filing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Filing</rdfs:label>
+    <rdfs:comment>A document submitted to the SEC, such as a 10-K.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#resolvesTo">
+  <rdf:Description rdf:about="http://kg.local/sec#acquired">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:label>resolves to</rdfs:label>
-    <rdfs:comment>Links a mention to the canonical entity chosen by entity resolution. Functional: a mention resolves to at most one canonical entity.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dct:title>SEC EDGAR + GLEIF Enterprise Knowledge Graph Ontology</dct:title>
-    <dct:description>Classes and relations for corporate structure, identifiers, and reported financial facts extracted from SEC filings and the GLEIF registry.</dct:description>
-    <owl:versionInfo>0.1.0</owl:versionInfo>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#incorporatedIn">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#Jurisdiction"/>
-    <rdfs:label>incorporated in</rdfs:label>
-    <rdfs:comment>Functional: at most one jurisdiction of incorporation.</rdfs:comment>
+    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:label>acquired</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#sourceDoc">
+  <rdf:Description rdf:about="http://kg.local/sec#extractor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>source document</rdfs:label>
-    <rdfs:comment>SHA-256 of the immutable source document this assertion came from.</rdfs:comment>
+    <rdfs:label>extractor</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#parentOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -149,23 +81,54 @@
     <rdfs:label>parent of</rdfs:label>
     <rdfs:comment>Ownership closed under transitivity: a reasoner derives indirect ownership from chains of directParentOf.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#aboutConcept">
+  <rdf:Description rdf:about="http://kg.local/sec#Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Identifier</rdfs:label>
+    <rdfs:comment>An identifier claim, modelled as a node rather than a property so that conflicting claims can coexist until entity resolution adjudicates.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#identifiedBy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#XBRLConcept"/>
-    <rdfs:label>about concept</rdfs:label>
-    <rdfs:comment>Functional: a fact measures exactly one concept.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#Identifier"/>
+    <rdfs:label>identified by</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#factValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    <rdfs:label>fact value</rdfs:label>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b4">
-    <rdf:first rdf:resource="http://kg.local/sec#Identifier"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b5"/>
+  <rdf:Description rdf:about="http://kg.local/sec#Entity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Entity</rdfs:label>
+    <rdfs:comment>Anything the graph makes assertions about.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#XBRLConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>XBRL Concept</rdfs:label>
+    <rdfs:comment>A taxonomy element such as us-gaap:Revenues.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b8">
+    <rdf:first rdf:resource="http://kg.local/sec#Industry"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#competesWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:label>competes with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#subsidiaryOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://kg.local/sec#parentOf"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:label>subsidiary of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#LegalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:label>Legal Entity</rdfs:label>
+    <rdfs:comment>An incorporated body: a filer, a parent company, or a subsidiary.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#modality">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -174,72 +137,6 @@
     <rdfs:label>modality</rdfs:label>
     <rdfs:comment>structured, semi, or unstructured.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Filing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Filing</rdfs:label>
-    <rdfs:comment>A document submitted to the SEC, such as a 10-K.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#fiscalYear">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <rdfs:label>fiscal year</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#identifiedBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#Identifier"/>
-    <rdfs:label>identified by</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#LegalEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:label>Legal Entity</rdfs:label>
-    <rdfs:comment>An incorporated body: a filer, a parent company, or a subsidiary.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Identifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Identifier</rdfs:label>
-    <rdfs:comment>An identifier claim, modelled as a node rather than a property so that conflicting claims can coexist until entity resolution adjudicates.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b8">
-    <rdf:first rdf:resource="http://kg.local/sec#Industry"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b9"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b9">
-    <rdf:first rdf:resource="http://kg.local/sec#Filing"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#extractor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>extractor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#XBRLConcept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>XBRL Concept</rdfs:label>
-    <rdfs:comment>A taxonomy element such as us-gaap:Revenues.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Jurisdiction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Jurisdiction</rdfs:label>
-    <rdfs:comment>A legal jurisdiction of incorporation, identified by an ISO 3166 code.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b2">
-    <rdf:first rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#acquired">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
-    <rdfs:label>acquired</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="n59e76251d331472ab43c1f84f8039654b2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#identifierScheme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -247,23 +144,126 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>identifier scheme</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b7">
-    <rdf:first rdf:resource="http://kg.local/sec#Jurisdiction"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b8"/>
+  <rdf:Description rdf:about="http://kg.local/sec#fiscalYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:label>fiscal year</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b6">
+    <rdf:first rdf:resource="http://kg.local/sec#XBRLConcept"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b2">
+    <rdf:first rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b9">
+    <rdf:first rdf:resource="http://kg.local/sec#Filing"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#identifierValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Identifier"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>identifier value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#sourceDoc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>source document</rdfs:label>
+    <rdfs:comment>SHA-256 of the immutable source document this assertion came from.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dct:title>SEC EDGAR + GLEIF Enterprise Knowledge Graph Ontology</dct:title>
+    <dct:description>Classes and relations for corporate structure, identifiers, and reported financial facts extracted from SEC filings and the GLEIF registry.</dct:description>
+    <owl:versionInfo>0.1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#extractorVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>extractor version</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b3">
+    <rdf:first rdf:resource="http://kg.local/sec#Person"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b4">
+    <rdf:first rdf:resource="http://kg.local/sec#Identifier"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b5">
+    <rdf:first rdf:resource="http://kg.local/sec#FinancialFact"/>
+    <rdf:rest rdf:nodeID="nd8bccf4128244bd1a1ee9e55f2c0eda5b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#aboutConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#XBRLConcept"/>
+    <rdfs:label>about concept</rdfs:label>
+    <rdfs:comment>Functional: a fact measures exactly one concept.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#Industry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Industry</rdfs:label>
+    <rdfs:comment>An industry classification, currently SIC.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#confidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label>confidence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:label>Person</rdfs:label>
+    <rdfs:comment>A natural person, typically an officer or director.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#officerOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Person"/>
+    <rdfs:range rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:label>officer of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#legalName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>legal name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#jurisdictionText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>jurisdiction text</rdfs:label>
+    <rdfs:comment>Raw jurisdiction string as printed in Exhibit 21, before normalisation to a Jurisdiction instance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#FinancialFact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Financial Fact</rdfs:label>
+    <rdfs:comment>One reported numeric observation, bound to a concept, unit, and period.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#factValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://kg.local/sec#FinancialFact"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label>fact value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://kg.local/sec#Jurisdiction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Jurisdiction</rdfs:label>
+    <rdfs:comment>A legal jurisdiction of incorporation, identified by an ISO 3166 code.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://kg.local/sec#reports">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://kg.local/sec#LegalEntity"/>
     <rdfs:range rdf:resource="http://kg.local/sec#FinancialFact"/>
     <rdfs:label>reports</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n59e76251d331472ab43c1f84f8039654b3">
-    <rdf:first rdf:resource="http://kg.local/sec#Person"/>
-    <rdf:rest rdf:nodeID="n59e76251d331472ab43c1f84f8039654b4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://kg.local/sec#Industry">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Industry</rdfs:label>
-    <rdfs:comment>An industry classification, currently SIC.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

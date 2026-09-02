@@ -37,12 +37,10 @@ def to_cypher(ttl: Path, out: Path) -> Path:
 
     for prop in sorted(graph.subjects(RDF.type, OWL.InverseFunctionalProperty)):
         name = _local(prop)
-        lines.append(f"// {name} is inverse-functional in the ontology:")
-        lines.append("// one identifier value denotes at most one entity.")
-        lines.append("CREATE CONSTRAINT identifier_value_unique IF NOT EXISTS")
-        lines.append(
-            "FOR (m:Mention) REQUIRE (m.mention_type, m.name) IS NODE KEY;\n"
-        )
+        lines.append(f"// {name} is inverse-functional in the ontology, meaning one")
+        lines.append("// identifier value denotes at most one entity. Expressing that")
+        lines.append("// in Neo4j needs a NODE KEY constraint, which is Enterprise")
+        lines.append("// only, so it is checked in kg.evaluate instead.\n")
         break
 
     classes = sorted(_local(c) for c in graph.subjects(RDF.type, OWL.Class))

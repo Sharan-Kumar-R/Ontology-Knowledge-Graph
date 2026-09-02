@@ -1,0 +1,213 @@
+@prefix kg:   <http://kg.local/sec#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+
+<http://kg.local/sec> a owl:Ontology ;
+    dct:title "SEC EDGAR + GLEIF Enterprise Knowledge Graph Ontology" ;
+    dct:description "Classes and relations for corporate structure, identifiers, and reported financial facts extracted from SEC filings and the GLEIF registry." ;
+    owl:versionInfo "0.1.0" .
+
+##############################################################################
+# Classes
+##############################################################################
+
+kg:Entity a owl:Class ;
+    rdfs:label "Entity" ;
+    rdfs:comment "Anything the graph makes assertions about." .
+
+kg:LegalEntity a owl:Class ;
+    rdfs:subClassOf kg:Entity ;
+    rdfs:label "Legal Entity" ;
+    rdfs:comment "An incorporated body: a filer, a parent company, or a subsidiary." .
+
+kg:Person a owl:Class ;
+    rdfs:subClassOf kg:Entity ;
+    rdfs:label "Person" ;
+    rdfs:comment "A natural person, typically an officer or director." .
+
+kg:Identifier a owl:Class ;
+    rdfs:label "Identifier" ;
+    rdfs:comment "An identifier claim, modelled as a node rather than a property so that conflicting claims can coexist until entity resolution adjudicates." .
+
+kg:Filing a owl:Class ;
+    rdfs:label "Filing" ;
+    rdfs:comment "A document submitted to the SEC, such as a 10-K." .
+
+kg:FinancialFact a owl:Class ;
+    rdfs:label "Financial Fact" ;
+    rdfs:comment "One reported numeric observation, bound to a concept, unit, and period." .
+
+kg:XBRLConcept a owl:Class ;
+    rdfs:label "XBRL Concept" ;
+    rdfs:comment "A taxonomy element such as us-gaap:Revenues." .
+
+kg:Jurisdiction a owl:Class ;
+    rdfs:label "Jurisdiction" ;
+    rdfs:comment "A legal jurisdiction of incorporation, identified by an ISO 3166 code." .
+
+kg:Industry a owl:Class ;
+    rdfs:label "Industry" ;
+    rdfs:comment "An industry classification, currently SIC." .
+
+# A legal entity and a natural person are never the same thing, and neither is
+# ever an identifier or a reported fact. Stating this lets a reasoner detect
+# extractor bugs that conflate them.
+[] a owl:AllDisjointClasses ;
+   owl:members ( kg:LegalEntity kg:Person kg:Identifier kg:FinancialFact
+                 kg:XBRLConcept kg:Jurisdiction kg:Industry kg:Filing ) .
+
+##############################################################################
+# Object properties
+##############################################################################
+
+# directParentOf is a SIMPLE role: asymmetric and irreflexive are only legal on
+# simple roles in OWL 2 DL. parentOf is its transitive super-property. Declaring
+# one property both transitive and asymmetric would push the ontology out of
+# OWL 2 DL and reasoners would refuse it.
+kg:directParentOf a owl:ObjectProperty , owl:AsymmetricProperty , owl:IrreflexiveProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:subPropertyOf kg:parentOf ;
+    rdfs:label "direct parent of" ;
+    rdfs:comment "Immediate ownership, as asserted by a single Exhibit 21 row." .
+
+kg:parentOf a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:label "parent of" ;
+    rdfs:comment "Ownership closed under transitivity: a reasoner derives indirect ownership from chains of directParentOf." .
+
+kg:subsidiaryOf a owl:ObjectProperty ;
+    owl:inverseOf kg:parentOf ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:label "subsidiary of" .
+
+kg:identifiedBy a owl:ObjectProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range kg:Identifier ;
+    rdfs:label "identified by" .
+
+kg:identifies a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+    owl:inverseOf kg:identifiedBy ;
+    rdfs:domain kg:Identifier ;
+    rdfs:range kg:Entity ;
+    rdfs:label "identifies" ;
+    rdfs:comment "Inverse functional: one identifier value denotes at most one entity. This is the axiom that makes identifier agreement a valid entity-resolution signal." .
+
+kg:reports a owl:ObjectProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:FinancialFact ;
+    rdfs:label "reports" .
+
+kg:aboutConcept a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain kg:FinancialFact ;
+    rdfs:range kg:XBRLConcept ;
+    rdfs:label "about concept" ;
+    rdfs:comment "Functional: a fact measures exactly one concept." .
+
+kg:incorporatedIn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:Jurisdiction ;
+    rdfs:label "incorporated in" ;
+    rdfs:comment "Functional: at most one jurisdiction of incorporation." .
+
+kg:officerOf a owl:ObjectProperty ;
+    rdfs:domain kg:Person ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:label "officer of" .
+
+kg:acquired a owl:ObjectProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:label "acquired" .
+
+kg:competesWith a owl:ObjectProperty , owl:SymmetricProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:LegalEntity ;
+    rdfs:label "competes with" .
+
+kg:filed a owl:ObjectProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range kg:Filing ;
+    rdfs:label "filed" .
+
+kg:resolvesTo a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range kg:Entity ;
+    rdfs:label "resolves to" ;
+    rdfs:comment "Links a mention to the canonical entity chosen by entity resolution. Functional: a mention resolves to at most one canonical entity." .
+
+##############################################################################
+# Datatype properties
+##############################################################################
+
+kg:legalName a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "legal name" .
+
+kg:identifierScheme a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain kg:Identifier ;
+    rdfs:range xsd:string ;
+    rdfs:label "identifier scheme" .
+
+kg:identifierValue a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain kg:Identifier ;
+    rdfs:range xsd:string ;
+    rdfs:label "identifier value" .
+
+kg:factValue a owl:DatatypeProperty ;
+    rdfs:domain kg:FinancialFact ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "fact value" .
+
+kg:fiscalYear a owl:DatatypeProperty ;
+    rdfs:domain kg:FinancialFact ;
+    rdfs:range xsd:integer ;
+    rdfs:label "fiscal year" .
+
+kg:unit a owl:DatatypeProperty ;
+    rdfs:domain kg:FinancialFact ;
+    rdfs:range xsd:string ;
+    rdfs:label "unit" .
+
+kg:jurisdictionText a owl:DatatypeProperty ;
+    rdfs:domain kg:LegalEntity ;
+    rdfs:range xsd:string ;
+    rdfs:label "jurisdiction text" ;
+    rdfs:comment "Raw jurisdiction string as printed in Exhibit 21, before normalisation to a Jurisdiction instance." .
+
+##############################################################################
+# Provenance — required on every assertion
+##############################################################################
+
+kg:sourceDoc a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "source document" ;
+    rdfs:comment "SHA-256 of the immutable source document this assertion came from." .
+
+kg:extractor a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "extractor" .
+
+kg:extractorVersion a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "extractor version" .
+
+kg:confidence a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "confidence" .
+
+kg:modality a owl:DatatypeProperty ;
+    rdfs:domain kg:Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "modality" ;
+    rdfs:comment "structured, semi, or unstructured." .

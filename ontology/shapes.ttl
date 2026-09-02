@@ -1,0 +1,138 @@
+@prefix kg:   <http://kg.local/sec#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# SHACL is closed-world: a missing required property is a violation, not an
+# unknown. That is precisely the job OWL cannot do, and why both files exist.
+
+kg:ProvenanceShape a sh:NodeShape ;
+    sh:targetClass kg:LegalEntity , kg:Person , kg:Identifier ,
+                   kg:FinancialFact , kg:XBRLConcept ;
+    sh:property [
+        sh:path kg:sourceDoc ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:pattern "^[0-9a-f]{64}$" ;
+        sh:message "every assertion must cite a SHA-256 source document" ;
+    ] ;
+    sh:property [
+        sh:path kg:extractor ;
+        sh:minCount 1 ;
+        sh:message "every assertion must name the extractor that produced it" ;
+    ] ;
+    sh:property [
+        sh:path kg:confidence ;
+        sh:minCount 1 ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:maxInclusive 1.0 ;
+        sh:message "confidence must be present and within [0,1]" ;
+    ] ;
+    sh:property [
+        sh:path kg:modality ;
+        sh:minCount 1 ;
+        sh:in ( "structured" "semi" "unstructured" ) ;
+        sh:message "modality must be structured, semi, or unstructured" ;
+    ] .
+
+kg:LegalEntityShape a sh:NodeShape ;
+    sh:targetClass kg:LegalEntity ;
+    sh:property [
+        sh:path kg:legalName ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:message "a legal entity needs exactly one non-trivial name" ;
+    ] ;
+    sh:property [
+        sh:path kg:incorporatedIn ;
+        sh:maxCount 1 ;
+        sh:message "an entity is incorporated in at most one jurisdiction" ;
+    ] .
+
+kg:IdentifierShape a sh:NodeShape ;
+    sh:targetClass kg:Identifier ;
+    sh:property [
+        sh:path kg:identifierScheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:in ( "LEI" "CIK" "TICKER" ) ;
+        sh:message "identifier scheme must be LEI, CIK, or TICKER" ;
+    ] ;
+    sh:property [
+        sh:path kg:identifierValue ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "an identifier must carry exactly one value" ;
+    ] .
+
+# Scheme-specific formats. A CIK that is not ten digits, or an LEI that is not
+# 20 characters, means the extractor mislabelled something.
+kg:LeiFormatShape a sh:NodeShape ;
+    sh:targetClass kg:Identifier ;
+    sh:sparql [
+        sh:message "LEI values must be 18 alphanumerics followed by 2 check digits" ;
+        sh:prefixes kg: ;
+        sh:select """
+            PREFIX kg: <http://kg.local/sec#>
+            SELECT $this WHERE {
+                $this kg:identifierScheme "LEI" ;
+                      kg:identifierValue ?v .
+                FILTER (!REGEX(?v, "^[A-Z0-9]{18}[0-9]{2}$"))
+            }
+        """ ;
+    ] .
+
+kg:CikFormatShape a sh:NodeShape ;
+    sh:targetClass kg:Identifier ;
+    sh:sparql [
+        sh:message "CIK values must be zero-padded to ten digits" ;
+        sh:prefixes kg: ;
+        sh:select """
+            PREFIX kg: <http://kg.local/sec#>
+            SELECT $this WHERE {
+                $this kg:identifierScheme "CIK" ;
+                      kg:identifierValue ?v .
+                FILTER (!REGEX(?v, "^[0-9]{10}$"))
+            }
+        """ ;
+    ] .
+
+kg:FinancialFactShape a sh:NodeShape ;
+    sh:targetClass kg:FinancialFact ;
+    sh:property [
+        sh:path kg:factValue ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:decimal ;
+        sh:message "a financial fact needs exactly one numeric value" ;
+    ] ;
+    sh:property [
+        sh:path kg:fiscalYear ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1900 ;
+        sh:maxInclusive 2100 ;
+        sh:message "fiscal year must be a plausible four-digit year" ;
+    ] ;
+    sh:property [
+        sh:path kg:aboutConcept ;
+        sh:maxCount 1 ;
+        sh:message "a fact measures at most one concept" ;
+    ] .
+
+# An entity cannot own itself. Ownership cycles beyond depth 1 are checked in
+# Cypher, since SHACL has no transitive closure.
+kg:NoSelfOwnershipShape a sh:NodeShape ;
+    sh:targetClass kg:LegalEntity ;
+    sh:sparql [
+        sh:message "an entity cannot be its own parent" ;
+        sh:prefixes kg: ;
+        sh:select """
+            PREFIX kg: <http://kg.local/sec#>
+            SELECT $this WHERE {
+                $this kg:directParentOf $this .
+            }
+        """ ;
+    ] .

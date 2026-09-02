@@ -197,6 +197,45 @@ def stats():
         driver.close()
 
 
+@app.command()
+def validate(limit: int = typer.Option(3000, help="max nodes to export to RDF")):
+    """Export the graph to RDF and validate it against the SHACL shapes."""
+    from kg.evaluate.shacl_eval import (
+        cypher_only_checks,
+        export_rdf,
+        summarise,
+        validate as shacl_validate,
+    )
+
+    settings = load_settings()
+    driver = get_driver(settings)
+    try:
+        graph = export_rdf(driver, limit=limit)
+        typer.echo(f"exported {len(graph)} RDF triples")
+        conforms, results, _ = shacl_validate(
+            graph, Path("ontology/shapes.ttl"), Path("ontology/ontology.ttl")
+        )
+        counts = summarise(results)
+        typer.echo(f"conforms: {conforms}")
+        typer.echo(f"violations: {sum(counts.values())}")
+        for message, n in counts.most_common(10):
+            typer.echo(f"  {n:>6}  {message[:80]}")
+        typer.echo("")
+        for key, value in cypher_only_checks(driver).items():
+            typer.echo(f"  {key:<18} {value}")
+    finally:
+        driver.close()
+
+
+@app.command(name="build-ontology")
+def build_ontology():
+    """Regenerate ontology.owl and constraints.cypher from ontology.ttl."""
+    import subprocess
+    import sys
+
+    subprocess.run([sys.executable, "ontology/build.py"], check=True)
+
+
 @app.command(name="run-all")
 def run_all(limit: int = 25):
     """ingest-sec, parse, load, stats."""

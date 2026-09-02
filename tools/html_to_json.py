@@ -1,14 +1,4 @@
-"""One-off converter: Exhibit 21 HTML -> JSON.
-
-SEC filers publish Exhibit 21 in two shapes: a real HTML table, or indented
-free text with dot leaders. This script handles both, drops header rows, and
-writes the result to data/samples/semi/exhibit21/*.json, which is what the
-pipeline reads.
-
-Run it only when refreshing the bundled data. It is kept in the repo so the
-derivation of those JSON files is auditable.
-"""
-
+"""One-off converter: Exhibit 21 HTML -> JSON."""
 import json
 import re
 from pathlib import Path
@@ -27,6 +17,45 @@ _HEADING_LABEL = re.compile(
 _HEADING_VALUE = re.compile(
     r"incorporat|jurisdiction|domicile|organiz|state or|country|location", re.I
 )
+_FOOTNOTE_MARKER = re.compile(r"^\(?\s*[*†‡\d]+\s*\)?$")
+
+_US_STATES = """
+Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware
+Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana
+Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana
+Nebraska Nevada Ohio Oklahoma Oregon Pennsylvania Tennessee Texas Utah Vermont
+Virginia Washington Wisconsin Wyoming
+""".split()
+
+_COUNTRIES = """
+Argentina Australia Austria Bahamas Bahrain Bangladesh Barbados Belgium Bermuda
+Brazil Bulgaria Canada Chile China Colombia Croatia Cyprus Denmark Ecuador Egypt
+Estonia Finland France Germany Gibraltar Greece Guatemala Honduras Hungary
+Iceland India Indonesia Ireland Israel Italy Jamaica Japan Jordan Kazakhstan
+Kenya Kuwait Latvia Lebanon Liechtenstein Lithuania Luxembourg Malaysia Malta
+Mauritius Mexico Monaco Morocco Netherlands Nicaragua Nigeria Norway Oman
+Pakistan Panama Paraguay Peru Philippines Poland Portugal Qatar Romania Russia
+Serbia Singapore Slovakia Slovenia Spain Sweden Switzerland Taiwan Thailand
+Tunisia Turkey Ukraine Uruguay Venezuela Vietnam Zambia Zimbabwe
+""".split()
+
+_MULTI_WORD = [
+    "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina",
+    "North Dakota", "Rhode Island", "South Carolina", "South Dakota",
+    "West Virginia", "District of Columbia", "Puerto Rico", "Cayman Islands",
+    "British Virgin Islands", "Channel Islands", "Costa Rica", "Czech Republic",
+    "Dominican Republic", "El Salvador", "Hong Kong", "New Zealand",
+    "Saudi Arabia", "South Africa", "South Korea", "Sri Lanka",
+    "Trinidad and Tobago", "United Arab Emirates", "United Kingdom",
+    "United States",
+]
+
+JURISDICTIONS = sorted(_US_STATES + _COUNTRIES + _MULTI_WORD, key=len, reverse=True)
+
+_JURISDICTION = re.compile(
+    r"\s(" + "|".join(re.escape(j) for j in JURISDICTIONS) + r")"
+    r"(?:\s*[,(]\s*U\.?\s?S\.?A?\.?\s*\)?)?(?=\s|$)"
+)
 
 
 def is_header_row(name: str, value: str) -> bool:
@@ -35,6 +64,22 @@ def is_header_row(name: str, value: str) -> bool:
         or _HEADING_LABEL.match(name.strip())
         or _HEADING_VALUE.search(value)
     )
+
+
+def is_footnote_row(name: str) -> bool:
+    """A legend entry, not a subsidiary: the name column holds only "(1)"."""
+    return bool(_FOOTNOTE_MARKER.match(name.strip()))
+
+
+def split_run_on(line: str) -> list:
+    """Split a run-on paragraph on the jurisdiction that closes each entry."""
+    parts = _JURISDICTION.split(line)
+    pairs = []
+    for i in range(0, len(parts) - 1, 2):
+        name = parts[i].lstrip(" .,;").rstrip(" ,;")
+        if name:
+            pairs.append((name, parts[i + 1]))
+    return pairs
 
 
 def rows_from_tables(tree) -> list:
@@ -55,8 +100,11 @@ def rows_from_text(tree) -> list:
     """Fallback for filers who lay the list out as text with dot leaders."""
     rows = []
     for line in tree.text_content().splitlines():
-        line = line.strip()
+        line = " ".join(line.split())
         if not line or _HEADING.search(line):
+            continue
+        if len(_JURISDICTION.findall(line)) >= 2:
+            rows.extend(split_run_on(line))
             continue
         parts = [p.strip(" .") for p in _DOTS.split(line) if p.strip(" .")]
         if len(parts) >= 2:
@@ -65,11 +113,14 @@ def rows_from_text(tree) -> list:
 
 
 def extract(html_bytes: bytes) -> dict:
+    def keep(row):
+        return not is_header_row(row[0], row[1]) and not is_footnote_row(row[0])
+
     tree = lxml_html.fromstring(html_bytes)
-    rows = [r for r in rows_from_tables(tree) if not is_header_row(r[0], r[1])]
+    rows = [r for r in rows_from_tables(tree) if keep(r)]
     layout = "table"
     if not rows:
-        rows = [r for r in rows_from_text(tree) if not is_header_row(r[0], r[1])]
+        rows = [r for r in rows_from_text(tree) if keep(r)]
         layout = "free_text"
     return {
         "layout": layout,
@@ -88,9 +139,9 @@ def main() -> None:
             continue
         html_path = SAMPLES / entry["exhibit21"]
         if html_path.suffix.lower() not in (".htm", ".html"):
-            print(f"  skip {entry['title'][:30]:<32} already converted")
-            continue
+            html_path = html_path.with_suffix(".htm")
         if not html_path.exists():
+            print(f"  skip {entry['title'][:30]:<32} no source HTML")
             continue
         payload = extract(html_path.read_bytes())
         payload["parent_name"] = entry["title"]

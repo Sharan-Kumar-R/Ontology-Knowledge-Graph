@@ -2,92 +2,1072 @@
  "layout": "free_text",
  "subsidiaries": [
   {
-   "name": "AbbVie Finance Corporation Delaware",
-   "jurisdiction_text": "AbbVie Global Inc. Delaware"
+   "name": "AbbVie Finance Corporation",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AGN Sundry LLC Delaware",
-   "jurisdiction_text": "Aliada Therapeutics, Inc. Delaware"
+   "name": "AbbVie Global Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Allergan Pharma Inc. Delaware",
-   "jurisdiction_text": "Allergan Property Holdings, LLC Delaware"
+   "name": "AbbVie Holdco Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Cerevel Therapeutics, Inc. Delaware",
-   "jurisdiction_text": "Cerevel Therapeutics, LLC Delaware"
+   "name": "AbbVie Holdings Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Hurricane, LLC Delaware",
-   "jurisdiction_text": "IEP Pharmaceutical Devices, LLC Delaware"
+   "name": "AbbVie Indemnity Company LLC",
+   "jurisdiction_text": "Vermont"
   },
   {
-   "name": "LifeCell Corporation Delaware",
-   "jurisdiction_text": "Mavupharma, Inc. Delaware"
+   "name": "AbbVie International Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Ltd Bermuda",
-   "jurisdiction_text": "AbbVie Biotechnology Ltd Bermuda"
+   "name": "AbbVie Pharmaceuticals LLC",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Allergan Holdings B2, Ltd. Bermuda",
-   "jurisdiction_text": "Kythera Holdings Ltd Bermuda"
+   "name": "AbbVie Products LLC",
+   "jurisdiction_text": "Georgia"
   },
   {
-   "name": "Aptalis Pharma Canada ULC Canada",
-   "jurisdiction_text": "Allergan Holdings C, Ltd. Cayman Islands"
+   "name": "AbbVie Purchasing LLC",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Shanghai Allergan Medical Aesthetics Clinic Co.,  Ltd.  China",
-   "jurisdiction_text": "AbbVie S.A.S. Colombia"
+   "name": "AbbVie Resources Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Allergan Holdings France SAS France",
-   "jurisdiction_text": "Allergan Industrie SAS France"
+   "name": "AbbVie Resources International Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Limited Hong Kong",
-   "jurisdiction_text": "Allergan Hong Kong Limited Hong Kong"
+   "name": "AGN Sundry LLC",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Allergan Equities Unlimited Company Ireland",
-   "jurisdiction_text": "Allergan Holdings Unlimited Company Ireland"
+   "name": "Aliada Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Forest Laboratories Ireland Limited Ireland",
-   "jurisdiction_text": "Fournier Laboratories Ireland Limited Ireland"
+   "name": "Aliada Therapeutics Security Corporation",
+   "jurisdiction_text": "Massachusetts"
   },
   {
-   "name": "Aptalis Pharma S.r.l. Italy",
-   "jurisdiction_text": "AbbVie GK Japan"
+   "name": "Allergan Akarna LLC",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Allergan Capital S.\u00e0 r.l. Luxembourg",
-   "jurisdiction_text": "Allergan Europe S.\u00e0 r.l. Luxembourg"
+   "name": "Allergan Finance, LLC",
+   "jurisdiction_text": "Nevada"
   },
   {
-   "name": "Allergan Malta Holding Limited Malta",
-   "jurisdiction_text": "Allergan Malta II Limited Malta"
+   "name": "Allergan GI Corp",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Nederland Holdings B.V. Netherlands",
-   "jurisdiction_text": "AbbVie Pharmaceuticals B.V. Netherlands"
+   "name": "Allergan Holdco US, Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Philippines Inc. Philippines",
-   "jurisdiction_text": "AbbVie Sp. z o.o. Poland"
+   "name": "Allergan Holdings B1, Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Operations Singapore Pte. Ltd. Singapore",
-   "jurisdiction_text": "AbbVie Pte. Ltd. Singapore"
+   "name": "Allergan Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "Fastox Pharma SA Switzerland",
-   "jurisdiction_text": "ImmunoGen Switzerland GmbH Switzerland"
+   "name": "Allergan, Inc.",
+   "jurisdiction_text": "Delaware"
   },
   {
-   "name": "AbbVie Ltd United Kingdom",
-   "jurisdiction_text": "AbbVie Trustee Company Limited United Kingdom"
+   "name": "Allergan Laboratories, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan Pharma Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan Property Holdings, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Puerto Rico"
+  },
+  {
+   "name": "Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan Sales Puerto Rico, Inc.",
+   "jurisdiction_text": "California"
+  },
+  {
+   "name": "Allergan Sales, LLC (d/b/a Allergan; d/b/a Bioscience Laboratories)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan Therapeutics LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan USA, Inc. (d/b/a Pacificom / Pacific Communications)",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Allergan W.C. Holding Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Almanac Intermediate LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Anterios, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cerevel Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Cerevel Therapeutics, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Chase Pharmaceuticals Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Durata Holdings, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Durata Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Eden Biodesign, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Envy Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ForSight Vision5, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Fremont Holding L.L.C.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Furiex Pharmaceuticals, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Gilgamesh Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Hurricane, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "IEP Pharmaceutical Devices, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "ImmunoGen, Inc.",
+   "jurisdiction_text": "Massachusetts"
+  },
+  {
+   "name": "ImmunoGen US Holding, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Indy Acquisition 1, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Keller Medical, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Kelvin Intermediate LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Knoll Pharmaceutical Company",
+   "jurisdiction_text": "New Jersey"
+  },
+  {
+   "name": "KOS Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Landos Biopharma, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Life Properties Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "LifeCell Corporation",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mavupharma, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Mitokinin, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "MPEX Pharmaceuticals, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Naurex Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Neptunite, LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Nimble Therapeutics, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Oculeve, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Organics L.L.C.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pacific Pharma, Inc.",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "Pharmacyclics LLC",
+   "jurisdiction_text": "Delaware"
+  },
+  {
+   "name": "AbbVie Ltd",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Biotechnology Ltd",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Finance Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Global Enterprises Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Group Holdings Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Group Holdings 2 Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Group Investments Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie Group Investments 2 Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Allergan Development Ventures I, L.P.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Allergan Holdings B Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Allergan Holdings B2, Ltd.",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Kythera Holdings Ltd",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Warner Chilcott Holdings Company II, Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Warner Chilcott Holdings Company III, Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "Warner Chilcott Limited",
+   "jurisdiction_text": "Bermuda"
+  },
+  {
+   "name": "AbbVie d.o.o. Bosnia AbbVie Farmac\u00eautica Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Allergan Produtos Farmaceuticos Ltda.",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "Optifirst Produtos Farmaceuticos Ltda",
+   "jurisdiction_text": "Brazil"
+  },
+  {
+   "name": "AbbVie EOOD",
+   "jurisdiction_text": "Bulgaria"
+  },
+  {
+   "name": "AbbVie Corporation",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Aptalis Pharma",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "ULC",
+   "jurisdiction_text": "Canada"
+  },
+  {
+   "name": "Allergan Holdings C, Ltd.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Allergan Overseas Holding",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "Pharmacyclics Cayman Ltd.",
+   "jurisdiction_text": "Cayman Islands"
+  },
+  {
+   "name": "AbbVie Productos Farmac\u00e9uticos Limitada",
+   "jurisdiction_text": "Chile"
+  },
+  {
+   "name": "AbbVie Pharmaceutical Trading (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Allergan (Chengdu) Medical Aesthetics Clinic Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Allergan Information Consulting (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Allergan Medical Device (Shanghai) Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "Shanghai Allergan Medical Aesthetics Clinic Co., Ltd.",
+   "jurisdiction_text": "China"
+  },
+  {
+   "name": "AbbVie S.A.S.",
+   "jurisdiction_text": "Colombia"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "S.R.L.",
+   "jurisdiction_text": "Costa Rica"
+  },
+  {
+   "name": "AbbVie d.o.o.",
+   "jurisdiction_text": "Croatia"
+  },
+  {
+   "name": "AbbVie s.r.o.",
+   "jurisdiction_text": "Czech Republic"
+  },
+  {
+   "name": "AbbVie A/S",
+   "jurisdiction_text": "Denmark"
+  },
+  {
+   "name": "AbbVie, S.R.L.",
+   "jurisdiction_text": "Dominican Republic"
+  },
+  {
+   "name": "AbbVie L.L.C.",
+   "jurisdiction_text": "Egypt"
+  },
+  {
+   "name": "AbbVie O\u00dc",
+   "jurisdiction_text": "Estonia"
+  },
+  {
+   "name": "AbbVie Oy",
+   "jurisdiction_text": "Finland"
+  },
+  {
+   "name": "AbbVie SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Allergan Holdings",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Allergan Industrie SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "Martillac Biotechnology Manufacturing SAS",
+   "jurisdiction_text": "France"
+  },
+  {
+   "name": "AbbVie Biotechnology GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AbbVie Deutschland GmbH & Co. KG",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AbbVie Komplement\u00e4r GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AbbVie Pharmaceuticals GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AbbVie Real Estate Management GmbH",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "ImmunoGen",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "GmbH (In Voluntary Liquidation)",
+   "jurisdiction_text": "Germany"
+  },
+  {
+   "name": "AbbVie Pharmaceuticals Societe Anonyme",
+   "jurisdiction_text": "Greece"
+  },
+  {
+   "name": "AbbVie, Sociedad Anonima",
+   "jurisdiction_text": "Guatemala"
+  },
+  {
+   "name": "AbbVie Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "Limited",
+   "jurisdiction_text": "Hong Kong"
+  },
+  {
+   "name": "AbbVie Gyogyszerkereskedelmi Korlatolt Felelossegu Tarsasag",
+   "jurisdiction_text": "Hungary"
+  },
+  {
+   "name": "AbbVie Healthcare",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Private Limited",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "AbbVie Therapeutics",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "Private Limited*",
+   "jurisdiction_text": "India"
+  },
+  {
+   "name": "AbbVie International Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AbbVie Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AbbVie Manufacturing Management Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Equities Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Pharma Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Pharmaceuticals International Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Pharmaceuticals",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan Services International, Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Allergan WC",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Forest Laboratories",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Fournier Laboratories",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "ImmunoGen BioPharma (Ireland) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Pharmacyclics (Europe) Limited",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Warner Chilcott Intermediate (Ireland) Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Zeltiq",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "International Holdings Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Zeltiq",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "Unlimited Company",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "AbbVie Biopharmaceuticals Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "Marbelle Threads Ltd",
+   "jurisdiction_text": "Israel"
+  },
+  {
+   "name": "AbbVie S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "Aptalis Pharma S.r.l.",
+   "jurisdiction_text": "Italy"
+  },
+  {
+   "name": "AbbVie GK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Allergan International YK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Allergan K.K.",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Allergan NK",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "AbbVie Ltd Korea, South AbbVie SIA",
+   "jurisdiction_text": "Latvia"
+  },
+  {
+   "name": "AbbVie UAB",
+   "jurisdiction_text": "Lithuania"
+  },
+  {
+   "name": "AbbVie Biotherapeutics S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan AHI S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Capital 2 S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Capital S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Europe S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Finance S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Funding SCS",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan Holdings S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan International Holding S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan WC 1 S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "Allergan WC 2 S.\u00e0 r.l.",
+   "jurisdiction_text": "Luxembourg"
+  },
+  {
+   "name": "AbbVie Sdn. Bhd.",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "Sdn. Bhd. (In Voluntary Liquidation)",
+   "jurisdiction_text": "Malaysia"
+  },
+  {
+   "name": "AbbVie Group Finance Ltd.",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "Holding Limited",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "II Limited",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "Limited",
+   "jurisdiction_text": "Malta"
+  },
+  {
+   "name": "AbbVie Farmac\u00e9uticos, S.A. de C.V.",
+   "jurisdiction_text": "Mexico"
+  },
+  {
+   "name": "AbbVie B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Central Finance B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Enterprises B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Finance B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Ireland"
+  },
+  {
+   "name": "NL B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Japan"
+  },
+  {
+   "name": "Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Logistics B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Nederland Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Pharmaceuticals B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Research B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Venezuela"
+  },
+  {
+   "name": "B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Venezuela"
+  },
+  {
+   "name": "Holdings B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Aptalis Holding B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Aptalis",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "Warner Chilcott Nederland B.V.",
+   "jurisdiction_text": "Netherlands"
+  },
+  {
+   "name": "AbbVie Limited",
+   "jurisdiction_text": "New Zealand"
+  },
+  {
+   "name": "AbbVie AS",
+   "jurisdiction_text": "Norway"
+  },
+  {
+   "name": "AbbVie, S. de R.L.",
+   "jurisdiction_text": "Panama"
+  },
+  {
+   "name": "AbbVie",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "Inc.",
+   "jurisdiction_text": "Philippines"
+  },
+  {
+   "name": "AbbVie Sp. z o.o.",
+   "jurisdiction_text": "Poland"
+  },
+  {
+   "name": "AbbVie, L.da",
+   "jurisdiction_text": "Portugal"
+  },
+  {
+   "name": "AbbVie Corp",
+   "jurisdiction_text": "Puerto Rico"
+  },
+  {
+   "name": "Knoll LLC",
+   "jurisdiction_text": "Puerto Rico"
+  },
+  {
+   "name": "AbbVie S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "AbbVie Trading S.R.L.",
+   "jurisdiction_text": "Romania"
+  },
+  {
+   "name": "AbbVie Limited Liability Company",
+   "jurisdiction_text": "Russia"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "LLC* (In Voluntary Liquidation)",
+   "jurisdiction_text": "Saudi Arabia"
+  },
+  {
+   "name": "AbbVie d.o.o. Beograd",
+   "jurisdiction_text": "Serbia"
+  },
+  {
+   "name": "AbbVie Operations",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "AbbVie Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "Pte. Ltd.",
+   "jurisdiction_text": "Singapore"
+  },
+  {
+   "name": "AbbVie Holdings s.r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "AbbVie s.r.o.",
+   "jurisdiction_text": "Slovakia"
+  },
+  {
+   "name": "AbbVie Biofarmacevtska druzba d.o.o.",
+   "jurisdiction_text": "Slovenia"
+  },
+  {
+   "name": "AbbVie (Pty) Ltd",
+   "jurisdiction_text": "South Africa"
+  },
+  {
+   "name": "AbbVie Spain, S.L.",
+   "jurisdiction_text": "Spain"
+  },
+  {
+   "name": "AbbVie AB",
+   "jurisdiction_text": "Sweden"
+  },
+  {
+   "name": "AbbVie AG",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "AbbVie Biopharmaceuticals GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Fastox Pharma SA",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "ImmunoGen",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "Pharmacyclics",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "GmbH",
+   "jurisdiction_text": "Switzerland"
+  },
+  {
+   "name": "AbbVie Ltd. (In Voluntary Liquidation)",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "AbbVie Pharmaceuticals (Thailand) Ltd.",
+   "jurisdiction_text": "Thailand"
+  },
+  {
+   "name": "AbbVie Sarl",
+   "jurisdiction_text": "Tunisia"
+  },
+  {
+   "name": "AbbVie T\u0131bbi \u0130la\u00e7lar Sanayi ve Ticaret Limited \u015eirketi",
+   "jurisdiction_text": "Turkey"
+  },
+  {
+   "name": "Allergan",
+   "jurisdiction_text": "Ukraine"
+  },
+  {
+   "name": "LLC",
+   "jurisdiction_text": "Ukraine"
+  },
+  {
+   "name": "AbbVie Australasia Holdings Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AbbVie Biotherapeutics Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AbbVie Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AbbVie Trustee Company Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AbbVie UK Holdco Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Akarna Therapeutics, Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Allergan Holdco UK Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Allergan Holdings Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "Allergan Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "DJS Antibodies Ltd",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "ImmunoGen Europe Limited",
+   "jurisdiction_text": "United Kingdom"
+  },
+  {
+   "name": "AbbVie S.A.",
+   "jurisdiction_text": "Uruguay"
+  },
+  {
+   "name": "AbbVie Pharmaceuticals SCA.",
+   "jurisdiction_text": "Venezuela"
   }
  ],
  "parent_name": "AbbVie Inc.",

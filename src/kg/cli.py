@@ -38,6 +38,11 @@ def check():
     driver = get_driver(settings)
     try:
         typer.echo(json.dumps(check_connection(driver), indent=2))
+    except Exception as exc:
+        # Not fatal: parse works with no database at all, and validate works
+        # against the staged Parquet with --offline.
+        typer.echo(f"neo4j:        UNREACHABLE - {type(exc).__name__}: {exc}")
+        typer.echo("              parse still works; use: kg validate --offline")
     finally:
         driver.close()
 
@@ -126,20 +131,35 @@ def stats():
 
 
 @app.command()
-def validate(limit: int = typer.Option(3000, help="nodes to sample; 0 validates the whole graph")):
+def validate(
+    limit: int = typer.Option(3000, help="nodes to sample; 0 validates the whole graph"),
+    offline: bool = typer.Option(
+        False, help="validate the staged Parquet directly, with no Neo4j"
+    ),
+):
     """Export the graph to RDF and validate it against the SHACL shapes."""
     from kg.evaluate.shacl_eval import (
         cypher_only_checks,
         export_rdf,
+        export_rdf_from_parquet,
+        parquet_only_checks,
         summarise,
         validate as shacl_validate,
     )
 
     settings = load_settings()
-    driver = get_driver(settings)
+    mentions = settings.staging_dir / "mentions.parquet"
+    edges = settings.staging_dir / "edge_mentions.parquet"
+
+    driver = None
     try:
-        graph = export_rdf(driver, limit=limit or None)
+        if offline:
+            graph = export_rdf_from_parquet(mentions, edges, limit=limit or None)
+        else:
+            driver = get_driver(settings)
+            graph = export_rdf(driver, limit=limit or None)
         typer.echo(f"exported {len(graph)} RDF triples")
+
         conforms, results, _ = shacl_validate(
             graph, Path("ontology/shapes.ttl"), Path("ontology/ontology.ttl")
         )
@@ -149,10 +169,17 @@ def validate(limit: int = typer.Option(3000, help="nodes to sample; 0 validates 
         for message, n in counts.most_common(10):
             typer.echo(f"  {n:>6}  {message[:80]}")
         typer.echo("")
-        for key, value in cypher_only_checks(driver).items():
+
+        checks = (
+            parquet_only_checks(mentions, edges)
+            if offline
+            else cypher_only_checks(driver)
+        )
+        for key, value in checks.items():
             typer.echo(f"  {key:<18} {value}")
     finally:
-        driver.close()
+        if driver is not None:
+            driver.close()
 
 
 @app.command(name="build-ontology")

@@ -1,0 +1,21 @@
+[project]
+name = "kg"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas", "pyarrow", "duckdb", "httpx", "lxml",
+    "pydantic>=2", "pyyaml", "typer", "neo4j",
+    "rapidfuzz", "scikit-learn", "datasketch",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["integration: requires a running Neo4j"]

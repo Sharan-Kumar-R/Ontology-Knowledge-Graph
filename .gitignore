@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 .env
 config/settings.yaml
+.venv/
+.pytest_cache/

@@ -162,7 +162,7 @@ Measured at 100, 1000, and 10000 filings, then extrapolated with a stated cost m
 
 ## 9. Stack and repository layout
 
-Python 3.11, Neo4j 5 with neosemantics in Docker, DuckDB, pandas and pyarrow, lxml, rapidfuzz, scikit-learn, datasketch, owlready2, typer for the CLI, pytest.
+Python 3.10 (installed locally; 3.11 unnecessary), Neo4j 5 with neosemantics in Docker, DuckDB, pandas and pyarrow, lxml, rapidfuzz, scikit-learn, datasketch, owlready2, typer for the CLI, pytest.
 
 ```
 onotology/
@@ -181,10 +181,13 @@ onotology/
     resolve/     normalize.py  blocking.py  features.py  scorer.py  cluster.py
     evaluate/    er_eval.py  edge_eval.py  shacl_eval.py  completeness.py
     scale/       bench.py
-  data/          raw/  staging/  gold/
   notebooks/
   tests/
 ```
+
+Bulk data lives **outside OneDrive** at `C:\kg-data\` (`raw/`, `staging/`, `gold/`), as does the Neo4j volume at `C:\kg-data\neo4j\`. Only code and specs sync. The path is set once in `config/settings.yaml`; no absolute paths appear in code.
+
+`config/settings.yaml` is gitignored and holds the SEC `User-Agent` contact email, which SEC's fair-access policy requires for automated requests (rate limit: 10 requests per second). `config/settings.yaml.example` is committed with a placeholder.
 
 Every stage is a CLI command, configuration-driven, cached by content hash so re-runs are cheap.
 

@@ -1,27 +1,75 @@
 """One-off converter: Exhibit 21 HTML -> JSON.
 
-Run once to produce data/samples/semi/exhibit21/*.json from the original SEC
-HTML. The pipeline reads the JSON; this script is kept only to document how
-that JSON was derived.
+SEC filers publish Exhibit 21 in two shapes: a real HTML table, or indented
+free text with dot leaders. This script handles both, drops header rows, and
+writes the result to data/samples/semi/exhibit21/*.json, which is what the
+pipeline reads.
+
+Run it only when refreshing the bundled data. It is kept in the repo so the
+derivation of those JSON files is auditable.
 """
 
 import json
+import re
 from pathlib import Path
 
 from kg.ingest.local import load_index
-from kg.parse.semi import _is_header_row, _rows_from_tables, _rows_from_text
 from lxml import html as lxml_html
 
 ROOT = Path(__file__).resolve().parent.parent
-EX21 = ROOT / "data" / "samples" / "semi" / "exhibit21"
+SAMPLES = ROOT / "data" / "samples"
+
+_DOTS = re.compile(r"\.{3,}|\s{3,}|\t+")
+_HEADING = re.compile(r"subsidiar|jurisdiction|name of|state of|registrant", re.I)
+_HEADING_LABEL = re.compile(
+    r"^(name|entity|entity name|company|subsidiary|legal name)$", re.I
+)
+_HEADING_VALUE = re.compile(
+    r"incorporat|jurisdiction|domicile|organiz|state or|country|location", re.I
+)
+
+
+def is_header_row(name: str, value: str) -> bool:
+    return bool(
+        _HEADING.search(name)
+        or _HEADING_LABEL.match(name.strip())
+        or _HEADING_VALUE.search(value)
+    )
+
+
+def rows_from_tables(tree) -> list:
+    """Take cells by position, never by tag name - filers style them freely."""
+    rows = []
+    for table in tree.xpath("//table"):
+        for tr in table.xpath(".//tr"):
+            cells = [
+                " ".join(td.text_content().split()) for td in tr.xpath("./td|./th")
+            ]
+            cells = [c for c in cells if c]
+            if len(cells) >= 2:
+                rows.append((cells[0], cells[1]))
+    return rows
+
+
+def rows_from_text(tree) -> list:
+    """Fallback for filers who lay the list out as text with dot leaders."""
+    rows = []
+    for line in tree.text_content().splitlines():
+        line = line.strip()
+        if not line or _HEADING.search(line):
+            continue
+        parts = [p.strip(" .") for p in _DOTS.split(line) if p.strip(" .")]
+        if len(parts) >= 2:
+            rows.append((parts[0], parts[1]))
+    return rows
 
 
 def extract(html_bytes: bytes) -> dict:
     tree = lxml_html.fromstring(html_bytes)
-    rows = [r for r in _rows_from_tables(tree) if not _is_header_row(r[0], r[1])]
+    rows = [r for r in rows_from_tables(tree) if not is_header_row(r[0], r[1])]
     layout = "table"
     if not rows:
-        rows = [r for r in _rows_from_text(tree) if not _is_header_row(r[0], r[1])]
+        rows = [r for r in rows_from_text(tree) if not is_header_row(r[0], r[1])]
         layout = "free_text"
     return {
         "layout": layout,
@@ -38,7 +86,10 @@ def main() -> None:
     for entry in index:
         if not entry.get("exhibit21"):
             continue
-        html_path = ROOT / "data" / "samples" / entry["exhibit21"]
+        html_path = SAMPLES / entry["exhibit21"]
+        if html_path.suffix.lower() not in (".htm", ".html"):
+            print(f"  skip {entry['title'][:30]:<32} already converted")
+            continue
         if not html_path.exists():
             continue
         payload = extract(html_path.read_bytes())
@@ -51,11 +102,12 @@ def main() -> None:
         json_path.write_text(json.dumps(payload, indent=1), encoding="utf-8")
         entry["exhibit21"] = f"semi/exhibit21/{json_path.name}"
         converted += 1
-        print(f"  {entry['title'][:30]:<32} {payload['layout']:<10} "
-              f"{len(payload['subsidiaries']):>4} subsidiaries")
+        print(
+            f"  {entry['title'][:30]:<32} {payload['layout']:<10} "
+            f"{len(payload['subsidiaries']):>4} subsidiaries"
+        )
 
-    index_path = ROOT / "data" / "samples" / "index.json"
-    index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
+    (SAMPLES / "index.json").write_text(json.dumps(index, indent=2), encoding="utf-8")
     print(f"\nconverted {converted} files, rewrote index.json")
 
 

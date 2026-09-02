@@ -1,31 +1,10 @@
-import re
 from typing import Optional
-
-from lxml import html as lxml_html
 
 from kg.parse.schema import EdgeMention, Mention, make_mention_id
 
 EXTRACTOR_VERSION = "1"
 DEFAULT_TAGS = ("Revenues", "Assets", "NetIncomeLoss")
 EX21_CONFIDENCE = 0.85
-
-_DOTS = re.compile(r"\.{3,}|\s{3,}|\t+")
-_HEADING = re.compile(r"subsidiar|jurisdiction|name of|state of|registrant", re.I)
-_HEADING_LABEL = re.compile(
-    r"^(name|entity|entity name|company|subsidiary|legal name)$", re.I
-)
-_HEADING_VALUE = re.compile(
-    r"incorporat|jurisdiction|domicile|organiz|state or|country|location", re.I
-)
-
-
-def _is_header_row(name: str, value: str) -> bool:
-    return bool(
-        _HEADING.search(name)
-        or _HEADING_LABEL.match(name.strip())
-        or _HEADING_VALUE.search(value)
-    )
-
 
 def parse_companyfacts(
     facts: dict,
@@ -121,32 +100,6 @@ def parse_companyfacts(
     return mentions, edges
 
 
-def _rows_from_tables(tree) -> list:
-    rows = []
-    for table in tree.xpath("//table"):
-        for tr in table.xpath(".//tr"):
-            cells = [
-                " ".join(td.text_content().split())
-                for td in tr.xpath("./td|./th")
-            ]
-            cells = [c for c in cells if c]
-            if len(cells) >= 2:
-                rows.append((cells[0], cells[1]))
-    return rows
-
-
-def _rows_from_text(tree) -> list:
-    rows = []
-    for line in tree.text_content().splitlines():
-        line = line.strip()
-        if not line or _HEADING.search(line):
-            continue
-        parts = [p.strip(" .") for p in _DOTS.split(line) if p.strip(" .")]
-        if len(parts) >= 2:
-            rows.append((parts[0], parts[1]))
-    return rows
-
-
 def parse_exhibit21_json(
     payload: dict,
     source_doc: str,
@@ -154,31 +107,17 @@ def parse_exhibit21_json(
     parent_cik: str,
     parent_name: str,
 ):
-    """Read a converted Exhibit 21 record.
+    """Read a converted Exhibit 21 record into ownership mentions and edges.
 
-    Same output as parse_exhibit21, but the subsidiary rows have already been
-    lifted out of the original HTML by tools/html_to_json.py. Confidence stays
-    below 1.0 because those rows came from layout heuristics, not a schema.
+    The subsidiary rows were lifted out of the original SEC HTML by
+    tools/html_to_json.py. Confidence stays below 1.0 because those rows came
+    from layout heuristics rather than a schema.
     """
     rows = [
         (s.get("name", ""), s.get("jurisdiction_text", ""))
         for s in payload.get("subsidiaries", [])
         if s.get("name")
     ]
-    return _build_ownership(rows, source_doc, source_uri, parent_cik, parent_name)
-
-
-def parse_exhibit21(
-    html_bytes: bytes,
-    source_doc: str,
-    source_uri: str,
-    parent_cik: str,
-    parent_name: str,
-):
-    tree = lxml_html.fromstring(html_bytes)
-    rows = [r for r in _rows_from_tables(tree) if not _is_header_row(r[0], r[1])]
-    if not rows:
-        rows = [r for r in _rows_from_text(tree) if not _is_header_row(r[0], r[1])]
     return _build_ownership(rows, source_doc, source_uri, parent_cik, parent_name)
 
 

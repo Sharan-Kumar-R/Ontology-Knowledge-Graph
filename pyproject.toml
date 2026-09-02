@@ -3,10 +3,19 @@ name = "kg"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-    "pandas", "pyarrow", "duckdb", "httpx", "lxml",
-    "pydantic>=2", "pyyaml", "typer", "neo4j",
-    "rapidfuzz", "scikit-learn", "datasketch",
+    "pandas",         # parsed records -> Parquet, and back
+    "pyarrow",        # the Parquet engine pandas uses
+    "pydantic>=2",    # settings validation
+    "pyyaml",         # reads config/settings.yaml
+    "typer",          # the CLI
+    "neo4j",          # graph driver
+    "rdflib",         # ontology parsing and RDF export
+    "pyshacl",        # SHACL validation
+    "lxml",           # tools/html_to_json.py only
 ]
+
+[project.optional-dependencies]
+reasoning = ["owlready2"]   # HermiT, used by tests/test_ontology.py
 
 [build-system]
 requires = ["setuptools>=68"]

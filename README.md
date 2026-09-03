@@ -22,6 +22,7 @@ Neo4j, or **no database at all**.
 7. [When you get new data](#7-when-you-get-new-data)
 8. [What is not built yet](#8-what-is-not-built-yet)
 
+Connecting to Neo4j Aura: [docs/AURA_SETUP.md](docs/AURA_SETUP.md).
 Query cookbook for the browser: [docs/GRAPH_COMMANDS.md](docs/GRAPH_COMMANDS.md).
 
 ---
@@ -499,6 +500,7 @@ ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, re
 | `tests/` | 30 tests, 1 needing a live database |
 | `src/kg.egg-info/` | Auto-generated pip bookkeeping. Ignore it, never edit it |
 | `docs/PIPELINE.md` | How the pipeline works end to end |
+| `docs/AURA_SETUP.md` | Connecting the pipeline to Neo4j Aura |
 | `docs/GRAPH_COMMANDS.md` | Cypher queries for the browser |
 | `docs/DESIGN.md` | The design document |
 | `docs/PLAN.md` | The implementation plan |

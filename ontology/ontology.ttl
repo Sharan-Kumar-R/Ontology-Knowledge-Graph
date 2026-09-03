@@ -155,6 +155,7 @@ kg:resolvesTo a owl:ObjectProperty , owl:FunctionalProperty ;
     rdfs:domain kg:Entity ;
     rdfs:range kg:Entity ;
     rdfs:label "resolves to" ;
+    kg:edgeLabel "RESOLVES_TO" ;
     rdfs:comment "Links a mention to the canonical entity chosen by entity resolution. Functional: a mention resolves to at most one canonical entity." .
 
 ##############################################################################

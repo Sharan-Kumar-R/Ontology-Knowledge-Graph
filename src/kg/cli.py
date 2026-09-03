@@ -39,8 +39,6 @@ def check():
     try:
         typer.echo(json.dumps(check_connection(driver), indent=2))
     except Exception as exc:
-        # Not fatal: parse works with no database at all, and validate works
-        # against the staged Parquet with --offline.
         typer.echo(f"neo4j:        UNREACHABLE - {type(exc).__name__}: {exc}")
         typer.echo("              parse still works; use: kg validate --offline")
     finally:
@@ -91,6 +89,24 @@ def parse():
 
 
 @app.command()
+def resolve():
+    """Link mentions of the same company across documents (ladder rung R0)."""
+    from kg.resolve.deterministic import resolve_parquet, summarise
+
+    settings = load_settings()
+    entities, edges = resolve_parquet(settings.staging_dir / "mentions.parquet")
+
+    e_path = write_mentions(entities, settings.staging_dir / "entities.parquet")
+    r_path = write_edges(edges, settings.staging_dir / "resolution_edges.parquet")
+
+    for key, value in summarise(entities, edges).items():
+        if value is not None:
+            typer.echo(f"  {key:<20} {value}")
+    typer.echo(f"wrote {len(entities)} entities -> {e_path}")
+    typer.echo(f"wrote {len(edges)} resolution edges -> {r_path}")
+
+
+@app.command()
 def load(
     reset: bool = typer.Option(False, help="delete all nodes first"),
     batch_size: int = typer.Option(
@@ -111,6 +127,13 @@ def load(
             driver, settings.staging_dir / "edge_mentions.parquet", batch_size=batch_size
         )
         typer.echo(f"loaded {n} mentions, {m} edges")
+
+        entities = settings.staging_dir / "entities.parquet"
+        resolution = settings.staging_dir / "resolution_edges.parquet"
+        if entities.exists() and resolution.exists():
+            n = load_mentions(driver, entities, batch_size=batch_size)
+            m = load_edges(driver, resolution, batch_size=batch_size)
+            typer.echo(f"loaded {n} entities, {m} resolution edges")
     finally:
         driver.close()
 
@@ -157,8 +180,14 @@ def validate(
     )
 
     settings = load_settings()
-    mentions = settings.staging_dir / "mentions.parquet"
-    edges = settings.staging_dir / "edge_mentions.parquet"
+    mentions = [
+        settings.staging_dir / "mentions.parquet",
+        settings.staging_dir / "entities.parquet",
+    ]
+    edges = [
+        settings.staging_dir / "edge_mentions.parquet",
+        settings.staging_dir / "resolution_edges.parquet",
+    ]
 
     driver = None
     try:
@@ -201,10 +230,15 @@ def build_ontology():
 
 
 @app.command(name="run-all")
-def run_all():
-    """Build the whole graph from data/samples/: parse, load, stats."""
+def run_all(
+    batch_size: int = typer.Option(
+        5000, help="rows per transaction; lower it for a remote or small database"
+    ),
+):
+    """Build the whole graph from data/samples/: parse, resolve, load, stats."""
     parse()
-    load(reset=True)
+    resolve()
+    load(reset=True, batch_size=batch_size)
     stats()
 
 

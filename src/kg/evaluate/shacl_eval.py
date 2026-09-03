@@ -19,6 +19,7 @@ EDGE_TO_PROPERTY = {
     "OFFICER_OF": KG.officerOf,
     "COMPETES_WITH": KG.competesWith,
     "FILED": KG.filed,
+    "RESOLVES_TO": KG.resolvesTo,
 }
 
 ATTR_TO_PROPERTY = {
@@ -31,11 +32,7 @@ ATTR_TO_PROPERTY = {
 
 
 def _add_mention(graph: Graph, node) -> None:
-    """Add one mention's triples.
-
-    Takes anything dict-like, so a Neo4j node and a Parquet row produce byte
-    for byte the same RDF and the two validate paths cannot drift apart.
-    """
+    """Add one mention's triples, from a Neo4j node or a Parquet row alike."""
     subject = NODE[node["mention_id"]]
     graph.add((subject, RDF.type, KG[node["mention_type"]]))
 
@@ -99,23 +96,25 @@ def export_rdf(driver, limit: Optional[int] = None) -> Graph:
     return graph
 
 
-def _read_rows(path) -> list:
+def _read_rows(paths) -> list:
     """Parquet to dicts, with NaN flattened to None so .get() behaves like Neo4j's."""
     import pandas as pd
 
-    df = pd.read_parquet(path)
-    return df.astype(object).where(pd.notna(df), None).to_dict("records")
+    if isinstance(paths, (str, Path)):
+        paths = [paths]
+    rows = []
+    for path in paths:
+        if not Path(path).exists():
+            continue
+        df = pd.read_parquet(path)
+        rows += df.astype(object).where(pd.notna(df), None).to_dict("records")
+    return rows
 
 
 def export_rdf_from_parquet(
     mentions_path, edges_path, limit: Optional[int] = None
 ) -> Graph:
-    """Build the same RDF graph from the staged Parquet, with no database.
-
-    The graph database is where the KG lives, but SHACL only needs the
-    triples, and those are fully determined by what parse already wrote. This
-    is the path for machines that cannot run Neo4j.
-    """
+    """Build the same RDF graph from the staged Parquet, with no database."""
     graph = Graph()
     graph.bind("kg", KG)
 
@@ -152,11 +151,7 @@ def _walks_returning_to_start(adjacency: dict, start: str, max_depth: int) -> in
 
 
 def parquet_only_checks(mentions_path, edges_path, max_depth: int = 6) -> dict:
-    """The cypher_only_checks in pure Python, for the no-database path.
-
-    Same two questions, same output keys, so a run without Neo4j reports the
-    same numbers as a run with it.
-    """
+    """The cypher_only_checks in pure Python, with the same output keys."""
     mentions = _read_rows(mentions_path)
     edges = _read_rows(edges_path)
 

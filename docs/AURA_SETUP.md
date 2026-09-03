@@ -180,7 +180,7 @@ brings it in, and the pipeline uses it automatically when present.
 If your CA is not in the Windows store, point at a PEM bundle instead:
 
 ```powershell
-$env:KG_CA_BUNDLE = "C:\path	o\corporate-ca.pem"
+$env:KG_CA_BUNDLE = "C:\path\to\corporate-ca.pem"
 ```
 
 Do not disable certificate verification to get past this. The proxy is already

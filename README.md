@@ -144,9 +144,9 @@ data/samples/
 ```
 
 The XBRL files are trimmed from 94 MB to 1.9 MB by keeping only the tags the
-parser reads. The Exhibit 21 files were converted from the original SEC HTML
-by `tools/html_to_json.py`, which handled both layouts SEC filers use (real
-HTML tables and dot-leader free text) and filtered out header rows. Each
+parser reads. The Exhibit 21 files were converted once, offline, from the original SEC
+HTML, handling both layouts filers use (real HTML tables and dot-leader free
+text) and filtering out header rows. Each
 record keeps a `layout` field recording which case it came from, and the
 `jurisdiction_text` values stay exactly as printed - `"Delaware, U.S."`,
 `"Hong Kong"` - because normalising them is a modelling decision, not a

@@ -202,11 +202,11 @@ validation. Provenance stays populated with zero network access.
 ### Where the Exhibit 21 JSON comes from
 
 `data/samples/semi/exhibit21/*.json` are not SEC-native. SEC ships Exhibit 21
-as HTML; [`tools/html_to_json.py`](../tools/html_to_json.py) converted it once,
-offline, and the JSON is what is committed. It is a one-off tool, deliberately
-outside `src/kg/`, and the pipeline never calls it.
+as HTML; a one-off converter turned it into JSON once, offline, and that JSON
+is what is committed. The converter has since been removed: the source HTML was
+never committed, so it could not be re-run from a clean clone anyway.
 
-Its job is genuinely hard, because filers lay out the same list in
+Its job was genuinely hard, because filers lay out the same list in
 incompatible ways:
 
 - `rows_from_tables` takes the first two non-empty cells of each `<tr>` **by
@@ -450,9 +450,8 @@ kg validate
 Trace "Apple Canada Inc." from disk to validated triple.
 
 **1. On disk.** `data/samples/semi/exhibit21/apple_inc.json` contains
-`{"name": "Apple Canada Inc.", "jurisdiction_text": "Canada"}`, produced
-earlier by `tools/html_to_json.py` from `a10-kexhibit21109272025.htm` via the
-`rows_from_tables` path.
+`{"name": "Apple Canada Inc.", "jurisdiction_text": "Canada"}`, converted
+earlier from `a10-kexhibit21109272025.htm` via the table-parsing path.
 
 **2. Ingest.** `load_index()` yields the Apple entry; `load_exhibit21(entry)`
 parses that JSON. `doc_id_for("semi/exhibit21/apple_inc.json")` produces the

@@ -107,12 +107,7 @@ def parse_exhibit21_json(
     parent_cik: str,
     parent_name: str,
 ):
-    """Read a converted Exhibit 21 record into ownership mentions and edges.
-
-    The subsidiary rows were lifted out of the original SEC HTML by
-    tools/html_to_json.py. Confidence stays below 1.0 because those rows came
-    from layout heuristics rather than a schema.
-    """
+    """Read a converted Exhibit 21 record into ownership mentions and edges."""
     rows = [
         (s.get("name", ""), s.get("jurisdiction_text", ""))
         for s in payload.get("subsidiaries", [])

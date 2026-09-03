@@ -4,6 +4,11 @@ from kg.config import Settings
 
 
 def get_driver(settings: Settings) -> Driver:
+    """Bolt by default; an https:// uri selects the HTTP Query API instead."""
+    if settings.neo4j_uri.startswith("https://"):
+        from kg.load.http_conn import get_http_driver
+
+        return get_http_driver(settings)
     return GraphDatabase.driver(
         settings.neo4j_uri,
         auth=(settings.neo4j_user, settings.neo4j_password),

@@ -11,6 +11,7 @@ dependencies = [
     "neo4j",          # graph driver
     "rdflib",         # ontology parsing and RDF export
     "pyshacl",        # SHACL validation
+    "truststore",     # trust the OS cert store behind TLS-intercepting proxies
 ]
 
 [project.optional-dependencies]

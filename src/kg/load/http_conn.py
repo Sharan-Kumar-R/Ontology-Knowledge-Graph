@@ -2,11 +2,28 @@
 
 import base64
 import json
+import os
+import ssl
 import urllib.error
 import urllib.request
 from typing import Optional
 
 from kg.config import Settings
+
+CA_BUNDLE_ENV = "KG_CA_BUNDLE"
+
+
+def build_ssl_context() -> ssl.SSLContext:
+    """Trust the OS certificate store, so corporate TLS interception verifies."""
+    bundle = os.environ.get(CA_BUNDLE_ENV)
+    if bundle:
+        return ssl.create_default_context(cafile=bundle)
+    try:
+        import truststore
+
+        return truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    except ImportError:
+        return ssl.create_default_context()
 
 
 class HttpError(RuntimeError):
@@ -51,6 +68,7 @@ class HttpDriver:
         host = uri.split("://", 1)[-1].rstrip("/")
         self.url = f"https://{host}/db/{database}/query/v2"
         self.timeout = timeout
+        self.context = build_ssl_context()
         token = base64.b64encode(f"{auth[0]}:{auth[1]}".encode("utf-8")).decode("ascii")
         self.headers = {
             "Authorization": f"Basic {token}",
@@ -66,7 +84,9 @@ class HttpDriver:
             self.url, data=json.dumps(payload).encode("utf-8"), headers=self.headers
         )
         try:
-            with urllib.request.urlopen(request, timeout=self.timeout) as response:
+            with urllib.request.urlopen(
+                request, timeout=self.timeout, context=self.context
+            ) as response:
                 body = json.loads(response.read())
         except urllib.error.HTTPError as exc:
             raise HttpError(f"{exc.code}: {exc.read().decode('utf-8', 'replace')[:400]}")

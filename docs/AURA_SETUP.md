@@ -154,6 +154,39 @@ Two limits over HTTP:
 `https://` works on unrestricted networks too, so you can leave it set
 everywhere rather than switching per machine.
 
+### TLS interception
+
+Many corporate networks also intercept TLS, re-signing every HTTPS connection
+with a company root CA. Windows trusts that CA; Python does not look there by
+default, so you get:
+
+```
+URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED]
+certificate verify failed: self-signed certificate in certificate chain>
+```
+
+The connection is reaching the server. Only certificate verification fails.
+
+Fix it by letting Python read the OS trust store, where your company CA already
+lives:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install truststore
+```
+
+That is all. `truststore` is a declared dependency, so `pip install -e .` also
+brings it in, and the pipeline uses it automatically when present.
+
+If your CA is not in the Windows store, point at a PEM bundle instead:
+
+```powershell
+$env:KG_CA_BUNDLE = "C:\path	o\corporate-ca.pem"
+```
+
+Do not disable certificate verification to get past this. The proxy is already
+reading the traffic; turning verification off additionally stops you noticing
+if anyone else does.
+
 ---
 
 ## Reading the failure
@@ -168,6 +201,7 @@ The error tells you how far the connection got.
 | `SessionExpired: Failed to write data to connection` | batch too large | `--batch-size 500` |
 | `FileNotFoundError: config/settings.yaml` | config not created | `copy config\settings.yaml.example config\settings.yaml` |
 | `FileNotFoundError: data/samples` | wrong working directory | run from the project root |
+| `CERTIFICATE_VERIFY_FAILED ... self-signed certificate in certificate chain` | corporate TLS interception | `pip install truststore`, or set `KG_CA_BUNDLE` |
 
 `AuthError` is good news: it proves the network path works and only the secret
 is wrong.

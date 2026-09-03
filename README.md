@@ -3,21 +3,26 @@
 Turns US public-company filings into a queryable graph with a formal ontology
 behind it and a source citation on every fact.
 
-**Current state:** 13,800 nodes, 13,656 relationships, from 25 companies.
+**Current state:** 14,000 nodes, 13,904 relationships, from 25 companies.
 100% of facts trace back to the exact SEC document they came from.
+
+Runs against **Neo4j Aura** (free cloud, nothing to install), a local Docker
+Neo4j, or **no database at all**.
 
 ---
 
 ## Table of contents
 
 1. [What this actually does](#1-what-this-actually-does)
-2. [The five commands](#2-the-five-commands)
+2. [The commands](#2-the-commands)
 3. [Setup from scratch](#3-setup-from-scratch)
 4. [How it was built, step by step](#4-how-it-was-built-step-by-step)
 5. [Every file explained](#5-every-file-explained)
 6. [Command reference](#6-command-reference)
 7. [When you get new data](#7-when-you-get-new-data)
 8. [What is not built yet](#8-what-is-not-built-yet)
+
+Query cookbook for the browser: [docs/GRAPH_COMMANDS.md](docs/GRAPH_COMMANDS.md).
 
 ---
 
@@ -57,7 +62,7 @@ Grammar versus sentences. Blueprint versus building.
 
 ---
 
-## 2. The five commands
+## 2. The commands
 
 Everything else in this repo is machinery serving these.
 
@@ -69,7 +74,19 @@ python -m kg.cli validate              # is the graph still valid
 python -m kg.cli build-ontology        # rebuild ontology files after editing
 ```
 
-Plus the graph browser at **http://localhost:7474** (`neo4j` / `changeme_kg_local`).
+`run-all` is `parse` -> `resolve` -> `load` -> `stats`. Those four also run
+individually when you want one stage:
+
+```bash
+python -m kg.cli parse                        # samples  -> Parquet   (no database)
+python -m kg.cli resolve                      # link mentions across documents
+python -m kg.cli load --reset --batch-size 500
+python -m kg.cli validate --offline --limit 0 # SHACL with no database at all
+```
+
+Then browse the graph: **Query** in the Aura console, or
+**http://localhost:7474** if you are running Docker. Queries to start with are
+in [docs/GRAPH_COMMANDS.md](docs/GRAPH_COMMANDS.md).
 
 ### Reading a command
 
@@ -90,45 +107,123 @@ because `pip install -e .` was run once during setup.
 
 On a fresh machine, in order:
 
-**Requirements:** Python 3.10+, Docker Desktop (running).
+**Requirements:** Python 3.10+, and a database — pick one of three tracks below.
 **Optional:** Protégé, to view the ontology visually.
+
+| Track | Needs | Use when |
+|---|---|---|
+| **A. Neo4j Aura** | a free cloud account | no Docker, no admin rights — the usual case on a work laptop |
+| **B. Docker** | Docker Desktop running | your own machine, fully offline |
+| **C. No database** | nothing but Python | everything is locked down; you lose the graph, keep the validation |
 
 **No network access or SEC account is needed.** All source data ships with the
 repo in `data/samples/` (3.3 MB, 25 companies).
 
-### Windows (PowerShell)
+### Step 1 — Python (all tracks)
 
 ```powershell
-# 1. Python environment and dependencies
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e .
-
-# 2. Copy the config template (defaults work as-is)
 copy config\settings.yaml.example config\settings.yaml
+```
 
-# 3. Start the graph database (first boot downloads plugins, ~1 min)
-docker compose up -d
+macOS / Linux: `python3 -m venv .venv`, `.venv/bin/python -m pip install -e .`,
+`cp config/settings.yaml.example config/settings.yaml`.
 
-# 4. Verify - should print neo4j_version and n10s_available: true
+`pip install -e .` is not optional. Your code lives in `src/`, and that command
+is what puts it on the import path — without it `python -m kg.cli` cannot find
+the `kg` package.
+
+### Track A — Neo4j Aura (no Docker, no install)
+
+Aura is Neo4j's hosted service. The database runs on their servers and you get
+the same browser UI as a web page.
+
+1. Go to **console.neo4j.io**, sign up, **Create instance -> Free**.
+2. Copy the credentials it shows. **The password is displayed once.** If you
+   lose it: instance menu (`...`) -> **Recover Database Credentials**.
+3. Wait for the status to read **RUNNING**.
+4. Fill in `config/settings.yaml`:
+
+```yaml
+data_root: C:/kg-data
+neo4j_uri: neo4j+s://<instance-id>.databases.neo4j.io
+neo4j_user: neo4j
+neo4j_password: <the generated password>
+```
+
+5. Verify, then build:
+
+```powershell
 .\.venv\Scripts\python.exe -m kg.cli check
+.\.venv\Scripts\python.exe -m kg.cli run-all --batch-size 500
+```
 
-# 5. Build the whole graph from data/samples/  (~1 min, no network)
+Keep `--batch-size 500`. The 5000 default is sized for a local instance; against
+Aura Free the write outgrows the connection and the driver raises
+`SessionExpired` partway through, leaving nothing loaded.
+
+Then open the instance in the console and click **Query** to browse the graph.
+
+Three things that trip people up:
+
+- **The username is not always `neo4j`.** Some instances use the instance id
+  (e.g. `f9eb4e18`) as both username and database name. If `check` returns
+  `AuthError` with a password you are sure of, try the instance id as the user.
+- **`data_root` must be writable.** Point it somewhere under your user profile
+  if the root of `C:` is locked down.
+- **Port 7687 must be open.** See the next section if it is not.
+
+### Track A2 — Aura when port 7687 is blocked
+
+Corporate networks commonly allow only 80 and 443. The bolt protocol needs
+**7687**, so `check` fails with:
+
+```
+ServiceUnavailable: Unable to retrieve routing information
+```
+
+Aura serves the same database over an HTTP API on **443** — the port your
+browser already uses. Change the scheme in `config/settings.yaml`:
+
+```yaml
+neo4j_uri: https://<instance-id>.databases.neo4j.io
+```
+
+That is the only change. `check`, `load`, `stats` and `run-all` all work over
+HTTPS; the URI scheme selects the transport
+([`get_driver`](src/kg/load/neo4j_conn.py)). `validate` without `--offline` is
+not supported over HTTP — use `validate --offline`, which checks the same
+shapes against the staged Parquet.
+
+To tell the two failures apart: `AuthError` means the network is fine and the
+credentials are wrong. `ServiceUnavailable` means you never reached the server.
+
+### Track B — Docker (local)
+
+```powershell
+docker compose up -d
+.\.venv\Scripts\python.exe -m kg.cli check
 .\.venv\Scripts\python.exe -m kg.cli run-all
 ```
 
-### macOS / Linux
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -e .
-cp config/settings.yaml.example config/settings.yaml
-docker compose up -d
-.venv/bin/python -m kg.cli check
-.venv/bin/python -m kg.cli run-all
-```
+Defaults in `settings.yaml.example` already point at it
+(`bolt://localhost:7687`, `neo4j` / `changeme_kg_local`). First boot takes
+about a minute. Browser at **http://localhost:7474**.
 
 The `docker-compose.yml` mounts `C:/kg-data/neo4j` — change those two volume
 paths on non-Windows.
+
+### Track C — no database at all
+
+```powershell
+.\.venv\Scripts\python.exe -m kg.cli parse
+.\.venv\Scripts\python.exe -m kg.cli resolve
+.\.venv\Scripts\python.exe -m kg.cli validate --offline --limit 0
+```
+
+Extraction, resolution and the full SHACL quality gate, with no server, no
+Docker and no network. You lose `load`, `stats` and the browser.
 
 ### The bundled data
 
@@ -155,26 +250,38 @@ parsing one.
 Ownership edges keep `confidence: 0.85` rather than `1.0`, since those rows
 came from layout heuristics rather than a schema.
 
-### Expected output from step 5
+### Expected output from `run-all`
 
 ```
 structured/tickers:     165 mentions
 semi/xbrl:            11724 mentions
-semi/exhibit21:        1952 ownership edges
-loaded 13864 mentions, 13690 edges
+semi/exhibit21:        2163 ownership edges
+wrote 14075 mentions -> C:\kg-data\staging\mentions.parquet
+wrote 13901 edges -> C:\kg-data\staging\edge_mentions.parquet
+  canonical_entities   25
+  mentions_linked      73
+  mentions_collapsed   48
+loaded 14075 mentions, 13901 edges
+loaded 25 entities, 73 resolution edges
 mentions:
   FinancialFact    semi           11628
-  LegalEntity      semi           1996
+  LegalEntity      semi           2171
   Identifier       structured     80
   XBRLConcept      semi           71
   LegalEntity      structured     25
+  Entity           structured     25
 edges:
   REPORTS          11628
-  PARENT_OF        1948
+  PARENT_OF        2123
   IDENTIFIED_BY    80
+  RESOLVES_TO      73
 ```
 
-Then open **http://localhost:7474** (`neo4j` / `changeme_kg_local`) and run:
+Counts are lower than the Parquet row counts because `mention_id` is a hash of
+the source document, extractor and key, and `load` uses `MERGE` — records that
+describe the same thing collapse instead of duplicating.
+
+Then open the graph (Aura **Query** tab, or http://localhost:7474) and run:
 
 ```cypher
 MATCH (p:Mention)-[:PARENT_OF]->(s:Mention)
@@ -182,14 +289,21 @@ WHERE p.name CONTAINS 'Apple'
 RETURN p, s
 ```
 
+More in [docs/GRAPH_COMMANDS.md](docs/GRAPH_COMMANDS.md).
+
 ### Troubleshooting
 
 | Symptom | Cause |
 |---|---|
 | `FileNotFoundError: data/samples` | Run commands from the project root folder |
-| `ServiceUnavailable` on bolt | Docker not running, or Neo4j still booting (wait ~60s) |
-| `FileNotFoundError: config/settings.yaml` | Step 2 was skipped |
-| `ConstraintCreationFailed ... Enterprise Edition` | You are on Neo4j Enterprise-only syntax; this repo targets Community |
+| `FileNotFoundError: config/settings.yaml` | You skipped the `copy` step |
+| `ServiceUnavailable` on Docker | Docker not running, or Neo4j still booting (wait ~60s) |
+| `ServiceUnavailable: Unable to retrieve routing information` on Aura | Port 7687 blocked. Switch the URI to `https://` — see Track A2 |
+| `AuthError: Unauthorized` on Aura | Wrong password, or the username is the instance id rather than `neo4j` |
+| `SessionExpired: Failed to write data` | Batch too large for the instance. Use `--batch-size 500` |
+| `Database does not exist. Database name: 'neo4j'` | The database is named after the instance id; set `neo4j_user` to it |
+| `n10s_available: false` | Expected on Aura. Nothing in the pipeline calls n10s |
+| `ConstraintCreationFailed ... Enterprise Edition` | Enterprise-only syntax; this repo targets Community |
 
 Bulk data is written to `C:\kg-data\`, deliberately outside OneDrive so
 gigabytes of Parquet and database files are not synced to the cloud.
@@ -362,13 +476,15 @@ ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, re
 
 | File | Purpose |
 |---|---|
-| `config.py` | Reads settings, validates the SEC contact email, creates data folders |
+| `config.py` | Reads and validates settings, creates the staging folder |
 | `ingest/local.py` | Reads the bundled files in `data/samples/` |
 | `parse/schema.py` | **The common format every reader writes into** |
 | `parse/structured.py` | Reader for clean tables |
-| `parse/semi.py` | Reader for XBRL JSON and Exhibit 21 HTML |
-| `load/neo4j_conn.py` | Database connection and health check |
+| `parse/semi.py` | Reader for XBRL JSON and converted Exhibit 21 |
+| `resolve/deterministic.py` | R0 entity resolution — links mentions across documents |
+| `load/neo4j_conn.py` | Picks the transport from the URI scheme, health check |
 | `load/neo4j_writer.py` | Batched loading, provenance enforcement |
+| `load/http_conn.py` | Neo4j over the HTTP API, for networks that block 7687 |
 | `evaluate/shacl_eval.py` | Exports the graph to RDF and validates it |
 | `cli.py` | All commands live here |
 
@@ -376,23 +492,25 @@ ontology.ttl ──build.py──┬──▶ ontology.owl        (Protégé, re
 
 | Path | Purpose |
 |---|---|
-| `docker-compose.yml` | Neo4j configuration |
-| `config/settings.yaml` | Your settings — **gitignored**, holds your email |
+| `docker-compose.yml` | Neo4j configuration for the Docker track |
+| `config/settings.yaml` | Your settings — **gitignored**, holds your password |
 | `config/settings.yaml.example` | Template to copy |
 | `pyproject.toml` | Dependencies and package config |
-| `tests/` | 34 tests |
+| `tests/` | 30 tests, 1 needing a live database |
 | `src/kg.egg-info/` | Auto-generated pip bookkeeping. Ignore it, never edit it |
-|  `docs/DESIGN.md` | The design document |
-|  `docs/PLAN.md` | The implementation plan |
+| `docs/PIPELINE.md` | How the pipeline works end to end |
+| `docs/GRAPH_COMMANDS.md` | Cypher queries for the browser |
+| `docs/DESIGN.md` | The design document |
+| `docs/PLAN.md` | The implementation plan |
 
 ### Where the data lives
 
 Outside the repo, at `C:\kg-data\`:
 
 ```
-raw/       downloaded SEC documents, named by content hash (permanent)
-staging/   mentions.parquet, edge_mentions.parquet
-neo4j/     the database files
+staging/   mentions.parquet, edge_mentions.parquet,
+           entities.parquet, resolution_edges.parquet
+neo4j/     the database files (Docker track only)
 ```
 
 ---
@@ -401,19 +519,29 @@ neo4j/     the database files
 
 | Command | What it does | Writes |
 |---|---|---|
-| `check` | Verifies config and Neo4j | — |
+| `check` | Verifies config and the database connection | — |
 | `parse` | Reads `data/samples/` | `mentions.parquet`, `edge_mentions.parquet` |
+| `resolve` | Links same-company mentions across documents | `entities.parquet`, `resolution_edges.parquet` |
 | `load --reset` | Loads Parquet into Neo4j | the graph |
 | `stats` | Counts by type | — |
 | `validate` | SHACL validation and consistency checks | — |
 | `build-ontology` | Regenerates ontology files from `ontology.ttl` | `ontology.owl`, `constraints.cypher` |
-| `run-all` | parse → load → stats | everything |
+| `run-all` | parse → resolve → load → stats | everything |
+
+Options worth knowing:
+
+| Option | On | Why |
+|---|---|---|
+| `--batch-size 500` | `load`, `run-all` | required for Aura Free; the 5000 default breaks the connection |
+| `--offline` | `validate` | validates the staged Parquet with no database |
+| `--limit 0` | `validate` | validate the whole graph instead of a 3000-node sample |
+| `--reset` | `load` | wipe the graph first; `run-all` always does this |
 
 Tests:
 
 ```bash
-python -m pytest -m "not integration"   # offline, no database needed
-python -m pytest                        # everything, needs docker compose up
+python -m pytest -m "not integration"   # 30 tests, no database needed
+python -m pytest                        # everything, needs a live database
 ```
 
 ---
@@ -480,9 +608,9 @@ cached and immutable, so re-running is cheap and produces the same answer.
 
 | Missing | Why it matters |
 |---|---|
-| **Entity resolution** | "Apple Inc." and "APPLE INC." are currently two separate nodes. They are one company. This is the hard problem in the field |
+| **Entity resolution beyond R0** | R0 is built: mentions sharing a CIK collapse to one `Entity` via `RESOLVES_TO`, which is what makes cross-document queries work. It only reaches entities that carry an identifier, so the ~2,100 subsidiaries are still unlinked. Rungs R1–R4 (normalisation, blocking, pairwise scoring, clustering) are the remaining work |
 | **Unstructured reader** | Facts stated only in prose — acquisitions, executives. Needs an LLM and `ANTHROPIC_API_KEY` |
-| **GLEIF ingestion** | A public registry publishing official ownership records. Comparing them against our 1,948 extracted ownership edges would give real precision and recall figures at no labelling cost |
+| **GLEIF ingestion** | A public registry publishing official ownership records. Comparing them against our 2,123 extracted ownership edges would give real precision and recall figures at no labelling cost |
 | **Scalability benchmarks** | Timing each stage at 100 / 1k / 10k filings |
 
 Competency question status is tracked honestly in

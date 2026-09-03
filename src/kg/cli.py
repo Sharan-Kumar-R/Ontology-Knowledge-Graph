@@ -91,7 +91,12 @@ def parse():
 
 
 @app.command()
-def load(reset: bool = typer.Option(False, help="delete all nodes first")):
+def load(
+    reset: bool = typer.Option(False, help="delete all nodes first"),
+    batch_size: int = typer.Option(
+        5000, help="rows per transaction; lower it for a remote or small database"
+    ),
+):
     """Apply constraints and load Parquet into Neo4j."""
     settings = load_settings()
     driver = get_driver(settings)
@@ -99,8 +104,12 @@ def load(reset: bool = typer.Option(False, help="delete all nodes first")):
         if reset:
             clear_graph(driver)
         apply_constraints(driver, CONSTRAINTS)
-        n = load_mentions(driver, settings.staging_dir / "mentions.parquet")
-        m = load_edges(driver, settings.staging_dir / "edge_mentions.parquet")
+        n = load_mentions(
+            driver, settings.staging_dir / "mentions.parquet", batch_size=batch_size
+        )
+        m = load_edges(
+            driver, settings.staging_dir / "edge_mentions.parquet", batch_size=batch_size
+        )
         typer.echo(f"loaded {n} mentions, {m} edges")
     finally:
         driver.close()
